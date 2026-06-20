@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://bjnhomnemlaa6"]
+
+[ext_resource type="Script" uid="uid://dphmbj52nnw2p" path="res://scripts/global.gd" id="1_jt24b"]
+[ext_resource type="AudioStream" uid="uid://ca7jeffnou8ss" path="res://assets/audio/button_back.ogg" id="2_lqipe"]
+[ext_resource type="AudioStream" uid="uid://cokd2a71i7oba" path="res://assets/audio/button_click.ogg" id="3_pw06x"]
+[ext_resource type="AudioStream" uid="uid://dy1htfmx0wyxf" path="res://assets/audio/correct_answer.ogg" id="4_sxrh4"]
+[ext_resource type="AudioStream" uid="uid://hymmcfvy18nb" path="res://assets/audio/intro.ogg" id="5_lljc6"]
+[ext_resource type="AudioStream" uid="uid://bagbtxc77wo0o" path="res://assets/audio/keypress.ogg" id="6_1nvry"]
+[ext_resource type="AudioStream" uid="uid://bp6cp7ljete1e" path="res://assets/audio/loading_in.ogg" id="7_jxs33"]
+[ext_resource type="AudioStream" uid="uid://cineiro4llq8f" path="res://assets/audio/loading_out.ogg" id="8_ggeaj"]
+[ext_resource type="AudioStream" uid="uid://bqiqk254232ic" path="res://assets/audio/out_of_guesses.ogg" id="9_rll33"]
+[ext_resource type="AudioStream" uid="uid://c0qnls656ea5k" path="res://assets/audio/success.ogg" id="10_uxql3"]
+[ext_resource type="AudioStream" uid="uid://u274nk1wnh77" path="res://assets/audio/tick_switch.ogg" id="11_nrutj"]
+[ext_resource type="AudioStream" uid="uid://cd3n74vujpbrl" path="res://assets/audio/trash.ogg" id="12_aj76r"]
+[ext_resource type="AudioStream" uid="uid://kn6g018hydc1" path="res://assets/audio/wrong_answer.ogg" id="13_bjlpp"]
+
+[node name="ScriptGlobal" type="Control" unique_id=1038585354]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_jt24b")
+
+[node name="BgAudio" type="AudioStreamPlayer" parent="." unique_id=1031493229]
+volume_db = -12.0
+
+[node name="BackAudio" type="AudioStreamPlayer" parent="." unique_id=390547773]
+stream = ExtResource("2_lqipe")
+volume_db = -12.0
+
+[node name="ClickAudio" type="AudioStreamPlayer" parent="." unique_id=930041867]
+stream = ExtResource("3_pw06x")
+volume_db = -12.0
+
+[node name="CorrectAudio" type="AudioStreamPlayer" parent="." unique_id=1875771483]
+stream = ExtResource("4_sxrh4")
+volume_db = -12.0
+
+[node name="IntroAudio" type="AudioStreamPlayer" parent="." unique_id=756051297]
+stream = ExtResource("5_lljc6")
+volume_db = -12.0
+
+[node name="KeypressAudio" type="AudioStreamPlayer" parent="." unique_id=730226614]
+stream = ExtResource("6_1nvry")
+volume_db = -12.0
+
+[node name="LoadingInAudio" type="AudioStreamPlayer" parent="." unique_id=148243666]
+stream = ExtResource("7_jxs33")
+volume_db = -12.0
+
+[node name="LoadingOutAudio" type="AudioStreamPlayer" parent="." unique_id=866668534]
+stream = ExtResource("8_ggeaj")
+volume_db = -12.0
+
+[node name="OutOfGuessesAudio" type="AudioStreamPlayer" parent="." unique_id=1665994353]
+stream = ExtResource("9_rll33")
+volume_db = -12.0
+
+[node name="SuccessAudio" type="AudioStreamPlayer" parent="." unique_id=2111933378]
+stream = ExtResource("10_uxql3")
+volume_db = -12.0
+
+[node name="TickSwitchAudio" type="AudioStreamPlayer" parent="." unique_id=2075215562]
+stream = ExtResource("11_nrutj")
+volume_db = -12.0
+
+[node name="TrashAudio" type="AudioStreamPlayer" parent="." unique_id=1848013155]
+stream = ExtResource("12_aj76r")
+volume_db = -12.0
+
+[node name="WrongAudio" type="AudioStreamPlayer" parent="." unique_id=354798443]
+stream = ExtResource("13_bjlpp")
+volume_db = -12.0

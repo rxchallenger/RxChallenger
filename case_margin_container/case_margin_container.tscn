@@ -1,0 +1,253 @@
+[gd_scene format=3 uid="uid://on4q4h1por6p"]
+
+[ext_resource type="Theme" uid="uid://cv40tygwaw1ho" path="res://themes/theme.tres" id="1_oreib"]
+[ext_resource type="Texture2D" uid="uid://bv2iul2lvfax3" path="res://assets/icons/left_arrow.webp" id="2_catal"]
+[ext_resource type="Texture2D" uid="uid://dblnu1ilk6bkr" path="res://assets/icons/case.webp" id="3_64efk"]
+[ext_resource type="Texture2D" uid="uid://bad28wpgdd0hg" path="res://assets/icons/right.webp" id="4_svbii"]
+[ext_resource type="StyleBox" uid="uid://dn0vu6dbt7tsa" path="res://themes/disabled_style_box_flat.tres" id="6_dic73"]
+[ext_resource type="StyleBox" uid="uid://djhr1wvyv2t8y" path="res://themes/green_style_button.tres" id="7_gixjj"]
+[ext_resource type="Texture2D" uid="uid://qmmv1a4powqw" path="res://assets/icons/done.webp" id="8_56ee1"]
+[ext_resource type="Texture2D" uid="uid://b41bjfh7gkfq3" path="res://assets/icons/alt.webp" id="9_rfdbj"]
+[ext_resource type="Texture2D" uid="uid://bkyp35rdc4d4s" path="res://assets/icons/hide.webp" id="10_xd7yu"]
+[ext_resource type="Texture2D" uid="uid://djgvyjg13cx36" path="res://assets/icons/show.webp" id="11_11qnd"]
+[ext_resource type="StyleBox" uid="uid://c2qa4jcj4l7ce" path="res://themes/orange_style_button.tres" id="12_0oslj"]
+[ext_resource type="Texture2D" uid="uid://c8rjlb2j1asyj" path="res://assets/icons/target.webp" id="13_5v8mi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v4ig7"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.2726, 0.70641, 0.94, 1)
+border_width_bottom = 50
+border_color = Color(0.175789, 0.633418, 0.861044, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 5
+
+[sub_resource type="Gradient" id="Gradient_mvta5"]
+offsets = PackedFloat32Array(0, 0.121442, 0.231499, 0.519924, 0.647059, 0.878558, 1)
+colors = PackedColorArray(1, 0.325833, 0.734913, 1, 0.794303, 0.911164, 1.15514e-06, 1, 2.69532e-06, 0.842031, 0.760813, 1, 0.282732, 0.282732, 0.282732, 1, 3.17663e-06, 0.546398, 0.685186, 1, 1, 0.290193, 0.508547, 1, 1, 1, 1, 1)
+
+[node name="CaseMarginContainer" type="MarginContainer" unique_id=1632402183]
+anchors_preset = -1
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = -500.16
+offset_top = -812.0
+offset_right = 499.84
+offset_bottom = 135.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_oreib")
+
+[node name="Panel" type="Panel" parent="." unique_id=35377892]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+
+[node name="Speciality" type="Label" parent="Panel" unique_id=2140577637]
+unique_name_in_owner = true
+visible = false
+layout_mode = 0
+offset_left = 311.0
+offset_top = 9.0
+offset_right = 649.0
+offset_bottom = 92.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel" unique_id=1204482963]
+layout_mode = 0
+offset_right = 986.0
+offset_bottom = 95.0
+alignment = 1
+
+[node name="BackButton" type="TextureButton" parent="Panel/HBoxContainer" unique_id=1880659216]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 95)
+layout_mode = 2
+size_flags_horizontal = 2
+texture_normal = ExtResource("2_catal")
+texture_pressed = ExtResource("2_catal")
+texture_hover = ExtResource("2_catal")
+texture_disabled = ExtResource("2_catal")
+texture_focused = ExtResource("2_catal")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="CaseIcon" type="TextureRect" parent="Panel/HBoxContainer" unique_id=940603978]
+layout_mode = 2
+size_flags_horizontal = 10
+texture = ExtResource("3_64efk")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="Panel/HBoxContainer" unique_id=2075265946]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_font_sizes/font_size = 50
+text = "Level Select"
+
+[node name="NextButton" type="TextureButton" parent="Panel/HBoxContainer" unique_id=1253439927]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 95)
+layout_mode = 2
+size_flags_horizontal = 10
+texture_normal = ExtResource("4_svbii")
+texture_pressed = ExtResource("4_svbii")
+texture_hover = ExtResource("4_svbii")
+texture_disabled = ExtResource("4_svbii")
+texture_focused = ExtResource("4_svbii")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="TextureMarginContainer" type="MarginContainer" parent="Panel" unique_id=345025926]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -480.0
+offset_top = -374.5
+offset_right = 479.0
+offset_bottom = 451.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PrescriptionTexture" type="TextureRect" parent="Panel/TextureMarginContainer" unique_id=293743861]
+layout_mode = 2
+
+[node name="ContentControl" type="Control" parent="Panel" unique_id=309411887]
+unique_name_in_owner = true
+layout_mode = 1
+anchor_left = 0.497
+anchor_top = 0.861
+anchor_right = 0.497
+anchor_bottom = 0.861
+offset_left = -489.0
+offset_top = -823.367
+offset_right = -449.0
+offset_bottom = -783.367
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Drug1" type="Button" parent="Panel/ContentControl" unique_id=1110682478 groups=["DrugButtons"]]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 141.0
+offset_right = 673.0
+offset_bottom = 218.0
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = ExtResource("7_gixjj")
+theme_override_styles/normal_mirrored = ExtResource("6_dic73")
+theme_override_styles/pressed = ExtResource("6_dic73")
+theme_override_styles/pressed_mirrored = ExtResource("6_dic73")
+theme_override_styles/hover = ExtResource("6_dic73")
+theme_override_styles/hover_mirrored = ExtResource("6_dic73")
+theme_override_styles/hover_pressed = ExtResource("6_dic73")
+theme_override_styles/hover_pressed_mirrored = ExtResource("6_dic73")
+theme_override_styles/disabled = ExtResource("6_dic73")
+theme_override_styles/disabled_mirrored = ExtResource("6_dic73")
+theme_override_styles/focus = ExtResource("6_dic73")
+icon = ExtResource("8_56ee1")
+expand_icon = true
+
+[node name="Alt1" type="TextureButton" parent="Panel/ContentControl" unique_id=1212042374 groups=["AltTextures"]]
+layout_mode = 0
+offset_left = 61.9999
+offset_top = 141.0
+offset_right = 140.0
+offset_bottom = 215.0
+texture_normal = ExtResource("9_rfdbj")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="HideDrug1" type="TextureButton" parent="Panel/ContentControl" unique_id=1091567722 groups=["HideTextures"]]
+layout_mode = 0
+offset_left = 61.9999
+offset_top = 141.0
+offset_right = 140.0
+offset_bottom = 218.0
+toggle_mode = true
+texture_normal = ExtResource("10_xd7yu")
+texture_pressed = ExtResource("11_11qnd")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="DrugLetterCount1" type="Button" parent="Panel/ContentControl" unique_id=1449345706 groups=["DrugLetterButtons"]]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 141.0
+offset_right = 62.0
+offset_bottom = 215.0
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("12_0oslj")
+theme_override_styles/pressed = ExtResource("12_0oslj")
+theme_override_styles/focus = ExtResource("12_0oslj")
+
+[node name="Score" type="Button" parent="Panel/ContentControl" unique_id=1150479275]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 707.0
+offset_top = 107.0
+offset_right = 971.0
+offset_bottom = 211.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_v4ig7")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxFlat_v4ig7")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_v4ig7")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxFlat_v4ig7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_v4ig7")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxFlat_v4ig7")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_v4ig7")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxFlat_v4ig7")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_v4ig7")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxFlat_v4ig7")
+theme_override_styles/focus = SubResource("StyleBoxFlat_v4ig7")
+text = "0/?"
+icon = ExtResource("13_5v8mi")
+expand_icon = true
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Panel" unique_id=1862407778]
+unique_name_in_owner = true
+position = Vector2(497, 280)
+emitting = false
+amount = 10
+one_shot = true
+explosiveness = 0.6
+randomness = 0.2
+local_coords = true
+emission_shape = 3
+emission_rect_extents = Vector2(50, 50)
+direction = Vector2(0, -1)
+spread = 15.0
+gravity = Vector2(0, 5000)
+initial_velocity_min = 1600.0
+initial_velocity_max = 1600.0
+angular_velocity_min = 0.2
+angular_velocity_max = 0.2
+angle_min = 30.0
+angle_max = 30.0
+scale_amount_min = 50.0
+scale_amount_max = 50.0
+color_ramp = SubResource("Gradient_mvta5")
+hue_variation_min = 1.0
+hue_variation_max = 1.0

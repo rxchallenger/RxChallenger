@@ -1,0 +1,199 @@
+[gd_scene format=3 uid="uid://chxe78yjqftkl"]
+
+[ext_resource type="Script" uid="uid://jbrdwmw7pd34" path="res://addons/silent_wolf/Auth/Register.gd" id="1"]
+[ext_resource type="Theme" uid="uid://d2eakbmaefnt6" path="res://addons/silent_wolf/assets/themes/sw_theme.tres" id="1_dsws8"]
+[ext_resource type="PackedScene" uid="uid://clllbf6am8qdf" path="res://addons/silent_wolf/common/SWButton.tscn" id="2"]
+[ext_resource type="Texture2D" uid="uid://djgvyjg13cx36" path="res://assets/icons/show.webp" id="4_lqv0f"]
+[ext_resource type="Texture2D" uid="uid://dh8fem1lgom04" path="res://addons/silent_wolf/assets/gfx/info_icon_small.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://bkyp35rdc4d4s" path="res://assets/icons/hide.webp" id="5_tafpi"]
+[ext_resource type="Texture2D" uid="uid://gdw18po2h7hb" path="res://addons/silent_wolf/assets/gfx/dummy_info_icon_small.png" id="6"]
+
+[node name="Register" type="TextureRect"]
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.437
+anchor_right = 0.5
+anchor_bottom = 0.437
+offset_left = -540.0
+offset_top = -839.04
+offset_right = 468.0
+offset_bottom = -55.04
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_dsws8")
+expand_mode = 1
+script = ExtResource("1")
+
+[node name="BackButton" parent="." instance=ExtResource("2")]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 528.0
+offset_right = 177.0
+offset_bottom = 569.0
+theme_override_font_sizes/font_size = 36
+text = "← Back"
+
+[node name="RevealPassword" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1008.0
+offset_top = 853.0
+offset_right = 1088.0
+offset_bottom = 933.0
+toggle_mode = true
+texture_normal = ExtResource("4_lqv0f")
+texture_pressed = ExtResource("5_tafpi")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="FormContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 584.0
+offset_right = 999.0
+offset_bottom = 1303.0
+theme_override_constants/separation = 36
+
+[node name="Label" type="Label" parent="FormContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "Sign up"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="MainFormContainer" type="HBoxContainer" parent="FormContainer"]
+layout_mode = 2
+theme_override_constants/separation = 36
+
+[node name="FormLabels" type="VBoxContainer" parent="FormContainer/MainFormContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 32
+
+[node name="PlayerNameLabel" type="Label" parent="FormContainer/MainFormContainer/FormLabels"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Username:"
+
+[node name="EmailLabel" type="Label" parent="FormContainer/MainFormContainer/FormLabels"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Email:"
+
+[node name="PasswordLabel" type="Label" parent="FormContainer/MainFormContainer/FormLabels"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Password:"
+
+[node name="ConfirmPasswordLabel" type="Label" parent="FormContainer/MainFormContainer/FormLabels"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "Confirm password:"
+
+[node name="FormInputFields" type="VBoxContainer" parent="FormContainer/MainFormContainer"]
+custom_minimum_size = Vector2(460, 0)
+layout_mode = 2
+
+[node name="PlayerName" type="LineEdit" parent="FormContainer/MainFormContainer/FormInputFields"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+max_length = 18
+
+[node name="Email" type="LineEdit" parent="FormContainer/MainFormContainer/FormInputFields"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+max_length = 50
+
+[node name="Password" type="LineEdit" parent="FormContainer/MainFormContainer/FormInputFields"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+max_length = 30
+secret = true
+
+[node name="ConfirmPassword" type="LineEdit" parent="FormContainer/MainFormContainer/FormInputFields"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+max_length = 30
+secret = true
+
+[node name="InfoLabels" type="VBoxContainer" parent="FormContainer/MainFormContainer"]
+layout_direction = 3
+layout_mode = 2
+theme = ExtResource("1_dsws8")
+
+[node name="UsernameToolButton" type="Button" parent="FormContainer/MainFormContainer/InfoLabels"]
+layout_mode = 2
+icon = ExtResource("5")
+flat = true
+
+[node name="DummyToolButton1" type="Button" parent="FormContainer/MainFormContainer/InfoLabels"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+icon = ExtResource("6")
+
+[node name="PasswordToolButton" type="Button" parent="FormContainer/MainFormContainer/InfoLabels"]
+layout_mode = 2
+icon = ExtResource("5")
+flat = true
+
+[node name="DummyToolButton2" type="Button" parent="FormContainer/MainFormContainer/InfoLabels"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 2
+icon = ExtResource("6")
+
+[node name="InfoBox" type="Label" parent="FormContainer"]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0.796078, 0, 0, 1)
+text = "Password should contain at least 8 characters including uppercase and lowercase letters, numbers and (optionally) special characters."
+autowrap_mode = 3
+
+[node name="ErrorMessage" type="Label" parent="FormContainer"]
+visible = false
+custom_minimum_size = Vector2(36, 0)
+layout_mode = 2
+theme = ExtResource("1_dsws8")
+theme_override_colors/font_color = Color(0.92549, 0, 0, 1)
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="RegisterButton" parent="FormContainer" instance=ExtResource("2")]
+custom_minimum_size = Vector2(280, 80)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 48
+text = "Register Now"
+
+[node name="ProcessingLabel" type="Label" parent="FormContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 36
+text = "Processing..."
+
+[node name="LoginLabel" type="Label" parent="FormContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 36
+text = "Already have an account?"
+
+[node name="LoginNowButton" type="Button" parent="FormContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Login now"
+
+[connection signal="pressed" from="BackButton" to="." method="_on_BackButton_pressed"]
+[connection signal="toggled" from="RevealPassword" to="." method="_on_reveal_password_toggled"]
+[connection signal="text_changed" from="FormContainer/MainFormContainer/FormInputFields/PlayerName" to="." method="_on_player_name_text_changed"]
+[connection signal="text_changed" from="FormContainer/MainFormContainer/FormInputFields/Email" to="." method="_on_email_text_changed"]
+[connection signal="text_changed" from="FormContainer/MainFormContainer/FormInputFields/Password" to="." method="_on_password_text_changed"]
+[connection signal="text_changed" from="FormContainer/MainFormContainer/FormInputFields/ConfirmPassword" to="." method="_on_confirm_password_text_changed"]
+[connection signal="mouse_entered" from="FormContainer/MainFormContainer/InfoLabels/UsernameToolButton" to="." method="_on_UsernameToolButton_mouse_entered"]
+[connection signal="mouse_exited" from="FormContainer/MainFormContainer/InfoLabels/UsernameToolButton" to="." method="_on_UsernameToolButton_mouse_exited"]
+[connection signal="mouse_entered" from="FormContainer/MainFormContainer/InfoLabels/PasswordToolButton" to="." method="_on_PasswordToolButton_mouse_entered"]
+[connection signal="mouse_exited" from="FormContainer/MainFormContainer/InfoLabels/PasswordToolButton" to="." method="_on_PasswordToolButton_mouse_exited"]
+[connection signal="pressed" from="FormContainer/RegisterButton" to="." method="_on_RegisterButton_pressed"]
+[connection signal="pressed" from="FormContainer/LoginNowButton" to="." method="_on_login_now_button_pressed"]

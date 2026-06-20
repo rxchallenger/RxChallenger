@@ -1,0 +1,4671 @@
+[gd_scene format=3 uid="uid://b786btrtfxbkf"]
+
+[ext_resource type="Script" uid="uid://3mexlk32bh06" path="res://drugs/drugs_script.gd" id="1_sfapg"]
+[ext_resource type="Texture2D" uid="uid://d0pqni3cfbpul" path="res://assets/drugs/ator.webp" id="2"]
+[ext_resource type="Texture2D" uid="uid://b73pdvibyoi32" path="res://assets/drugs/aspocid.webp" id="2_bxps7"]
+[ext_resource type="Texture2D" uid="uid://du1120eufha2o" path="res://assets/drugs/cerebrolysin.webp" id="3"]
+[ext_resource type="Texture2D" uid="uid://08jqe2l62m8y" path="res://assets/drugs/fortamind.webp" id="4"]
+[ext_resource type="Texture2D" uid="uid://cvpnovmc557vw" path="res://assets/drugs/neuroton.webp" id="5"]
+[ext_resource type="Texture2D" uid="uid://bjabupwe3dts6" path="res://assets/drugs/memexa.webp" id="6"]
+[ext_resource type="Texture2D" uid="uid://dd78uj7i85tuy" path="res://assets/drugs/alphintern.webp" id="7"]
+[ext_resource type="Texture2D" uid="uid://bqixd82l6267a" path="res://assets/drugs/hibiotic.webp" id="8"]
+[ext_resource type="Texture2D" uid="uid://dsfcgpeokm53l" path="res://assets/drugs/flagyl.webp" id="9"]
+[ext_resource type="Texture2D" uid="uid://dse12k6l0xk6t" path="res://assets/drugs/thiotacid.webp" id="10"]
+[ext_resource type="Texture2D" uid="uid://cjx1cp61afdhp" path="res://assets/drugs/karbalta.webp" id="11"]
+[ext_resource type="Texture2D" uid="uid://p3e7ea7cuh87" path="res://assets/drugs/neurobion.webp" id="12"]
+[ext_resource type="Texture2D" uid="uid://d1jt5h0vxymbs" path="res://assets/drugs/calcidol.webp" id="13"]
+[ext_resource type="Texture2D" uid="uid://ntr141eks7xf" path="res://assets/drugs/devarol.webp" id="14"]
+[ext_resource type="Texture2D" uid="uid://xmitev0whbsb" path="res://assets/drugs/rabeprazole.webp" id="15"]
+[ext_resource type="Texture2D" uid="uid://cmd3re7dcmpf" path="res://assets/drugs/cholerose.webp" id="16"]
+[ext_resource type="Texture2D" uid="uid://vn1wsn133efg" path="res://assets/drugs/ganaton.webp" id="17"]
+[ext_resource type="Texture2D" uid="uid://dqll4bkvvv46f" path="res://assets/drugs/mucosta.webp" id="18"]
+[ext_resource type="Texture2D" uid="uid://c7tuek2bpgndx" path="res://assets/drugs/nexium.webp" id="19"]
+[ext_resource type="Texture2D" uid="uid://b6ekjahmg3q6x" path="res://assets/drugs/colovatil.webp" id="20"]
+[ext_resource type="Texture2D" uid="uid://cb6gaqngioj30" path="res://assets/drugs/systane.webp" id="21"]
+[ext_resource type="Texture2D" uid="uid://cyhnxfstm16tp" path="res://assets/drugs/cosopt.webp" id="22"]
+[ext_resource type="Texture2D" uid="uid://diedn457ps1pb" path="res://assets/drugs/bromoflam.webp" id="23"]
+[ext_resource type="Texture2D" uid="uid://1oamhxcnf8gl" path="res://assets/drugs/plavix.webp" id="25"]
+[ext_resource type="Texture2D" uid="uid://mkw45nbx6y4x" path="res://assets/drugs/entresto.webp" id="26"]
+[ext_resource type="Texture2D" uid="uid://vg813kufbwld" path="res://assets/drugs/examide.webp" id="27"]
+[ext_resource type="Texture2D" uid="uid://db6am5prpjiyx" path="res://assets/drugs/procoralan.webp" id="28"]
+[ext_resource type="Texture2D" uid="uid://dv3pacdospyqj" path="res://assets/drugs/marevan.webp" id="29"]
+[ext_resource type="Texture2D" uid="uid://4eobwcide4y2" path="res://assets/drugs/duspatalin.webp" id="30"]
+[ext_resource type="Texture2D" uid="uid://belvq0s6g0oja" path="res://assets/drugs/stablon.webp" id="31"]
+[ext_resource type="Texture2D" uid="uid://dlspxri5rh1y5" path="res://assets/drugs/lelipel.webp" id="32"]
+[ext_resource type="Texture2D" uid="uid://dylmn534jbe7u" path="res://assets/drugs/mosapride.webp" id="33"]
+[ext_resource type="Texture2D" uid="uid://dmj58exf6f73u" path="res://assets/drugs/notussil.webp" id="34"]
+[ext_resource type="Texture2D" uid="uid://dryhdlr110xdx" path="res://assets/drugs/ezogast.webp" id="35"]
+[ext_resource type="Texture2D" uid="uid://t1b6c5w5gs6n" path="res://assets/drugs/neurorubine.webp" id="36"]
+[ext_resource type="Texture2D" uid="uid://bl8rhncflmq2d" path="res://assets/drugs/protolans.webp" id="37"]
+[ext_resource type="Texture2D" uid="uid://bk30ct4x4i21x" path="res://assets/drugs/git.webp" id="38"]
+[ext_resource type="Texture2D" uid="uid://5whu72swgmfj" path="res://assets/drugs/clarikan.webp" id="39"]
+[ext_resource type="Texture2D" uid="uid://cggqsqp4gynrf" path="res://assets/drugs/nexicure.webp" id="40"]
+[ext_resource type="Texture2D" uid="uid://5d6eqticimhs" path="res://assets/drugs/fluxopride.webp" id="41"]
+[ext_resource type="Texture2D" uid="uid://5bmi1llyp2hv" path="res://assets/drugs/dispercam.webp" id="42"]
+[ext_resource type="Texture2D" uid="uid://do4ll10uuahmo" path="res://assets/drugs/fernilar.webp" id="43"]
+[ext_resource type="Texture2D" uid="uid://b8qvwkigy0lpw" path="res://assets/drugs/motilium.webp" id="44"]
+[ext_resource type="Texture2D" uid="uid://bttdux3ea5uyd" path="res://assets/drugs/ambezim.webp" id="45"]
+[ext_resource type="Texture2D" uid="uid://c5h06j1lb0385" path="res://assets/drugs/gaptin.webp" id="46"]
+[ext_resource type="Texture2D" uid="uid://cm4ifuce6o5mr" path="res://assets/drugs/zurcal.webp" id="47"]
+[ext_resource type="Texture2D" uid="uid://cakaj00pchhkv" path="res://assets/drugs/mucophylline.webp" id="48"]
+[ext_resource type="Texture2D" uid="uid://ce1vh7sf7qhlu" path="res://assets/drugs/lucidril.webp" id="49"]
+[ext_resource type="Texture2D" uid="uid://c8byo758242ig" path="res://assets/drugs/gasmovac.webp" id="50"]
+[ext_resource type="Texture2D" uid="uid://bvm2ky0jaxpjd" path="res://assets/drugs/celeborg.webp" id="51"]
+[ext_resource type="Texture2D" uid="uid://pe8dvo6lyyt3" path="res://assets/drugs/coloverin.webp" id="52"]
+[ext_resource type="Texture2D" uid="uid://cw3gonloej1j2" path="res://assets/drugs/livabion.webp" id="53"]
+[ext_resource type="Texture2D" uid="uid://qwpqeemu1tsn" path="res://assets/drugs/emoxclav.webp" id="54"]
+[ext_resource type="Texture2D" uid="uid://ddeve27yrv7e0" path="res://assets/drugs/dexatobrin.webp" id="55"]
+[ext_resource type="Texture2D" uid="uid://64g75k7ld6ot" path="res://assets/drugs/andorivaban.webp" id="56"]
+[ext_resource type="Texture2D" uid="uid://bt517e1npugtc" path="res://assets/drugs/divido.webp" id="57"]
+[ext_resource type="Texture2D" uid="uid://mmlxcf4s2hjd" path="res://assets/drugs/infectomycin.webp" id="58"]
+[ext_resource type="Texture2D" uid="uid://3iicn8aj16d2" path="res://assets/drugs/acetylcysteine.webp" id="59"]
+[ext_resource type="Texture2D" uid="uid://dg5gy3kjmu7hb" path="res://assets/drugs/asmakast.webp" id="60"]
+[ext_resource type="Texture2D" uid="uid://d2cd3lpcmocm2" path="res://assets/drugs/disprelone.webp" id="61"]
+[ext_resource type="Texture2D" uid="uid://cb31tw4c7d1ax" path="res://assets/drugs/foradil.webp" id="62"]
+[ext_resource type="Texture2D" uid="uid://kmwch3ypwd60" path="res://assets/drugs/adol.webp" id="63"]
+[ext_resource type="Texture2D" uid="uid://bq16t3yerdxvy" path="res://assets/drugs/bepra.webp" id="64"]
+[ext_resource type="Texture2D" uid="uid://crsco4b0u0skf" path="res://assets/drugs/fenistil.webp" id="65"]
+[ext_resource type="Texture2D" uid="uid://blwp3pvtyq67o" path="res://assets/drugs/tegretol.webp" id="66"]
+[ext_resource type="Texture2D" uid="uid://bxe5ai0jy3r4u" path="res://assets/drugs/colchicine.webp" id="67"]
+[ext_resource type="Texture2D" uid="uid://cepjm1kvn7pv0" path="res://assets/drugs/neurovit.webp" id="68"]
+[ext_resource type="Texture2D" uid="uid://c3erumedaxv1y" path="res://assets/drugs/ketolgin.webp" id="69"]
+[ext_resource type="Texture2D" uid="uid://do35jl2un0led" path="res://assets/drugs/methoquick.webp" id="70"]
+[ext_resource type="Texture2D" uid="uid://cjpmimvc0h2w6" path="res://assets/drugs/miflonide.webp" id="71"]
+[ext_resource type="Texture2D" uid="uid://xhqqb0gs5dlj" path="res://assets/drugs/newtone.webp" id="72"]
+[ext_resource type="Texture2D" uid="uid://waefc7b35t76" path="res://assets/drugs/immunomash.webp" id="73"]
+[ext_resource type="Texture2D" uid="uid://cd54f010yu16" path="res://assets/drugs/gralipentin.webp" id="74"]
+[ext_resource type="Texture2D" uid="uid://co4hbrfs6ufgw" path="res://assets/drugs/triamerican.webp" id="75"]
+[ext_resource type="Texture2D" uid="uid://jiba4kwm11qn" path="res://assets/drugs/pepzol.webp" id="76"]
+[ext_resource type="Texture2D" uid="uid://clpq1xkyn2d85" path="res://assets/drugs/ketolac.webp" id="77"]
+[ext_resource type="Texture2D" uid="uid://bb7h17bbbci8j" path="res://assets/drugs/moxen.webp" id="78"]
+[ext_resource type="Texture2D" uid="uid://dfjd4ihbv6say" path="res://assets/drugs/tinifloxacin.webp" id="79"]
+[ext_resource type="Texture2D" uid="uid://crg01w765p7hs" path="res://assets/drugs/genuphil.webp" id="80"]
+[ext_resource type="Texture2D" uid="uid://jgev5n1pf8g7" path="res://assets/drugs/caredalud.webp" id="81"]
+[ext_resource type="Texture2D" uid="uid://dam4h7n0738gf" path="res://assets/drugs/rowachol.webp" id="82"]
+[ext_resource type="Texture2D" uid="uid://7uq5xp4jm6j1" path="res://assets/drugs/prontoplus.webp" id="83"]
+[ext_resource type="Texture2D" uid="uid://dyl07118vamq6" path="res://assets/drugs/iverzine.webp" id="84"]
+[ext_resource type="Texture2D" uid="uid://c0ipryd48122p" path="res://assets/drugs/antodine.webp" id="85"]
+[ext_resource type="Texture2D" uid="uid://ci5ghu0nkdd5j" path="res://assets/drugs/cymbalta.webp" id="86"]
+[ext_resource type="Texture2D" uid="uid://10v3ywhvbrhl" path="res://assets/drugs/recoxibright.webp" id="87"]
+[ext_resource type="Texture2D" uid="uid://c3nnfr40602xt" path="res://assets/drugs/deltavit.webp" id="88"]
+[ext_resource type="Texture2D" uid="uid://4cw30mffkhfh" path="res://assets/drugs/spasmofen.webp" id="89"]
+[ext_resource type="Texture2D" uid="uid://6dk7pfivew1p" path="res://assets/drugs/gastrazole.webp" id="90"]
+[ext_resource type="Texture2D" uid="uid://di4m448dfmixx" path="res://assets/drugs/progest.webp" id="91"]
+[ext_resource type="Texture2D" uid="uid://cpvo7765vkss7" path="res://assets/drugs/lactodel.webp" id="92"]
+[ext_resource type="Texture2D" uid="uid://cx3wlimqqela3" path="res://assets/drugs/csp.webp" id="93"]
+[ext_resource type="Texture2D" uid="uid://d2dxyegq1ihd4" path="res://assets/drugs/somazina.webp" id="94"]
+[ext_resource type="Texture2D" uid="uid://ceo2ihwccuwsa" path="res://assets/drugs/doxium.webp" id="95"]
+[ext_resource type="Texture2D" uid="uid://dqqr4haxeakg4" path="res://assets/drugs/tedimerp.webp" id="96"]
+[ext_resource type="Texture2D" uid="uid://jsnvuwslvamp" path="res://assets/drugs/hebitaxime.webp" id="97"]
+[ext_resource type="Texture2D" uid="uid://dg2sybbo70ngd" path="res://assets/drugs/naviluca.webp" id="98"]
+[ext_resource type="Texture2D" uid="uid://q3vq22re480d" path="res://assets/drugs/panadolextra.webp" id="99"]
+[ext_resource type="Texture2D" uid="uid://c6w4u5oajmx3u" path="res://assets/drugs/clindam.webp" id="100"]
+[ext_resource type="Texture2D" uid="uid://b4ousqrw53tfr" path="res://assets/drugs/acnetrox.webp" id="101"]
+[ext_resource type="Texture2D" uid="uid://bwc8h2vv7o5j" path="res://assets/drugs/quibron.webp" id="102"]
+[ext_resource type="Texture2D" uid="uid://b5nbcs5hain3d" path="res://assets/drugs/rhinopro.webp" id="103"]
+[ext_resource type="Texture2D" uid="uid://b0pc7jjsvomdr" path="res://assets/drugs/tavoniflox.webp" id="104"]
+[ext_resource type="Texture2D" uid="uid://c0lhl6kddvbp8" path="res://assets/drugs/cervitam.webp" id="105"]
+[ext_resource type="Texture2D" uid="uid://dwccg80hnyo04" path="res://assets/drugs/torbener.webp" id="106"]
+[ext_resource type="Texture2D" uid="uid://doegwqmii2chj" path="res://assets/drugs/glucovance.webp" id="107"]
+[ext_resource type="Texture2D" uid="uid://bbb6pfrjq02ma" path="res://assets/drugs/monohexal.webp" id="108"]
+[ext_resource type="Texture2D" uid="uid://bnrmlfafnfjq8" path="res://assets/drugs/tebonina.webp" id="109"]
+[ext_resource type="Texture2D" uid="uid://dvvnwq5esdjue" path="res://assets/drugs/alkapress.webp" id="110"]
+[ext_resource type="Texture2D" uid="uid://bri7a3j8q0jlj" path="res://assets/drugs/dicetel.webp" id="111"]
+[ext_resource type="Texture2D" uid="uid://gki17wqo06om" path="res://assets/drugs/duloxeprin.webp" id="112"]
+[ext_resource type="Texture2D" uid="uid://7k75yfxoycpu" path="res://assets/drugs/biorefamin.webp" id="113"]
+[ext_resource type="Texture2D" uid="uid://cifnqqj5jtkcw" path="res://assets/drugs/rotahelex.webp" id="114"]
+[ext_resource type="Texture2D" uid="uid://cio8insdvti2l" path="res://assets/drugs/roxogesic.webp" id="115"]
+[ext_resource type="Texture2D" uid="uid://bowjrcw6pflf2" path="res://assets/drugs/limitless.webp" id="116"]
+[ext_resource type="Texture2D" uid="uid://dd6w370g5w6xe" path="res://assets/drugs/lcarnitine.webp" id="117"]
+[ext_resource type="Texture2D" uid="uid://bh48gcq1ra5li" path="res://assets/drugs/quickslim.webp" id="118"]
+[ext_resource type="Texture2D" uid="uid://cfua0hjkb5g00" path="res://assets/drugs/xoraxon.webp" id="119"]
+[ext_resource type="Texture2D" uid="uid://b7hjuwsn6pr2j" path="res://assets/drugs/dorofen.webp" id="120"]
+[ext_resource type="Texture2D" uid="uid://c2nyl4nwfdru3" path="res://assets/drugs/epitens.webp" id="121"]
+[ext_resource type="Texture2D" uid="uid://c3o5httpymrmf" path="res://assets/drugs/coloverind.webp" id="122"]
+[ext_resource type="Texture2D" uid="uid://cq40r10qv1pcr" path="res://assets/drugs/verserc.webp" id="123"]
+[ext_resource type="Texture2D" uid="uid://dedvc1fruokiv" path="res://assets/drugs/trimedflu.webp" id="124"]
+[ext_resource type="Texture2D" uid="uid://7ou606deem3" path="res://assets/drugs/vidrop.webp" id="125"]
+[ext_resource type="Texture2D" uid="uid://ckyvl2713mgh5" path="res://assets/drugs/folicap.webp" id="126"]
+[ext_resource type="Texture2D" uid="uid://c7ynrqx61q3eb" path="res://assets/drugs/spasmoamrase.webp" id="127"]
+[ext_resource type="Texture2D" uid="uid://cbi3xm2qy3ngy" path="res://assets/drugs/spasmodigestin.webp" id="128"]
+[ext_resource type="Texture2D" uid="uid://dh5yx2pxkwv2t" path="res://assets/drugs/atoreza.webp" id="129"]
+[ext_resource type="Texture2D" uid="uid://c1wnuwyvngdrg" path="res://assets/drugs/csf.webp" id="130"]
+[ext_resource type="Texture2D" uid="uid://v53pxu1mfm46" path="res://assets/drugs/inhalex.webp" id="131"]
+[ext_resource type="Texture2D" uid="uid://dsd1q6ge0bw1y" path="res://assets/drugs/trental.webp" id="132"]
+[ext_resource type="Texture2D" uid="uid://dkynjbu746qop" path="res://assets/drugs/secnidazole.webp" id="133"]
+[ext_resource type="Texture2D" uid="uid://cfedgsbr123oq" path="res://assets/drugs/coliurinal.webp" id="134"]
+[ext_resource type="Texture2D" uid="uid://6qgmrfv5su74" path="res://assets/drugs/petro.webp" id="135"]
+[ext_resource type="Texture2D" uid="uid://b7bmkvcl6e2ti" path="res://assets/drugs/zisrocin.webp" id="136"]
+[ext_resource type="Texture2D" uid="uid://btwl5i45mnwug" path="res://assets/drugs/ornidaz.webp" id="137"]
+[ext_resource type="Texture2D" uid="uid://d003e4rn2m3vq" path="res://assets/drugs/ivybronch.webp" id="138"]
+[ext_resource type="Texture2D" uid="uid://dqbt4nbkw58ht" path="res://assets/drugs/dexa.webp" id="139"]
+[ext_resource type="Texture2D" uid="uid://bhbg2me4qb5ku" path="res://assets/drugs/visceralgine.webp" id="140"]
+[ext_resource type="Texture2D" uid="uid://dtlxp37n6kvaw" path="res://assets/drugs/curam.webp" id="141"]
+[ext_resource type="Texture2D" uid="uid://b3ki8pxcs3xbq" path="res://assets/drugs/cetal.webp" id="142"]
+[ext_resource type="Texture2D" uid="uid://cqrgxdll3eyw3" path="res://assets/drugs/simethicone.webp" id="143"]
+[ext_resource type="Texture2D" uid="uid://b003itl5wxsj5" path="res://assets/drugs/dexamethasone.webp" id="144"]
+[ext_resource type="Texture2D" uid="uid://bldde5l31h8vj" path="res://assets/drugs/cortiplex.webp" id="145"]
+[ext_resource type="Texture2D" uid="uid://c8b1doa5n6vwg" path="res://assets/drugs/cevamol.webp" id="146"]
+[ext_resource type="Texture2D" uid="uid://cdg7s8yvlkgwm" path="res://assets/drugs/dextrose.webp" id="147"]
+[ext_resource type="Texture2D" uid="uid://beoqo5wtdsf35" path="res://assets/drugs/pantazol.webp" id="148"]
+[ext_resource type="Texture2D" uid="uid://ddsll6y2h17vm" path="res://assets/drugs/betafos.webp" id="149"]
+[ext_resource type="Texture2D" uid="uid://yhvw4r4w7any" path="res://assets/drugs/polyfast.webp" id="150"]
+[ext_resource type="Texture2D" uid="uid://bkirvfhp477dw" path="res://assets/drugs/motinorm.webp" id="151"]
+[ext_resource type="Texture2D" uid="uid://x3pv765bhspf" path="res://assets/drugs/predsolforte.webp" id="152"]
+[ext_resource type="Texture2D" uid="uid://l0bbri4m6yce" path="res://assets/drugs/tussistop.webp" id="153"]
+[ext_resource type="Texture2D" uid="uid://bc8dcsfskx6nt" path="res://assets/drugs/clasynmo.webp" id="154"]
+[ext_resource type="Texture2D" uid="uid://b36toe5y12jpv" path="res://assets/drugs/ocuguard.webp" id="155"]
+[ext_resource type="Texture2D" uid="uid://dkaw7dc0o38ax" path="res://assets/drugs/diclac.webp" id="156"]
+[ext_resource type="Texture2D" uid="uid://cs4x1vfbofd1j" path="res://assets/drugs/doliprane.webp" id="157"]
+[ext_resource type="Texture2D" uid="uid://h2pf1bu75gbg" path="res://assets/drugs/omez.webp" id="158"]
+[ext_resource type="Texture2D" uid="uid://1dqm2u25lh38" path="res://assets/drugs/emerest.webp" id="159"]
+[ext_resource type="Texture2D" uid="uid://1ikxafqkrli6" path="res://assets/drugs/helicure.webp" id="160"]
+[ext_resource type="Texture2D" uid="uid://c5fcx1sw3l1hd" path="res://assets/drugs/ramdeep.webp" id="161"]
+[ext_resource type="Texture2D" uid="uid://ccq8p5plb3hov" path="res://assets/drugs/massagil.webp" id="162"]
+[ext_resource type="Texture2D" uid="uid://csrwhwxuybye5" path="res://assets/drugs/ciprocin.webp" id="163"]
+[ext_resource type="Texture2D" uid="uid://drmxeub7o6mau" path="res://assets/drugs/sirdalud.webp" id="164"]
+[ext_resource type="Texture2D" uid="uid://bc03dotuxg6u8" path="res://assets/drugs/ferose.webp" id="165"]
+[ext_resource type="Texture2D" uid="uid://ckwxj0p3gd3qq" path="res://assets/drugs/acnestop.webp" id="166"]
+[ext_resource type="Texture2D" uid="uid://da1evxjaepc72" path="res://assets/drugs/statomain.webp" id="167"]
+[ext_resource type="Texture2D" uid="uid://cfdepsr362p87" path="res://assets/drugs/butaximark.webp" id="168"]
+[ext_resource type="Texture2D" uid="uid://de7um8vnn8bxw" path="res://assets/drugs/lumiere.webp" id="169"]
+[ext_resource type="Texture2D" uid="uid://c2pmyv46olwva" path="res://assets/drugs/verdo.webp" id="170"]
+[ext_resource type="Texture2D" uid="uid://dy3v02oj17cfr" path="res://assets/drugs/acnezinc.webp" id="171"]
+[ext_resource type="Texture2D" uid="uid://cbmguw215yna1" path="res://assets/drugs/tarolimus.webp" id="172"]
+[ext_resource type="Texture2D" uid="uid://io4c1iie6p2l" path="res://assets/drugs/selenium.webp" id="173"]
+[ext_resource type="Texture2D" uid="uid://cbckmlce5pjx5" path="res://assets/drugs/vibramycin.webp" id="174"]
+[ext_resource type="Texture2D" uid="uid://cgvm63jl6clmm" path="res://assets/drugs/unitone.webp" id="175"]
+[ext_resource type="Texture2D" uid="uid://dq1h0qkoqrfob" path="res://assets/drugs/pandermal.webp" id="176"]
+[ext_resource type="Texture2D" uid="uid://dwx5sis8g4udq" path="res://assets/drugs/alvital.webp" id="177"]
+[ext_resource type="Texture2D" uid="uid://c8ap0t3nnonto" path="res://assets/drugs/fusizon.webp" id="178"]
+[ext_resource type="Texture2D" uid="uid://bopr32ghp683e" path="res://assets/drugs/sono.webp" id="179"]
+[ext_resource type="Texture2D" uid="uid://b4hy206j0hak" path="res://assets/drugs/doxycost.webp" id="180"]
+[ext_resource type="Texture2D" uid="uid://ckxon3ej3hgov" path="res://assets/drugs/jolly.webp" id="181"]
+[ext_resource type="Texture2D" uid="uid://b351ro6tcp0kf" path="res://assets/drugs/bactroban.webp" id="182"]
+[ext_resource type="Texture2D" uid="uid://c2w6cbhiuoird" path="res://assets/drugs/alphanet.webp" id="183"]
+[ext_resource type="Texture2D" uid="uid://c4iviim4mpxag" path="res://assets/drugs/dalacin.webp" id="184"]
+[ext_resource type="Texture2D" uid="uid://cd10ymnvb5wwa" path="res://assets/drugs/activate.webp" id="185"]
+[ext_resource type="Texture2D" uid="uid://c6deu2woydspj" path="res://assets/drugs/marpalene.webp" id="186"]
+[ext_resource type="Texture2D" uid="uid://tkv8ex22cfif" path="res://assets/drugs/suplfect.webp" id="187"]
+[ext_resource type="Texture2D" uid="uid://clye8le6yomei" path="res://assets/drugs/itomash.webp" id="188"]
+[ext_resource type="Texture2D" uid="uid://cr53chcqo0y5n" path="res://assets/drugs/fittbar.webp" id="189"]
+[ext_resource type="Texture2D" uid="uid://dx1oqhj6okymg" path="res://assets/drugs/andouristat.webp" id="190"]
+[ext_resource type="Texture2D" uid="uid://btcp2i2dxu5hk" path="res://assets/drugs/conaadione.webp" id="191"]
+[ext_resource type="Texture2D" uid="uid://cb4v8lmiwjc4i" path="res://assets/drugs/aldactone.webp" id="192"]
+[ext_resource type="Texture2D" uid="uid://15ekcagw5vl2" path="res://assets/drugs/ventolin.webp" id="193"]
+[ext_resource type="Texture2D" uid="uid://c3vn4l22okvog" path="res://assets/drugs/amaryl.webp" id="194"]
+[ext_resource type="Texture2D" uid="uid://cd1j4algggyrj" path="res://assets/drugs/ursofalk.webp" id="195"]
+[ext_resource type="Texture2D" uid="uid://3dl7niy1u7v5" path="res://assets/drugs/mixtard.webp" id="196"]
+[ext_resource type="Texture2D" uid="uid://dayyhmq36qjpe" path="res://assets/drugs/diabetin.webp" id="197"]
+[ext_resource type="Texture2D" uid="uid://dtyfuvv3owgo2" path="res://assets/drugs/duphalac.webp" id="198"]
+[ext_resource type="Texture2D" uid="uid://basdwotqaa6ob" path="res://assets/drugs/liverin.webp" id="199"]
+[ext_resource type="Texture2D" uid="uid://cjq5avyguvvod" path="res://assets/drugs/targofloxin.webp" id="200"]
+[ext_resource type="Texture2D" uid="uid://bs4877l5p342" path="res://assets/drugs/uniphyllin.webp" id="201"]
+[ext_resource type="Texture2D" uid="uid://ca5ps806jgluc" path="res://assets/drugs/antinal.webp" id="202"]
+[ext_resource type="Texture2D" uid="uid://cp84mxn4aoafk" path="res://assets/drugs/digenorm.webp" id="203"]
+[ext_resource type="Texture2D" uid="uid://ts53avv5ep2t" path="res://assets/drugs/colona.webp" id="204"]
+[ext_resource type="Texture2D" uid="uid://q0ui43el7vdd" path="res://assets/drugs/entocid.webp" id="205"]
+[ext_resource type="Texture2D" uid="uid://bbjfrynftntal" path="res://assets/drugs/farcosolvin.webp" id="206"]
+[ext_resource type="Texture2D" uid="uid://cc4svpbj5o1qm" path="res://assets/drugs/toplexil.webp" id="207"]
+[ext_resource type="Texture2D" uid="uid://c1t472kr3h2dy" path="res://assets/drugs/brufen.webp" id="208"]
+[ext_resource type="Texture2D" uid="uid://h2152aps4wxh" path="res://assets/drugs/levcet.webp" id="209"]
+[ext_resource type="Texture2D" uid="uid://boq3e6tq07864" path="res://assets/drugs/amofluxin.webp" id="210"]
+[ext_resource type="Texture2D" uid="uid://0x82brjgrv6d" path="res://assets/drugs/proctoglyvenol.webp" id="211"]
+[ext_resource type="Texture2D" uid="uid://mgxegp8g2b78" path="res://assets/drugs/vitamaxplus.webp" id="212"]
+[ext_resource type="Texture2D" uid="uid://kwky343yosi0" path="res://assets/drugs/klarimix.webp" id="213"]
+[ext_resource type="Texture2D" uid="uid://dcrptulenvq7l" path="res://assets/drugs/floxamo.webp" id="214"]
+[ext_resource type="Texture2D" uid="uid://cjae3c5fg37iy" path="res://assets/drugs/buscopan.webp" id="215"]
+[ext_resource type="Texture2D" uid="uid://dqsggpfi6445t" path="res://assets/drugs/broncholin.webp" id="216"]
+[ext_resource type="Texture2D" uid="uid://1qn8xhiwmx3m" path="res://assets/drugs/dipenacid.webp" id="217"]
+[ext_resource type="Texture2D" uid="uid://tfo7k7utcv0q" path="res://assets/drugs/adenoxforte.webp" id="218"]
+[ext_resource type="Texture2D" uid="uid://dngld7hggr4gh" path="res://assets/drugs/cidoteston.webp" id="219"]
+[ext_resource type="Texture2D" uid="uid://cnsfxgj76imyk" path="res://assets/drugs/doxy.webp" id="220"]
+[ext_resource type="Texture2D" uid="uid://dr8l586cydp63" path="res://assets/drugs/tempra.webp" id="221"]
+[ext_resource type="Texture2D" uid="uid://mm4thgqry7ax" path="res://assets/drugs/algason.webp" id="222"]
+[ext_resource type="Texture2D" uid="uid://0kcnrl6tq8nq" path="res://assets/drugs/septrin.webp" id="223"]
+[ext_resource type="Texture2D" uid="uid://3gq7s08v07kt" path="res://assets/drugs/flornith.webp" id="224"]
+[ext_resource type="Texture2D" uid="uid://db8rpq5pwytlt" path="res://assets/drugs/capozid.webp" id="225"]
+[ext_resource type="Texture2D" uid="uid://b5qrbxxkjbee6" path="res://assets/drugs/evastine.webp" id="226"]
+[ext_resource type="Texture2D" uid="uid://bemc1otopga4k" path="res://assets/drugs/epidron.webp" id="227"]
+[ext_resource type="Texture2D" uid="uid://6u360miq171s" path="res://assets/drugs/dafrex.webp" id="228"]
+[ext_resource type="Texture2D" uid="uid://5fc0n2po1shc" path="res://assets/drugs/ceftriaxone.webp" id="229"]
+[ext_resource type="Texture2D" uid="uid://drhp0uqq804jg" path="res://assets/drugs/dolphin.webp" id="230"]
+[ext_resource type="Texture2D" uid="uid://erf7a2ais6tt" path="res://assets/drugs/betadine.webp" id="231"]
+[ext_resource type="Texture2D" uid="uid://c2ph2sxfsbm3y" path="res://assets/drugs/normalsaline.webp" id="232"]
+[ext_resource type="Texture2D" uid="uid://di0o1nt81xlyb" path="res://assets/drugs/movefree.webp" id="233"]
+[ext_resource type="Texture2D" uid="uid://c0a0gvq43kvy0" path="res://assets/drugs/mentholax.webp" id="234"]
+[ext_resource type="Texture2D" uid="uid://hx5hrny7l56i" path="res://assets/drugs/singulair.webp" id="235"]
+[ext_resource type="Texture2D" uid="uid://ds1hc4ylu5va0" path="res://assets/drugs/topzad.webp" id="236"]
+[ext_resource type="Texture2D" uid="uid://cc46bcsdya1xi" path="res://assets/drugs/cortigen.webp" id="237"]
+[ext_resource type="Texture2D" uid="uid://eva4gvisdg6l" path="res://assets/drugs/carnivitaforte.webp" id="238"]
+[ext_resource type="Texture2D" uid="uid://l34m0rps5kit" path="res://assets/drugs/diprofos.webp" id="239"]
+[ext_resource type="Texture2D" uid="uid://02xombb3knwj" path="res://assets/drugs/threezed.webp" id="240"]
+[ext_resource type="Texture2D" uid="uid://4f05eec8ueyy" path="res://assets/drugs/mucosol.webp" id="241"]
+[ext_resource type="Texture2D" uid="uid://bhyjvlxeqwkm5" path="res://assets/drugs/azgovanc.webp" id="242"]
+[ext_resource type="Texture2D" uid="uid://obnjftava1fe" path="res://assets/drugs/diax.webp" id="243"]
+[ext_resource type="Texture2D" uid="uid://dmru46plurgnf" path="res://assets/drugs/ivyrospan.webp" id="244"]
+[ext_resource type="Texture2D" uid="uid://bb2hwrolch7" path="res://assets/drugs/mucolator.webp" id="245"]
+[ext_resource type="Texture2D" uid="uid://3k6r1jh1cyxr" path="res://assets/drugs/healsec.webp" id="246"]
+[ext_resource type="Texture2D" uid="uid://bc13w5mbqshk3" path="res://assets/drugs/midodrine.webp" id="247"]
+[ext_resource type="Texture2D" uid="uid://b3nbts1vwcvio" path="res://assets/drugs/dolphink.webp" id="248"]
+[ext_resource type="Texture2D" uid="uid://cdr3h4lxjq47u" path="res://assets/drugs/emox.webp" id="249"]
+[ext_resource type="Texture2D" uid="uid://bcf1c25a3y78l" path="res://assets/drugs/dospa.webp" id="250"]
+[ext_resource type="Texture2D" uid="uid://bvs0tedsjs5hq" path="res://assets/drugs/conaz.webp" id="251"]
+[ext_resource type="Texture2D" uid="uid://bo327n6hs4sdk" path="res://assets/drugs/buscamol.webp" id="252"]
+[ext_resource type="Texture2D" uid="uid://u2nkc6lxv1wm" path="res://assets/drugs/duricef.webp" id="253"]
+[ext_resource type="Texture2D" uid="uid://b18v1w6k1x72x" path="res://assets/drugs/congestal.webp" id="254"]
+[ext_resource type="Texture2D" uid="uid://cb5ex5kghy8ow" path="res://assets/drugs/guaflex.webp" id="255"]
+[ext_resource type="Texture2D" uid="uid://cicrtcq1tbyjq" path="res://assets/drugs/galvus.webp" id="256"]
+[ext_resource type="Texture2D" uid="uid://2u7hautuoatn" path="res://assets/drugs/cidophage.webp" id="257"]
+[ext_resource type="Texture2D" uid="uid://hevfperxx4wv" path="res://assets/drugs/sigmalip.webp" id="258"]
+[ext_resource type="Texture2D" uid="uid://dxndf5i3b8l5x" path="res://assets/drugs/sparcin.webp" id="259"]
+[ext_resource type="Texture2D" uid="uid://cdmwyo2j5wbpp" path="res://assets/drugs/urivin.webp" id="260"]
+[ext_resource type="Texture2D" uid="uid://s7scow4a4yjf" path="res://assets/drugs/feldene.webp" id="261"]
+[ext_resource type="Texture2D" uid="uid://tkyo61f186dj" path="res://assets/drugs/sigmafenac.webp" id="262"]
+[ext_resource type="Texture2D" uid="uid://dse5wdcoc67uh" path="res://assets/drugs/eucal.webp" id="263"]
+[ext_resource type="Texture2D" uid="uid://clqa15ehd7fk" path="res://assets/drugs/densitin.webp" id="264"]
+[ext_resource type="Texture2D" uid="uid://m2d6v8lewjdn" path="res://assets/drugs/concor.webp" id="265"]
+[ext_resource type="Texture2D" uid="uid://3bjpkkh6b4yl" path="res://assets/drugs/farcovit.webp" id="266"]
+[ext_resource type="Texture2D" uid="uid://ksfe6u1n7mvd" path="res://assets/drugs/otal.webp" id="267"]
+[ext_resource type="Texture2D" uid="uid://bxhwgsv4pb7wm" path="res://assets/drugs/ciprofar.webp" id="268"]
+[ext_resource type="Texture2D" uid="uid://dfpogqr0sej0y" path="res://assets/drugs/cephradine.webp" id="269"]
+[ext_resource type="Texture2D" uid="uid://cqtemjdqxvd75" path="res://assets/drugs/epigent.webp" id="270"]
+[ext_resource type="Texture2D" uid="uid://8vmnbrmtknyn" path="res://assets/drugs/triactin.webp" id="271"]
+[ext_resource type="Texture2D" uid="uid://2kspq1vae3bb" path="res://assets/drugs/rheumafen.webp" id="272"]
+[ext_resource type="Texture2D" uid="uid://bbg6w255yyxnj" path="res://assets/drugs/dermatin.webp" id="273"]
+[ext_resource type="Texture2D" uid="uid://houwisvo6cc7" path="res://assets/drugs/ampicillin.webp" id="274"]
+[ext_resource type="Texture2D" uid="uid://b1uo2ibk835e1" path="res://assets/drugs/garamycin.webp" id="275"]
+[ext_resource type="Texture2D" uid="uid://26cf5up46qe" path="res://assets/drugs/amrizole.webp" id="276"]
+[ext_resource type="Texture2D" uid="uid://gkbs1mfvptuj" path="res://assets/drugs/misotac.webp" id="277"]
+[ext_resource type="Texture2D" uid="uid://bv2k7ivdmx8wq" path="res://assets/drugs/haemacaps.webp" id="278"]
+[ext_resource type="Texture2D" uid="uid://bieli8w20bd8c" path="res://assets/drugs/letrozole.webp" id="279"]
+[ext_resource type="Texture2D" uid="uid://lay13er7xgwu" path="res://assets/drugs/proximol.webp" id="280"]
+[ext_resource type="Texture2D" uid="uid://b13yqt0bwwj7l" path="res://assets/drugs/tearsguard.webp" id="281"]
+[ext_resource type="Texture2D" uid="uid://dw0d64ex57pyl" path="res://assets/drugs/rowatinex.webp" id="282"]
+[ext_resource type="Texture2D" uid="uid://cywnl7r432rxx" path="res://assets/drugs/voltaren.webp" id="283"]
+[ext_resource type="Texture2D" uid="uid://m06lipulf5na" path="res://assets/drugs/tamsulin.webp" id="284"]
+[ext_resource type="Texture2D" uid="uid://dsnipu2qi05pf" path="res://assets/drugs/dexaflox.webp" id="285"]
+[ext_resource type="Texture2D" uid="uid://c4pem5tq8xw12" path="res://assets/drugs/kellagon.webp" id="286"]
+[ext_resource type="Texture2D" uid="uid://dyeqlyl8pqdv3" path="res://assets/drugs/rapiflam.webp" id="287"]
+[ext_resource type="Texture2D" uid="uid://fi3f40j0ik4q" path="res://assets/drugs/trileptal.webp" id="288"]
+[ext_resource type="Texture2D" uid="uid://g5b3p5dvs11q" path="res://assets/drugs/olapex.webp" id="289"]
+[ext_resource type="Texture2D" uid="uid://bmdd74j2pjehl" path="res://assets/drugs/extragesic.webp" id="290"]
+[ext_resource type="Texture2D" uid="uid://b5gnv2kkxqg4a" path="res://assets/drugs/gantolief.webp" id="291"]
+[ext_resource type="Texture2D" uid="uid://b0iw6bixrljna" path="res://assets/drugs/extrauma.webp" id="292"]
+[ext_resource type="Texture2D" uid="uid://ctbd0cjlkg72f" path="res://assets/drugs/esomelodan.webp" id="293"]
+[ext_resource type="Texture2D" uid="uid://cxo7j7i00ya0t" path="res://assets/drugs/fusiderm.webp" id="294"]
+[ext_resource type="Texture2D" uid="uid://bqsiy2bxlyf2y" path="res://assets/drugs/rheumarene.webp" id="295"]
+[ext_resource type="Texture2D" uid="uid://bm48michpaw7s" path="res://assets/drugs/nizatect.webp" id="296"]
+[ext_resource type="Texture2D" uid="uid://barnp4su4jfbx" path="res://assets/drugs/ceporex.webp" id="297"]
+[ext_resource type="Texture2D" uid="uid://duyx6ub5r26je" path="res://assets/drugs/pantogar.webp" id="298"]
+[ext_resource type="Texture2D" uid="uid://ur70gx4jrt5e" path="res://assets/drugs/trivarol.webp" id="299"]
+[ext_resource type="Texture2D" uid="uid://cj5momslwrile" path="res://assets/drugs/ceclor.webp" id="300"]
+[ext_resource type="Texture2D" uid="uid://ce4qfiwrcgvxj" path="res://assets/drugs/erythromycin.webp" id="301"]
+[ext_resource type="Texture2D" uid="uid://bml3wyvalc0b0" path="res://assets/drugs/amcinol.webp" id="302"]
+[ext_resource type="Texture2D" uid="uid://deo7i7omleh36" path="res://assets/drugs/solupred.webp" id="303"]
+[ext_resource type="Texture2D" uid="uid://batp88d8aiybu" path="res://assets/drugs/hairplusback.webp" id="304"]
+[ext_resource type="Texture2D" uid="uid://306vk3b3t70s" path="res://assets/drugs/declophen.webp" id="305"]
+[ext_resource type="Texture2D" uid="uid://2uhai32iciiq" path="res://assets/drugs/minophylline.webp" id="306"]
+[ext_resource type="Texture2D" uid="uid://dwtnpj0cvolyp" path="res://assets/drugs/oframax.webp" id="307"]
+[ext_resource type="Texture2D" uid="uid://y0dk4grn6bkl" path="res://assets/drugs/tavegyl.webp" id="308"]
+[ext_resource type="Texture2D" uid="uid://d3y6ee0vbmofu" path="res://assets/drugs/betnovate.webp" id="309"]
+[ext_resource type="Texture2D" uid="uid://vypn8qdnhr3j" path="res://assets/drugs/softcleanser.webp" id="310"]
+[ext_resource type="Texture2D" uid="uid://iatgwqeo4kbg" path="res://assets/drugs/cutistad.webp" id="311"]
+[ext_resource type="Texture2D" uid="uid://bw45pjj0moeu1" path="res://assets/drugs/pyral.webp" id="312"]
+[ext_resource type="Texture2D" uid="uid://cbths0p6pac0l" path="res://assets/drugs/aspirin.webp" id="313"]
+[ext_resource type="Texture2D" uid="uid://bprcuis0sgfdh" path="res://assets/drugs/stopain.webp" id="314"]
+[ext_resource type="Texture2D" uid="uid://xyopc6x8jfys" path="res://assets/drugs/cipazole.webp" id="315"]
+[ext_resource type="Texture2D" uid="uid://ch7516ig04dnv" path="res://assets/drugs/babetone.webp" id="316"]
+[ext_resource type="Texture2D" uid="uid://xc3l64kk8odi" path="res://assets/drugs/zinctron.webp" id="317"]
+[ext_resource type="Texture2D" uid="uid://b2o6y2slq8j8p" path="res://assets/drugs/ultragriseofulvin.webp" id="318"]
+[ext_resource type="Texture2D" uid="uid://da08xbaxtd1b4" path="res://assets/drugs/quadriderm.webp" id="319"]
+[ext_resource type="Texture2D" uid="uid://b7a6agyulf08e" path="res://assets/drugs/profenid.webp" id="320"]
+[ext_resource type="Texture2D" uid="uid://dnuhx0y54sjxs" path="res://assets/drugs/utoclind.webp" id="321"]
+[ext_resource type="Texture2D" uid="uid://ck0xys5xvx0un" path="res://assets/drugs/delarex.webp" id="322"]
+[ext_resource type="Texture2D" uid="uid://dmg2y1maxmu4x" path="res://assets/drugs/daktacort.webp" id="323"]
+[ext_resource type="Texture2D" uid="uid://boy3hi0m8576q" path="res://assets/drugs/dostinex.webp" id="324"]
+[ext_resource type="Texture2D" uid="uid://trgfkry6pslx" path="res://assets/drugs/octatron.webp" id="325"]
+[ext_resource type="Texture2D" uid="uid://cnm7wtrrtx8gt" path="res://assets/drugs/histazine.webp" id="326"]
+[ext_resource type="Texture2D" uid="uid://dmwyphohcwiq1" path="res://assets/drugs/predsol.webp" id="327"]
+[ext_resource type="Texture2D" uid="uid://c3yr4ytuomga0" path="res://assets/drugs/trosyd.webp" id="328"]
+[ext_resource type="Texture2D" uid="uid://c5km0x2a32hhq" path="res://assets/drugs/yasmin.webp" id="329"]
+[ext_resource type="Texture2D" uid="uid://erlnyis0ptcp" path="res://assets/drugs/cataflam.webp" id="330"]
+[ext_resource type="Texture2D" uid="uid://cc5vlv5mftb7f" path="res://assets/drugs/elicasal.webp" id="331"]
+[ext_resource type="Texture2D" uid="uid://cv8tlt4epbqfw" path="res://assets/drugs/eltroxin.webp" id="332"]
+[ext_resource type="Texture2D" uid="uid://wh37adfwyi52" path="res://assets/drugs/somatropin.webp" id="333"]
+[ext_resource type="Texture2D" uid="uid://behhw6krlh88x" path="res://assets/drugs/physiomer.webp" id="334"]
+[ext_resource type="Texture2D" uid="uid://bxnbikg32f5jj" path="res://assets/drugs/bioderm.webp" id="335"]
+[ext_resource type="Texture2D" uid="uid://wq6y4ardne16" path="res://assets/drugs/soral.webp" id="336"]
+[ext_resource type="Texture2D" uid="uid://bv5huxxptx2hu" path="res://assets/drugs/albothyl.webp" id="337"]
+[ext_resource type="Texture2D" uid="uid://ck0t00tqptj1i" path="res://assets/drugs/carbamide.webp" id="338"]
+[ext_resource type="Texture2D" uid="uid://y200ehhawjbo" path="res://assets/drugs/fungican.webp" id="339"]
+[ext_resource type="Texture2D" uid="uid://cvvwa0kea2fbe" path="res://assets/drugs/nasacort.webp" id="340"]
+[ext_resource type="Texture2D" uid="uid://dja42nckscskc" path="res://assets/drugs/ketofan.webp" id="341"]
+[ext_resource type="Texture2D" uid="uid://vm3qxi434k11" path="res://assets/drugs/methorelax.webp" id="342"]
+[ext_resource type="Texture2D" uid="uid://bvrf5mdvssrnk" path="res://assets/drugs/calcical.webp" id="343"]
+[ext_resource type="Texture2D" uid="uid://daxo7snsof4n6" path="res://assets/drugs/calcimate.webp" id="344"]
+[ext_resource type="Texture2D" uid="uid://driemv10eck8g" path="res://assets/drugs/acyclovir.webp" id="345"]
+[ext_resource type="Texture2D" uid="uid://di6acq8dv0cex" path="res://assets/drugs/epicogel.webp" id="346"]
+[ext_resource type="Texture2D" uid="uid://bxods1p33m3v2" path="res://assets/drugs/abimolextra.webp" id="347"]
+[ext_resource type="Texture2D" uid="uid://dp70tm43w5ipp" path="res://assets/drugs/valtrex.webp" id="348"]
+[ext_resource type="Texture2D" uid="uid://dfr86s13iupbr" path="res://assets/drugs/napizole.webp" id="348_qsofq"]
+[ext_resource type="Texture2D" uid="uid://bgf01t2p66d26" path="res://assets/drugs/pantoloc.webp" id="349"]
+[ext_resource type="Texture2D" uid="uid://cig1n3ww0h3ts" path="res://assets/drugs/celebrex.webp" id="350"]
+[ext_resource type="Texture2D" uid="uid://d08va7xktdwav" path="res://assets/drugs/acetylcistein.webp" id="351"]
+[ext_resource type="Texture2D" uid="uid://w5h7tm4qxc4s" path="res://assets/drugs/neospore.webp" id="352"]
+[ext_resource type="Texture2D" uid="uid://dccryy7bck8aw" path="res://assets/drugs/ferrotron.webp" id="353"]
+[ext_resource type="Texture2D" uid="uid://s71ncpix0tp5" path="res://assets/drugs/nomigrain.webp" id="354"]
+[ext_resource type="Texture2D" uid="uid://cdaghvyx7krr" path="res://assets/drugs/alphachymotrypsin.webp" id="355"]
+[ext_resource type="Texture2D" uid="uid://btl7aondaaaxf" path="res://assets/drugs/dogmatil.webp" id="356"]
+[ext_resource type="Texture2D" uid="uid://ji6mk0iheiw4" path="res://assets/drugs/froben.webp" id="357"]
+[ext_resource type="Texture2D" uid="uid://e84il8hdy8wa" path="res://assets/drugs/danset.webp" id="358"]
+[ext_resource type="Texture2D" uid="uid://2ggeneyhxe6p" path="res://assets/drugs/factive.webp" id="359"]
+[ext_resource type="Texture2D" uid="uid://d0ex2rdj8duvf" path="res://assets/drugs/sulide.webp" id="360"]
+[ext_resource type="Texture2D" uid="uid://bn0itsmojypv3" path="res://assets/drugs/clomid.webp" id="361"]
+[ext_resource type="Texture2D" uid="uid://qq5l84l4x5hq" path="res://assets/drugs/vendexine.webp" id="362"]
+[ext_resource type="Texture2D" uid="uid://dc5egps5ybfkn" path="res://assets/drugs/spasmofree.webp" id="364"]
+[ext_resource type="Texture2D" uid="uid://c44100n6e3pf5" path="res://assets/drugs/olfen.webp" id="365"]
+[ext_resource type="Texture2D" uid="uid://d2yk2shhg5hw2" path="res://assets/drugs/biovit.webp" id="366"]
+[ext_resource type="Texture2D" uid="uid://7l0a0vtmdr06" path="res://assets/drugs/losec.webp" id="367"]
+[ext_resource type="Texture2D" uid="uid://ck7vhrycr1qgp" path="res://assets/drugs/nodeprine.webp" id="368"]
+[ext_resource type="Texture2D" uid="uid://dnpyhbdxo6jvl" path="res://assets/drugs/pevisone.webp" id="369"]
+[ext_resource type="Texture2D" uid="uid://dib2dj5xpn8jh" path="res://assets/drugs/tamoxifen.webp" id="370"]
+[ext_resource type="Texture2D" uid="uid://chmse3kg2xwyu" path="res://assets/drugs/reparil.webp" id="371"]
+[ext_resource type="Texture2D" uid="uid://cv2ctth7f5yei" path="res://assets/drugs/insumancomp.webp" id="372"]
+[ext_resource type="Texture2D" uid="uid://ce04il0khdrn0" path="res://assets/drugs/corasore.webp" id="373"]
+[ext_resource type="Texture2D" uid="uid://cpro25r6aei1l" path="res://assets/drugs/profenazone.webp" id="374"]
+[ext_resource type="Texture2D" uid="uid://cj6w8nivri6ea" path="res://assets/drugs/gonapure.webp" id="375"]
+[ext_resource type="Texture2D" uid="uid://cw776s7vviarv" path="res://assets/drugs/farcotilium.webp" id="376"]
+[ext_resource type="Texture2D" uid="uid://cfxrl8pmk07i8" path="res://assets/drugs/maxilase.webp" id="377"]
+[ext_resource type="Texture2D" uid="uid://df8rerqcjtu87" path="res://assets/drugs/cefotax.webp" id="378"]
+[ext_resource type="Texture2D" uid="uid://b8373nc3be45o" path="res://assets/drugs/anallerge.webp" id="379"]
+[ext_resource type="Texture2D" uid="uid://w7p4y2ss483h" path="res://assets/drugs/mekako.webp" id="380"]
+[ext_resource type="Texture2D" uid="uid://df0mteg6ogy7p" path="res://assets/drugs/haemojet.webp" id="381"]
+[ext_resource type="Texture2D" uid="uid://bvk7ww0y48vms" path="res://assets/drugs/dolod.webp" id="382"]
+[ext_resource type="Texture2D" uid="uid://cwkh3cgdvs6fq" path="res://assets/drugs/paramol.webp" id="383"]
+[ext_resource type="Texture2D" uid="uid://c3pd8wsp7t1lt" path="res://assets/drugs/sunsola.webp" id="384"]
+[ext_resource type="Texture2D" uid="uid://4rhgottrtirr" path="res://assets/drugs/octovent.webp" id="385"]
+[ext_resource type="Texture2D" uid="uid://bjyg8hxpo5ty" path="res://assets/drugs/miphenicol.webp" id="386"]
+[ext_resource type="Texture2D" uid="uid://dyi8ff67nqj44" path="res://assets/drugs/milga.webp" id="387"]
+[ext_resource type="Texture2D" uid="uid://c6kso4bfnw380" path="res://assets/drugs/marexal.webp" id="388"]
+[ext_resource type="Texture2D" uid="uid://ch04lvfcmbnyv" path="res://assets/drugs/navidoxine.webp" id="389"]
+[ext_resource type="Texture2D" uid="uid://nfhkgeso277y" path="res://assets/drugs/velosef.webp" id="390"]
+[ext_resource type="Texture2D" uid="uid://bl5h37tyqa7c1" path="res://assets/drugs/kenacort.webp" id="391"]
+[ext_resource type="Texture2D" uid="uid://c14027vlo8k13" path="res://assets/drugs/multirelax.webp" id="392"]
+[ext_resource type="Texture2D" uid="uid://b00rnh84fd244" path="res://assets/drugs/mobinorm.webp" id="393"]
+[ext_resource type="Texture2D" uid="uid://dx3k8klbgc5v8" path="res://assets/drugs/optipred.webp" id="394"]
+[ext_resource type="Texture2D" uid="uid://dn3bril4vv3ud" path="res://assets/drugs/cornetears.webp" id="395"]
+[ext_resource type="Texture2D" uid="uid://d071dvu540312" path="res://assets/drugs/epimag.webp" id="396"]
+[ext_resource type="Texture2D" uid="uid://b6k7qgvm20b11" path="res://assets/drugs/lanoxin.webp" id="397"]
+[ext_resource type="Texture2D" uid="uid://cuinjvp427aej" path="res://assets/drugs/cordarone.webp" id="398"]
+[ext_resource type="Texture2D" uid="uid://tqi4sgwlv5ap" path="res://assets/drugs/lasilactone.webp" id="399"]
+[ext_resource type="Texture2D" uid="uid://c8ob22unnyad" path="res://assets/drugs/indomethacin.webp" id="400"]
+[ext_resource type="Texture2D" uid="uid://c21blwx6feen6" path="res://assets/drugs/klacid.webp" id="401"]
+[ext_resource type="Texture2D" uid="uid://bm2mpw6nna4ep" path="res://assets/drugs/orazone.webp" id="402"]
+[ext_resource type="Texture2D" uid="uid://1uoh0j2mcux1" path="res://assets/drugs/tavacin.webp" id="403"]
+[ext_resource type="Texture2D" uid="uid://v8wxei8dj7mh" path="res://assets/drugs/ximacef.webp" id="404"]
+[ext_resource type="Texture2D" uid="uid://cy3v3rermielg" path="res://assets/drugs/totavit.webp" id="405"]
+[ext_resource type="Texture2D" uid="uid://c2ab8vw5y6vo3" path="res://assets/drugs/katrex.webp" id="406"]
+[ext_resource type="Texture2D" uid="uid://c12n1n0v8mq7" path="res://assets/drugs/fluvermal.webp" id="407"]
+[ext_resource type="Texture2D" uid="uid://crx1tns1sc4dq" path="res://assets/drugs/carbimazole.webp" id="408"]
+[ext_resource type="Texture2D" uid="uid://4qvgk1kb4hna" path="res://assets/drugs/theragran.webp" id="409"]
+[ext_resource type="Texture2D" uid="uid://bfiu77oxifhv3" path="res://assets/drugs/mosegor.webp" id="410"]
+[ext_resource type="Texture2D" uid="uid://olivxo2uxqku" path="res://assets/drugs/tenoxicam.webp" id="411"]
+[ext_resource type="Texture2D" uid="uid://k4lsp434lgm2" path="res://assets/drugs/bional.webp" id="412"]
+[ext_resource type="Texture2D" uid="uid://bse53gxe4u4ji" path="res://assets/drugs/fleboton.webp" id="413"]
+[ext_resource type="Texture2D" uid="uid://bi8sfssdpf5ix" path="res://assets/drugs/diprosalic.webp" id="414"]
+[ext_resource type="Texture2D" uid="uid://cc0a73syd0qsm" path="res://assets/drugs/nizapex.webp" id="415"]
+[ext_resource type="Texture2D" uid="uid://deal0wc5b216a" path="res://assets/drugs/ketoralplus.webp" id="416"]
+[ext_resource type="Texture2D" uid="uid://bnsv2aype7o1i" path="res://assets/drugs/exacinop.webp" id="417"]
+[ext_resource type="Texture2D" uid="uid://c6tv4hakyr1r2" path="res://assets/drugs/claforan.webp" id="418"]
+[ext_resource type="Texture2D" uid="uid://ddnts2tvebcm8" path="res://assets/drugs/eucarbon.webp" id="419"]
+[ext_resource type="Texture2D" uid="uid://dnlilkae7g7jx" path="res://assets/drugs/rametax.webp" id="420"]
+[ext_resource type="Texture2D" uid="uid://wc2lhuoo5s4m" path="res://assets/drugs/cyrinol.webp" id="421"]
+[ext_resource type="Texture2D" uid="uid://ccaqxlqft1in2" path="res://assets/drugs/marcofen.webp" id="422"]
+[ext_resource type="Texture2D" uid="uid://dshu152vc20lq" path="res://assets/drugs/vitamount.webp" id="423"]
+[ext_resource type="Texture2D" uid="uid://nibd7penmwt" path="res://assets/drugs/meloxicam.webp" id="424"]
+[ext_resource type="Texture2D" uid="uid://b2busjthdgvp7" path="res://assets/drugs/lamazi.webp" id="425"]
+[ext_resource type="Texture2D" uid="uid://cxfoi84oyktpr" path="res://assets/drugs/kapron.webp" id="426"]
+[ext_resource type="Texture2D" uid="uid://bxgv63eewaffq" path="res://assets/drugs/picolax.webp" id="427"]
+[ext_resource type="Texture2D" uid="uid://ccdsl6nqv6i3y" path="res://assets/drugs/lignopanthen.webp" id="428"]
+[ext_resource type="Texture2D" uid="uid://nhjf123wuvqy" path="res://assets/drugs/dicynone.webp" id="429"]
+[ext_resource type="Texture2D" uid="uid://dqhgfgqi5fnxj" path="res://assets/drugs/indocid.webp" id="430"]
+[ext_resource type="Texture2D" uid="uid://jo3gyeayw6wn" path="res://assets/drugs/myolgin.webp" id="431"]
+[ext_resource type="Texture2D" uid="uid://drlgc1v802fmc" path="res://assets/drugs/azionce.webp" id="432"]
+[ext_resource type="Texture2D" uid="uid://6h627g0hl5qs" path="res://assets/drugs/diclonatrium.webp" id="433"]
+[ext_resource type="Texture2D" uid="uid://h7x65cgre0uj" path="res://assets/drugs/valinil.webp" id="434"]
+[ext_resource type="Texture2D" uid="uid://b3pbavh286y8o" path="res://assets/drugs/oxa.webp" id="435"]
+[ext_resource type="Texture2D" uid="uid://b46icb4tqs58v" path="res://assets/drugs/amitriptine.webp" id="436"]
+[ext_resource type="Texture2D" uid="uid://f4n3mstl4p2c" path="res://assets/drugs/peopodak.webp" id="437"]
+[ext_resource type="Texture2D" uid="uid://b4fmpsq5r1mmi" path="res://assets/drugs/inderal.webp" id="438"]
+[ext_resource type="Texture2D" uid="uid://cgldnqccaiar7" path="res://assets/drugs/gold.webp" id="439"]
+[ext_resource type="Texture2D" uid="uid://dovo5ygsxfuop" path="res://assets/drugs/epicocillin.webp" id="440"]
+[ext_resource type="Texture2D" uid="uid://ck7kowhydk8o" path="res://assets/drugs/hydrosafe.webp" id="441"]
+[ext_resource type="Texture2D" uid="uid://dhaehmkul0w74" path="res://assets/drugs/mobitil.webp" id="442"]
+[ext_resource type="Texture2D" uid="uid://brb4xaomn5o44" path="res://assets/drugs/amiprostone.webp" id="443"]
+[ext_resource type="Texture2D" uid="uid://pph8t6gmqx0x" path="res://assets/drugs/coavazir.webp" id="444"]
+[ext_resource type="Texture2D" uid="uid://dywc27fjyir0e" path="res://assets/drugs/pravotin.webp" id="445"]
+[ext_resource type="Texture2D" uid="uid://btr8ay4p6uusx" path="res://assets/drugs/carnivita.webp" id="446"]
+[ext_resource type="Texture2D" uid="uid://c5qfgs26m1rks" path="res://assets/drugs/lustral.webp" id="447"]
+[ext_resource type="Texture2D" uid="uid://dal5svnopiadi" path="res://assets/drugs/attensera.webp" id="448"]
+[ext_resource type="Texture2D" uid="uid://68lasa6ijrht" path="res://assets/drugs/efalex.webp" id="449"]
+[ext_resource type="Texture2D" uid="uid://dyuf3ue2juq5a" path="res://assets/drugs/apexidone.webp" id="450"]
+[ext_resource type="Texture2D" uid="uid://bsqux3hc304ib" path="res://assets/drugs/konakion.webp" id="451"]
+[ext_resource type="Texture2D" uid="uid://d1g3rnqoma0na" path="res://assets/drugs/ribavirin.webp" id="452"]
+[ext_resource type="Texture2D" uid="uid://dyl6drujrdcly" path="res://assets/drugs/parafon.webp" id="453"]
+[ext_resource type="Texture2D" uid="uid://rgtcu3lepohq" path="res://assets/drugs/sifrol.webp" id="454"]
+[ext_resource type="Texture2D" uid="uid://dla44y4yp2mv" path="res://assets/drugs/mpiviropack.webp" id="455"]
+[ext_resource type="Texture2D" uid="uid://6kgorvjgf8oh" path="res://assets/drugs/zesperone.webp" id="456"]
+[ext_resource type="Texture2D" uid="uid://cubr05lmi8im4" path="res://assets/drugs/calcitron.webp" id="457"]
+[ext_resource type="Texture2D" uid="uid://bsimmdsnbbw8y" path="res://assets/drugs/cerebromap.webp" id="458"]
+[ext_resource type="Texture2D" uid="uid://b1e1pcsfkd6wp" path="res://assets/drugs/tryptizol.webp" id="459"]
+[ext_resource type="Texture2D" uid="uid://cnq7jnousermn" path="res://assets/drugs/powercaps.webp" id="460"]
+[ext_resource type="Texture2D" uid="uid://roqh14xaxtn7" path="res://assets/drugs/tebofortin.webp" id="461"]
+[ext_resource type="Texture2D" uid="uid://do884lutyhfaw" path="res://assets/drugs/ferrosanol.webp" id="462"]
+[ext_resource type="Texture2D" uid="uid://27fs2132lu5b" path="res://assets/drugs/fluroquinomox.webp" id="463"]
+[ext_resource type="Texture2D" uid="uid://v2ubmnqtq6ro" path="res://assets/drugs/streptoquin.webp" id="464"]
+[ext_resource type="Texture2D" uid="uid://d3al3300acoyo" path="res://assets/drugs/kapect.webp" id="465"]
+[ext_resource type="Texture2D" uid="uid://cgi0sjkwwwo6l" path="res://assets/drugs/smecta.webp" id="466"]
+[ext_resource type="Texture2D" uid="uid://d2gllxgtqf04l" path="res://assets/drugs/seroflo.webp" id="467"]
+[ext_resource type="Texture2D" uid="uid://cb58jya2tp5g" path="res://assets/drugs/bradipect.webp" id="468"]
+[ext_resource type="Texture2D" uid="uid://dilaocf6hfkg1" path="res://assets/drugs/nolvadex.webp" id="469"]
+[ext_resource type="Texture2D" uid="uid://dgwjgilisg7xw" path="res://assets/drugs/mucogel.webp" id="470"]
+[ext_resource type="Texture2D" uid="uid://lwp3sp3q8s4" path="res://assets/drugs/zithrokan.webp" id="471"]
+[ext_resource type="Texture2D" uid="uid://debf1up0k56u4" path="res://assets/drugs/nitromak.webp" id="472"]
+[ext_resource type="Texture2D" uid="uid://dt2bnm783d6b" path="res://assets/drugs/vastarel.webp" id="473"]
+[ext_resource type="Texture2D" uid="uid://du25tc6xthq1k" path="res://assets/drugs/disflatyl.webp" id="474"]
+[ext_resource type="Texture2D" uid="uid://cenq5fkx0742i" path="res://assets/drugs/depovit.webp" id="475"]
+[ext_resource type="Texture2D" uid="uid://7jeh4beqeovy" path="res://assets/drugs/merional.webp" id="476"]
+[ext_resource type="Texture2D" uid="uid://cgofpxghk4gq0" path="res://assets/drugs/cefixime.webp" id="477"]
+[ext_resource type="Texture2D" uid="uid://dyohbv5ae1l4e" path="res://assets/drugs/esterc.webp" id="478"]
+[ext_resource type="Texture2D" uid="uid://cxe82kgdfbod1" path="res://assets/drugs/orchazid.webp" id="479"]
+[ext_resource type="Texture2D" uid="uid://cdkw52oghn1g5" path="res://assets/drugs/pregdinapex.webp" id="480"]
+[ext_resource type="Texture2D" uid="uid://b48av6l2y3sfh" path="res://assets/drugs/concorplus.webp" id="481"]
+[ext_resource type="Texture2D" uid="uid://ch7i71tmkoctq" path="res://assets/drugs/fostimon.webp" id="482"]
+[ext_resource type="Texture2D" uid="uid://bsmot10hgklye" path="res://assets/drugs/faverin.webp" id="483"]
+[ext_resource type="Texture2D" uid="uid://b1r5pchp4v56q" path="res://assets/drugs/cymbatex.webp" id="484"]
+[ext_resource type="Texture2D" uid="uid://dhgwlsb83812d" path="res://assets/drugs/nitazode.webp" id="485"]
+[ext_resource type="Texture2D" uid="uid://bvbgmdu7u28e3" path="res://assets/drugs/torseretic.webp" id="486"]
+[ext_resource type="Texture2D" uid="uid://bxcxt1w0g0is5" path="res://assets/drugs/dinitra.webp" id="487"]
+[ext_resource type="Texture2D" uid="uid://btb63wl41kc1s" path="res://assets/drugs/panthenol.webp" id="488"]
+[ext_resource type="Texture2D" uid="uid://d2d3ig7u01tyn" path="res://assets/drugs/miopan.webp" id="489"]
+[ext_resource type="Texture2D" uid="uid://dk8r8j0d018a3" path="res://assets/drugs/varic.webp" id="490"]
+[ext_resource type="Texture2D" uid="uid://b5wkl4t807vl6" path="res://assets/drugs/cefaxone.webp" id="491"]
+[ext_resource type="Texture2D" uid="uid://bmtc54jxn01sr" path="res://assets/drugs/feroglobin.webp" id="492"]
+[ext_resource type="Texture2D" uid="uid://bljnkm4capc72" path="res://assets/drugs/metacardia.webp" id="493"]
+[ext_resource type="Texture2D" uid="uid://cky2vo438fkpi" path="res://assets/drugs/dulcada.webp" id="494"]
+[ext_resource type="Texture2D" uid="uid://cvfp5drwc6q22" path="res://assets/drugs/spasmocure.webp" id="495"]
+[ext_resource type="Texture2D" uid="uid://bade4gwjhnhun" path="res://assets/drugs/biprofenid.webp" id="496"]
+[ext_resource type="Texture2D" uid="uid://bqxk1k0fj5656" path="res://assets/drugs/dermocort.webp" id="497"]
+[ext_resource type="Texture2D" uid="uid://hx2qm4rplnu7" path="res://assets/drugs/betolvex.webp" id="498"]
+[ext_resource type="Texture2D" uid="uid://bpx578gnwdd2v" path="res://assets/drugs/clindavert.webp" id="499"]
+[ext_resource type="Texture2D" uid="uid://csacwlstykg1k" path="res://assets/drugs/tabocine.webp" id="500"]
+[ext_resource type="Texture2D" uid="uid://c1uml3gc134mf" path="res://assets/drugs/voltarengel.webp" id="501"]
+[ext_resource type="Texture2D" uid="uid://1djp5lma7h7h" path="res://assets/drugs/dexilant.webp" id="502"]
+[ext_resource type="Texture2D" uid="uid://bej5fr7gh1qj5" path="res://assets/drugs/moveasy.webp" id="503"]
+[ext_resource type="Texture2D" uid="uid://dm6ct7iw5v8w4" path="res://assets/drugs/librax.webp" id="504"]
+[ext_resource type="Texture2D" uid="uid://w1x5ski88gbm" path="res://assets/drugs/arcalion.webp" id="505"]
+[ext_resource type="Texture2D" uid="uid://dakchr6u8s2oi" path="res://assets/drugs/vano.webp" id="506"]
+[ext_resource type="Texture2D" uid="uid://gpb04sa6au26" path="res://assets/drugs/zyrtec.webp" id="507"]
+[ext_resource type="Texture2D" uid="uid://5q54vbxqiw5h" path="res://assets/drugs/carnitol.webp" id="508"]
+[ext_resource type="Texture2D" uid="uid://xri4n8kxfoy5" path="res://assets/drugs/brexin.webp" id="509"]
+[ext_resource type="Texture2D" uid="uid://004na26k4p2p" path="res://assets/drugs/ravemantine.webp" id="510"]
+[ext_resource type="Texture2D" uid="uid://o4m5u8dt07t0" path="res://assets/drugs/harpagin.webp" id="511"]
+[ext_resource type="Texture2D" uid="uid://dk8hlulawy5x5" path="res://assets/drugs/urosolvine.webp" id="512"]
+[ext_resource type="Texture2D" uid="uid://deqhmvsuead74" path="res://assets/drugs/caldin.webp" id="513"]
+[ext_resource type="Texture2D" uid="uid://61fag4h1mclf" path="res://assets/drugs/monicort.webp" id="514"]
+[ext_resource type="Texture2D" uid="uid://b4d5qnpur8501" path="res://assets/drugs/medexaflam.webp" id="515"]
+[ext_resource type="Texture2D" uid="uid://ce7grwhjkcdxo" path="res://assets/drugs/sofenacin.webp" id="516"]
+[ext_resource type="Texture2D" uid="uid://ca26jmtyy11r7" path="res://assets/drugs/allvent.webp" id="517"]
+[ext_resource type="Texture2D" uid="uid://2ah1gi034gjl" path="res://assets/drugs/avivavasc.webp" id="518"]
+[ext_resource type="Texture2D" uid="uid://bcm7nmcc2x8jt" path="res://assets/drugs/diease.webp" id="519"]
+[ext_resource type="Texture2D" uid="uid://bjabvl8owx06q" path="res://assets/drugs/tribgold.webp" id="520"]
+[ext_resource type="Texture2D" uid="uid://d2ubbirhj36qn" path="res://assets/drugs/augmentin.webp" id="521"]
+[ext_resource type="Texture2D" uid="uid://cdit0t7a1tvv0" path="res://assets/drugs/remowax.webp" id="522"]
+[ext_resource type="Texture2D" uid="uid://brlysmm0ebl44" path="res://assets/drugs/floxguard.webp" id="523"]
+[ext_resource type="Texture2D" uid="uid://b2x88ca4jmakd" path="res://assets/drugs/anuva.webp" id="524"]
+[ext_resource type="Texture2D" uid="uid://bcx6v10mjq5bf" path="res://assets/drugs/phenadone.webp" id="525"]
+[ext_resource type="Texture2D" uid="uid://dypo5161uidnq" path="res://assets/drugs/hepafort.webp" id="526"]
+[ext_resource type="Texture2D" uid="uid://doddsssxjuw4c" path="res://assets/drugs/mobic.webp" id="527"]
+[ext_resource type="Texture2D" uid="uid://bptuxrq5ucltn" path="res://assets/drugs/mixderm.webp" id="528"]
+[ext_resource type="Texture2D" uid="uid://cyfm1yb54rhqb" path="res://assets/drugs/babydrink.webp" id="529"]
+[ext_resource type="Texture2D" uid="uid://bg65j45m3krtm" path="res://assets/drugs/hyfresh.webp" id="530"]
+[ext_resource type="Texture2D" uid="uid://ddmn3i8wy1ff2" path="res://assets/drugs/neximash.webp" id="531"]
+[ext_resource type="Texture2D" uid="uid://ryoqa8d0acmw" path="res://assets/drugs/gynodaktarin.webp" id="532"]
+[ext_resource type="Texture2D" uid="uid://d0s8x11yvqeb6" path="res://assets/drugs/epicephin.webp" id="533"]
+[ext_resource type="Texture2D" uid="uid://dgayhl230hj4q" path="res://assets/drugs/flamifast.webp" id="534"]
+[ext_resource type="Texture2D" uid="uid://ewalpeawa7u7" path="res://assets/drugs/neuropatex.webp" id="535"]
+[ext_resource type="Texture2D" uid="uid://chj4w2vuxkd5b" path="res://assets/drugs/ofloxin.webp" id="536"]
+[ext_resource type="Texture2D" uid="uid://gr21ml05b5fl" path="res://assets/drugs/anticox.webp" id="537"]
+[ext_resource type="Texture2D" uid="uid://cmdmdr7wnhsro" path="res://assets/drugs/nonowater.webp" id="538"]
+[ext_resource type="Texture2D" uid="uid://dfiq55vp435r8" path="res://assets/drugs/babyrest.webp" id="539"]
+[ext_resource type="Texture2D" uid="uid://bjom60ton6vb1" path="res://assets/drugs/isoptofenicol.webp" id="540"]
+[ext_resource type="Texture2D" uid="uid://ymvnf4j1xx66" path="res://assets/drugs/moduretic.webp" id="541"]
+[ext_resource type="Texture2D" uid="uid://ctfb7uw17dyvh" path="res://assets/drugs/mebo.webp" id="542"]
+[ext_resource type="Texture2D" uid="uid://dtb522ftd1ikc" path="res://assets/drugs/decal.webp" id="543"]
+[ext_resource type="Texture2D" uid="uid://c37gmn36d1v4a" path="res://assets/drugs/kalobin.webp" id="544"]
+[ext_resource type="Texture2D" uid="uid://caickfn44g5fd" path="res://assets/drugs/vitazinc.webp" id="545"]
+[ext_resource type="Texture2D" uid="uid://orfo5er3hqsf" path="res://assets/drugs/lipanthyl.webp" id="546"]
+[ext_resource type="Texture2D" uid="uid://djc5b0oi76c1g" path="res://assets/drugs/libosense.webp" id="547"]
+[ext_resource type="Texture2D" uid="uid://depw2112gok76" path="res://assets/drugs/diacerein.webp" id="548"]
+[ext_resource type="Texture2D" uid="uid://b5lk7gxqmtnd3" path="res://assets/drugs/urinex.webp" id="549"]
+[ext_resource type="Texture2D" uid="uid://dk2yqgl736xab" path="res://assets/drugs/genurin.webp" id="550"]
+[ext_resource type="Texture2D" uid="uid://esjsfj7ro4nm" path="res://assets/drugs/dermovate.webp" id="551"]
+[ext_resource type="Texture2D" uid="uid://cjuuyyuhthek7" path="res://assets/drugs/salicylicacid.webp" id="552"]
+[ext_resource type="Texture2D" uid="uid://4p3wgfakh70b" path="res://assets/drugs/fucithalmic.webp" id="553"]
+[ext_resource type="Texture2D" uid="uid://b0luxabeb1lor" path="res://assets/drugs/aironyl.webp" id="554"]
+[ext_resource type="Texture2D" uid="uid://dlyuawt5ex13m" path="res://assets/drugs/halorange.webp" id="555"]
+[ext_resource type="Texture2D" uid="uid://bg5ayecmot1t5" path="res://assets/drugs/calmepam.webp" id="556"]
+[ext_resource type="Texture2D" uid="uid://bdmxio8lrg0fg" path="res://assets/drugs/supravit.webp" id="557"]
+[ext_resource type="Texture2D" uid="uid://3epi7u4lkmif" path="res://assets/drugs/oxybral.webp" id="558"]
+[ext_resource type="Texture2D" uid="uid://ur2f86827hi4" path="res://assets/drugs/vitaferrol.webp" id="559"]
+[ext_resource type="Texture2D" uid="uid://dijuuvpchg2s" path="res://assets/drugs/tavanic.webp" id="560"]
+[ext_resource type="Texture2D" uid="uid://csfyqcree1kvi" path="res://assets/drugs/abimol.webp" id="561"]
+[ext_resource type="Texture2D" uid="uid://ch8r4e8dt3dj1" path="res://assets/drugs/alerid.webp" id="562"]
+[ext_resource type="Texture2D" uid="uid://cjoh88s7arh7u" path="res://assets/drugs/rehydran.webp" id="563"]
+[ext_resource type="Texture2D" uid="uid://clt7m6ypn1b1e" path="res://assets/drugs/sulbin.webp" id="564"]
+[ext_resource type="Texture2D" uid="uid://eaomrfit4isl" path="res://assets/drugs/primperan.webp" id="565"]
+[ext_resource type="Texture2D" uid="uid://dlpbi7wbcoja4" path="res://assets/drugs/gastreg.webp" id="566"]
+[ext_resource type="Texture2D" uid="uid://54qjo0r4my0r" path="res://assets/drugs/claritine.webp" id="567"]
+[ext_resource type="Texture2D" uid="uid://ch3skqqp8otr3" path="res://assets/drugs/acnescave.webp" id="568"]
+[ext_resource type="Texture2D" uid="uid://c3cnlo4qaosrh" path="res://assets/drugs/unictam.webp" id="569"]
+[ext_resource type="Texture2D" uid="uid://duf0h07cm472j" path="res://assets/drugs/avipect.webp" id="570"]
+[ext_resource type="Texture2D" uid="uid://dv138osx15d15" path="res://assets/drugs/ocumethyl.webp" id="571"]
+[ext_resource type="Texture2D" uid="uid://b4yf1mxfl7c70" path="res://assets/drugs/selgon.webp" id="572"]
+[ext_resource type="Texture2D" uid="uid://do530o2aogu3l" path="res://assets/drugs/herbamix.webp" id="573"]
+[ext_resource type="Texture2D" uid="uid://b8cywicl0kgyu" path="res://assets/drugs/sansovit.webp" id="574"]
+[ext_resource type="Texture2D" uid="uid://vrw4mjbp87lt" path="res://assets/drugs/cefzil.webp" id="575"]
+[ext_resource type="Texture2D" uid="uid://dspshhyvhob1n" path="res://assets/drugs/arthineur.webp" id="576"]
+[ext_resource type="Texture2D" uid="uid://bbfg33h4ew37b" path="res://assets/drugs/sineup.webp" id="577"]
+[ext_resource type="Texture2D" uid="uid://dyetuwfsh6y1y" path="res://assets/drugs/litup.webp" id="578"]
+[ext_resource type="Texture2D" uid="uid://cdgefv7sfx4xf" path="res://assets/drugs/tress.webp" id="579"]
+[ext_resource type="Texture2D" uid="uid://dww8dvg3ju7nn" path="res://assets/drugs/becozyme.webp" id="580"]
+[ext_resource type="Texture2D" uid="uid://bvgcmygghkoad" path="res://assets/drugs/mrtumee.webp" id="581"]
+[ext_resource type="Texture2D" uid="uid://7qmshh21xy74" path="res://assets/drugs/ferrobella.webp" id="582"]
+[ext_resource type="Texture2D" uid="uid://dwegfxtoepkx8" path="res://assets/drugs/rutac.webp" id="583"]
+[ext_resource type="Texture2D" uid="uid://7o8e1qcky1jd" path="res://assets/drugs/neodigestin.webp" id="584"]
+[ext_resource type="Texture2D" uid="uid://bqiaeav3ufbsq" path="res://assets/drugs/verdex.webp" id="585"]
+[ext_resource type="Texture2D" uid="uid://di24uwt671q4b" path="res://assets/drugs/salinex.webp" id="586"]
+[ext_resource type="Texture2D" uid="uid://gyijuxrups20" path="res://assets/drugs/verm.webp" id="587"]
+[ext_resource type="Texture2D" uid="uid://bbyyfqcihigu7" path="res://assets/drugs/orchadexoline.webp" id="588"]
+[ext_resource type="Texture2D" uid="uid://cvg8as4prxktq" path="res://assets/drugs/norditropin.webp" id="589"]
+[ext_resource type="Texture2D" uid="uid://t23c5vn4f6ly" path="res://assets/drugs/trisolvin.webp" id="590"]
+[ext_resource type="Texture2D" uid="uid://y13wfiixva7u" path="res://assets/drugs/menogon.webp" id="591"]
+[ext_resource type="Texture2D" uid="uid://cdjcpcos53ti3" path="res://assets/drugs/ciprodiazole.webp" id="592"]
+[ext_resource type="Texture2D" uid="uid://26215sj6f2p3" path="res://assets/drugs/hexgabalin.webp" id="593"]
+[ext_resource type="Texture2D" uid="uid://3o064dvp1nsu" path="res://assets/drugs/controloc.webp" id="594"]
+[ext_resource type="Texture2D" uid="uid://bwxep2bvepnw5" path="res://assets/drugs/biodroxil.webp" id="595"]
+[ext_resource type="Texture2D" uid="uid://dwg7krgdj1m1p" path="res://assets/drugs/desa.webp" id="596"]
+[ext_resource type="Texture2D" uid="uid://deg5ma4o0kqku" path="res://assets/drugs/duphaston.webp" id="597"]
+[ext_resource type="Texture2D" uid="uid://dowg6rl5mi2b6" path="res://assets/drugs/uricol.webp" id="598"]
+[ext_resource type="Texture2D" uid="uid://cmnvdf8sarhsd" path="res://assets/drugs/meteospasmyl.webp" id="599"]
+[ext_resource type="Texture2D" uid="uid://8vurosltgw60" path="res://assets/drugs/choriomon.webp" id="600"]
+[ext_resource type="Texture2D" uid="uid://b4s48whmfo3xl" path="res://assets/drugs/collomak.webp" id="601"]
+[ext_resource type="Texture2D" uid="uid://clnpfdvyl2xk5" path="res://assets/drugs/movicol.webp" id="602"]
+[ext_resource type="Texture2D" uid="uid://deuhro6sl3w6o" path="res://assets/drugs/oflam.webp" id="603"]
+[ext_resource type="Texture2D" uid="uid://kv0644ap5eat" path="res://assets/drugs/amipride.webp" id="604"]
+[ext_resource type="Texture2D" uid="uid://bre7rxkbr80qh" path="res://assets/drugs/fucitop.webp" id="605"]
+[ext_resource type="Texture2D" uid="uid://c24d8oke2kb3d" path="res://assets/drugs/mupirax.webp" id="606"]
+[ext_resource type="Texture2D" uid="uid://cipioowbalcc4" path="res://assets/drugs/biaphine.webp" id="607"]
+[ext_resource type="Texture2D" uid="uid://kjfxxd4n3tfj" path="res://assets/drugs/plaquenil.webp" id="608"]
+[ext_resource type="Texture2D" uid="uid://c6m0jnbp1rre1" path="res://assets/drugs/calciplus.webp" id="609"]
+[ext_resource type="Texture2D" uid="uid://bgydri01knpr6" path="res://assets/drugs/lamifen.webp" id="610"]
+[ext_resource type="Texture2D" uid="uid://55f7b3yxmkal" path="res://assets/drugs/hostacortin.webp" id="611"]
+[ext_resource type="Texture2D" uid="uid://c7j1r61mris2u" path="res://assets/drugs/achtenon.webp" id="612"]
+[ext_resource type="Texture2D" uid="uid://d34xc6om757il" path="res://assets/drugs/depofort.webp" id="613"]
+[ext_resource type="Texture2D" uid="uid://xhsqmpdctww7" path="res://assets/drugs/antiver.webp" id="614"]
+[ext_resource type="Texture2D" uid="uid://173rwh8u26ok" path="res://assets/drugs/epifenac.webp" id="615"]
+[ext_resource type="Texture2D" uid="uid://051ul1u5stpa" path="res://assets/drugs/unasyn.webp" id="616"]
+[ext_resource type="Texture2D" uid="uid://bt4pbg2k0qigk" path="res://assets/drugs/alfacareno.webp" id="617"]
+[ext_resource type="Texture2D" uid="uid://fj0cwq1vqcka" path="res://assets/drugs/otrivin.webp" id="618"]
+[ext_resource type="Texture2D" uid="uid://duofifnfcap5q" path="res://assets/drugs/bronchophane.webp" id="619"]
+[ext_resource type="Texture2D" uid="uid://cj6yqdbxl7kbb" path="res://assets/drugs/cetafen.webp" id="620"]
+[ext_resource type="Texture2D" uid="uid://d4ipqugm4vw5s" path="res://assets/drugs/hical.webp" id="621"]
+[ext_resource type="Texture2D" uid="uid://ca4t7yabpghqi" path="res://assets/drugs/flumox.webp" id="622"]
+[ext_resource type="Texture2D" uid="uid://610i1k13o3uc" path="res://assets/drugs/tinox.webp" id="623"]
+[ext_resource type="Texture2D" uid="uid://cvlb7qefige1a" path="res://assets/drugs/octozinc.webp" id="624"]
+[ext_resource type="Texture2D" uid="uid://c40wk8nhloprq" path="res://assets/drugs/centalify.webp" id="625"]
+[ext_resource type="Texture2D" uid="uid://b7raguan64j07" path="res://assets/drugs/elidel.webp" id="626"]
+[ext_resource type="Texture2D" uid="uid://bgqst8we060gi" path="res://assets/drugs/utrocare.webp" id="627"]
+[ext_resource type="Texture2D" uid="uid://dy5cxarh05ga7" path="res://assets/drugs/depomedrol.webp" id="628"]
+[ext_resource type="Texture2D" uid="uid://cuhpw12ews4o1" path="res://assets/drugs/yutopar.webp" id="629"]
+[ext_resource type="Texture2D" uid="uid://b8lh74doluq26" path="res://assets/drugs/sutent.webp" id="630"]
+[ext_resource type="Texture2D" uid="uid://rlgjyq4dqoxt" path="res://assets/drugs/locasten.webp" id="631"]
+[ext_resource type="Texture2D" uid="uid://dhkhdjcprqfp3" path="res://assets/drugs/panox.webp" id="632"]
+[ext_resource type="Texture2D" uid="uid://o2p2gmqgh1fp" path="res://assets/drugs/nevilob.webp" id="633"]
+[ext_resource type="Texture2D" uid="uid://cgh46mllr3yc8" path="res://assets/drugs/candalkan.webp" id="634"]
+[ext_resource type="Texture2D" uid="uid://7o15af1y4bpf" path="res://assets/drugs/jusprin.webp" id="635"]
+[ext_resource type="Texture2D" uid="uid://du71tyahsrum1" path="res://assets/drugs/markfast.webp" id="636"]
+[ext_resource type="Texture2D" uid="uid://c7guy0udfcyyt" path="res://assets/drugs/rimactane.webp" id="637"]
+[ext_resource type="Texture2D" uid="uid://bio2fsxyplj3p" path="res://assets/drugs/septazole.webp" id="638"]
+[ext_resource type="Texture2D" uid="uid://208yfqe87gfi" path="res://assets/drugs/terramycin.webp" id="639"]
+[ext_resource type="Texture2D" uid="uid://dpkc7dvxtrs4h" path="res://assets/drugs/univit.webp" id="640"]
+[ext_resource type="Texture2D" uid="uid://djuep12iq3gf4" path="res://assets/drugs/serviflox.webp" id="641"]
+[ext_resource type="Texture2D" uid="uid://ufb5p21w8wye" path="res://assets/drugs/sinecod.webp" id="642"]
+[ext_resource type="Texture2D" uid="uid://dudjsyyuxxhlq" path="res://assets/drugs/salbovent.webp" id="643"]
+[ext_resource type="Texture2D" uid="uid://dlabijhe0du4r" path="res://assets/drugs/gsac.webp" id="644"]
+[ext_resource type="Texture2D" uid="uid://dh2ulkc40s8u7" path="res://assets/drugs/catafast.webp" id="645"]
+[ext_resource type="Texture2D" uid="uid://d2uylh44dwmh" path="res://assets/drugs/ciprapro.webp" id="646"]
+[ext_resource type="Texture2D" uid="uid://dyelw3kejpi6h" path="res://assets/drugs/famotak.webp" id="647"]
+[ext_resource type="Texture2D" uid="uid://bebt58pg7hj80" path="res://assets/drugs/marvit.webp" id="648"]
+[ext_resource type="Texture2D" uid="uid://v7ar0rsmq2si" path="res://assets/drugs/momenta.webp" id="649"]
+[ext_resource type="Texture2D" uid="uid://di41vtvo103bq" path="res://assets/drugs/polyfresh.webp" id="650"]
+[ext_resource type="Texture2D" uid="uid://dkbfq18f4uwut" path="res://assets/drugs/cefazone.webp" id="651"]
+[ext_resource type="Texture2D" uid="uid://fhbroihbuxrb" path="res://assets/drugs/ialugen.webp" id="652"]
+[ext_resource type="Texture2D" uid="uid://c34fgfm7n7r88" path="res://assets/drugs/levocar.webp" id="653"]
+[ext_resource type="Texture2D" uid="uid://sqddjxunvqga" path="res://assets/drugs/diflucan.webp" id="654"]
+[ext_resource type="Texture2D" uid="uid://bqrrgt4wnyr0c" path="res://assets/drugs/minoxidil.webp" id="655"]
+[ext_resource type="Texture2D" uid="uid://b16plk7ym0xlq" path="res://assets/drugs/biomox.webp" id="656"]
+[ext_resource type="Texture2D" uid="uid://cius7ywna0pep" path="res://assets/drugs/ospamox.webp" id="657"]
+[ext_resource type="Texture2D" uid="uid://chpmxcrwsdulu" path="res://assets/drugs/fortecortin.webp" id="658"]
+[ext_resource type="Texture2D" uid="uid://cm8p5pnp1uicd" path="res://assets/drugs/neurimax.webp" id="659"]
+[ext_resource type="Texture2D" uid="uid://d2bf075xl0r0v" path="res://assets/drugs/treflucan.webp" id="660"]
+[ext_resource type="Texture2D" uid="uid://buf5eew83ofoj" path="res://assets/drugs/bidalkin.webp" id="661"]
+[ext_resource type="Texture2D" uid="uid://d3e3eethrfxk8" path="res://assets/drugs/clarithro.webp" id="662"]
+[ext_resource type="Texture2D" uid="uid://ks5xgtu84nnd" path="res://assets/drugs/zaditen.webp" id="663"]
+[ext_resource type="Texture2D" uid="uid://bqqego15r8pld" path="res://assets/drugs/haemoton.webp" id="664"]
+[ext_resource type="Texture2D" uid="uid://cunkfavvgr5b" path="res://assets/drugs/artelac.webp" id="665"]
+[ext_resource type="Texture2D" uid="uid://smelyk4nhj4k" path="res://assets/drugs/cefobid.webp" id="666"]
+[ext_resource type="Texture2D" uid="uid://ctjencoh7ycd" path="res://assets/drugs/conjyclear.webp" id="667"]
+[ext_resource type="Texture2D" uid="uid://db8nvoho5nds1" path="res://assets/drugs/tramadol.webp" id="668"]
+[ext_resource type="Texture2D" uid="uid://b7ih17dtlk20g" path="res://assets/drugs/canesten.webp" id="669"]
+[ext_resource type="Texture2D" uid="uid://cplaydsludp4w" path="res://assets/drugs/muco.webp" id="670"]
+[ext_resource type="Texture2D" uid="uid://b287njtj6kxmu" path="res://assets/drugs/omepak.webp" id="671"]
+[ext_resource type="Texture2D" uid="uid://8h3niyqwcy8d" path="res://assets/drugs/megafen.webp" id="672"]
+[ext_resource type="Texture2D" uid="uid://sr7kwf72ph0c" path="res://assets/drugs/glycerin.webp" id="673"]
+[ext_resource type="Texture2D" uid="uid://cy6w5vo3ay3tb" path="res://assets/drugs/liometacen.webp" id="674"]
+[ext_resource type="Texture2D" uid="uid://djang21lk81si" path="res://assets/drugs/ampiflux.webp" id="675"]
+[ext_resource type="Texture2D" uid="uid://bnrwp7m64fe2e" path="res://assets/drugs/balsam.webp" id="676"]
+[ext_resource type="Texture2D" uid="uid://nwu4y8q5ylit" path="res://assets/drugs/cogintol.webp" id="677"]
+[ext_resource type="Texture2D" uid="uid://ct5o6kfbft1yf" path="res://assets/drugs/cosamine.webp" id="678"]
+[ext_resource type="Texture2D" uid="uid://crb5c3odaigxg" path="res://assets/drugs/flector.webp" id="679"]
+[ext_resource type="Texture2D" uid="uid://b3c1ugdgi6lmt" path="res://assets/drugs/ringer.webp" id="680"]
+[ext_resource type="Texture2D" uid="uid://drrmvjsvr3ail" path="res://assets/drugs/naphcon.webp" id="681"]
+[ext_resource type="Texture2D" uid="uid://c5pcwgvw06jgi" path="res://assets/drugs/lacteolforte.webp" id="682"]
+[ext_resource type="Texture2D" uid="uid://dy306kpyw6hho" path="res://assets/drugs/thiophenicol.webp" id="683"]
+[ext_resource type="Texture2D" uid="uid://7ra2uf7b07ax" path="res://assets/drugs/elonda.webp" id="684"]
+[ext_resource type="Texture2D" uid="uid://bve1d18xrf26h" path="res://assets/drugs/safamood.webp" id="685"]
+[ext_resource type="Texture2D" uid="uid://bn61dvvxv174s" path="res://assets/drugs/merti.webp" id="686"]
+[ext_resource type="Texture2D" uid="uid://bkhvvhqsdstb3" path="res://assets/drugs/hemoclar.webp" id="687"]
+[ext_resource type="Texture2D" uid="uid://eq6h11y87d2w" path="res://assets/drugs/tabunex.webp" id="688"]
+[ext_resource type="Texture2D" uid="uid://bfujy1oc4ln7s" path="res://assets/drugs/articavol.webp" id="689"]
+[ext_resource type="Texture2D" uid="uid://bb546krprmvs5" path="res://assets/drugs/wintriaxone.webp" id="690"]
+[ext_resource type="Texture2D" uid="uid://cjd8hh4mxvwlx" path="res://assets/drugs/zincosil.webp" id="691"]
+[ext_resource type="Texture2D" uid="uid://0thgn3ylqejk" path="res://assets/drugs/sedokast.webp" id="692"]
+[ext_resource type="Texture2D" uid="uid://wdua2okno5pd" path="res://assets/drugs/aceclocopa.webp" id="693"]
+[ext_resource type="Texture2D" uid="uid://bre43rm8o47p5" path="res://assets/drugs/tiralepsy.webp" id="694"]
+[ext_resource type="Texture2D" uid="uid://cs5ehhhnnsb68" path="res://assets/drugs/levohistam.webp" id="695"]
+[ext_resource type="Texture2D" uid="uid://l2rqe8uf8n84" path="res://assets/drugs/zandros.webp" id="696"]
+[ext_resource type="Texture2D" uid="uid://dk0vx4xwoy1x2" path="res://assets/drugs/cardura.webp" id="697"]
+[ext_resource type="Texture2D" uid="uid://bras27ujybxgd" path="res://assets/drugs/allerban.webp" id="698"]
+[ext_resource type="Texture2D" uid="uid://crddrbvn8l7fl" path="res://assets/drugs/klenva.webp" id="699"]
+[ext_resource type="Texture2D" uid="uid://cdrlqlpefa1ma" path="res://assets/drugs/vesicare.webp" id="700"]
+[ext_resource type="Texture2D" uid="uid://b2d0gmfrkaa2c" path="res://assets/drugs/beto.webp" id="701"]
+[ext_resource type="Texture2D" uid="uid://ckowhtheexmcj" path="res://assets/drugs/quinabiotic.webp" id="702"]
+[ext_resource type="Texture2D" uid="uid://cdt858a3he6ow" path="res://assets/drugs/viavag.webp" id="703"]
+[ext_resource type="Texture2D" uid="uid://dcgjlvcucbm60" path="res://assets/drugs/declophengel.webp" id="704"]
+[ext_resource type="Texture2D" uid="uid://b3i5bmn11xk8f" path="res://assets/drugs/gabalepsy.webp" id="705"]
+[ext_resource type="Texture2D" uid="uid://dt1cpr4kspdhq" path="res://assets/drugs/esmopump.webp" id="706"]
+[ext_resource type="Texture2D" uid="uid://dmllsnjr6ol5" path="res://assets/drugs/floxabact.webp" id="707"]
+[ext_resource type="Texture2D" uid="uid://3n4hikqss7nh" path="res://assets/drugs/pkmerz.webp" id="708"]
+[ext_resource type="Texture2D" uid="uid://bul7nvek8y57h" path="res://assets/drugs/furazole.webp" id="709"]
+[ext_resource type="Texture2D" uid="uid://6gh2044bsku0" path="res://assets/drugs/flopadex.webp" id="710"]
+[ext_resource type="Texture2D" uid="uid://d0k2eng2wop1h" path="res://assets/drugs/biostrong.webp" id="711"]
+[ext_resource type="Texture2D" uid="uid://bg1yau83tth4r" path="res://assets/drugs/ivypront.webp" id="712"]
+[ext_resource type="Texture2D" uid="uid://4aekqiafohrg" path="res://assets/drugs/efemyo.webp" id="713"]
+[ext_resource type="Texture2D" uid="uid://13adr7hs5cy6" path="res://assets/drugs/spascolon.webp" id="714"]
+[ext_resource type="Texture2D" uid="uid://beyb5idbsbx2y" path="res://assets/drugs/queen.webp" id="715"]
+[ext_resource type="Texture2D" uid="uid://dfuqq0spstps0" path="res://assets/drugs/effortil.webp" id="716"]
+[ext_resource type="Texture2D" uid="uid://bhc3777ne0wv6" path="res://assets/drugs/miconaz.webp" id="717"]
+[ext_resource type="Texture2D" uid="uid://djjcoa56ej6jp" path="res://assets/drugs/dolabactin.webp" id="718"]
+[ext_resource type="Texture2D" uid="uid://bnp4tp8467dxc" path="res://assets/drugs/zithromax.webp" id="719"]
+[ext_resource type="Texture2D" uid="uid://dq8shisqk1ej6" path="res://assets/drugs/agnucaston.webp" id="720"]
+[ext_resource type="Texture2D" uid="uid://gibjdeks1fqh" path="res://assets/drugs/panadol.webp" id="721"]
+[ext_resource type="Texture2D" uid="uid://6xurfjt7iflm" path="res://assets/drugs/tobradex.webp" id="722"]
+[ext_resource type="Texture2D" uid="uid://s6n1faw7cn4a" path="res://assets/drugs/flamotal.webp" id="723"]
+[ext_resource type="Texture2D" uid="uid://ld6mloofu4bq" path="res://assets/drugs/meloquin.webp" id="724"]
+[ext_resource type="Texture2D" uid="uid://c7h3huxvcoaeb" path="res://assets/drugs/cutivate.webp" id="725"]
+[ext_resource type="Texture2D" uid="uid://dobh1jdruppmb" path="res://assets/drugs/oxymet.webp" id="726"]
+[ext_resource type="Texture2D" uid="uid://cqej5k752tf87" path="res://assets/drugs/ostoval.webp" id="727"]
+[ext_resource type="Texture2D" uid="uid://d1if6il4pu6p6" path="res://assets/drugs/zinol.webp" id="728"]
+[ext_resource type="Texture2D" uid="uid://b8tcxk1xisakd" path="res://assets/drugs/ostmap.webp" id="729"]
+[ext_resource type="Texture2D" uid="uid://cv8lti8ex8gb1" path="res://assets/drugs/methotrexate.webp" id="730"]
+[ext_resource type="Texture2D" uid="uid://c7luemjh61cxt" path="res://assets/drugs/betaderm.webp" id="731"]
+[ext_resource type="Texture2D" uid="uid://42j0ugyyglhc" path="res://assets/drugs/adwiflam.webp" id="732"]
+[ext_resource type="Texture2D" uid="uid://dak5ere4vww55" path="res://assets/drugs/cleocin.webp" id="733"]
+[ext_resource type="Texture2D" uid="uid://bolnqed61ysh1" path="res://assets/drugs/triflucan.webp" id="734"]
+[ext_resource type="Texture2D" uid="uid://en62ji6ihxdw" path="res://assets/drugs/vascular.webp" id="735"]
+[ext_resource type="Texture2D" uid="uid://byrt6toeoffy1" path="res://assets/drugs/mariagon.webp" id="736"]
+[ext_resource type="Texture2D" uid="uid://nnqg3imw38bu" path="res://assets/drugs/fladazole.webp" id="737"]
+[ext_resource type="Texture2D" uid="uid://cwuyp6nkrpamd" path="res://assets/drugs/ultracalce.webp" id="738"]
+[ext_resource type="Texture2D" uid="uid://fqji6dxc0cl0" path="res://assets/drugs/solucortef.webp" id="739"]
+[ext_resource type="Texture2D" uid="uid://biay8v77uydps" path="res://assets/drugs/livial.webp" id="740"]
+[ext_resource type="Texture2D" uid="uid://r0jvdt1pou70" path="res://assets/drugs/apidone.webp" id="741"]
+[ext_resource type="Texture2D" uid="uid://dcrrpbnegsi1t" path="res://assets/drugs/escita.webp" id="742"]
+[ext_resource type="Texture2D" uid="uid://vtqtb0gnrje2" path="res://assets/drugs/hepaticum.webp" id="743"]
+[ext_resource type="Texture2D" uid="uid://bd23ka8p5aon7" path="res://assets/drugs/zithrocin.webp" id="744"]
+[ext_resource type="Texture2D" uid="uid://de5r2yete41uj" path="res://assets/drugs/intrafer.webp" id="745"]
+[ext_resource type="Texture2D" uid="uid://c4ir76lm7xxq4" path="res://assets/drugs/zolam.webp" id="746"]
+[ext_resource type="Texture2D" uid="uid://baaelmlo2w14x" path="res://assets/drugs/ponstan.webp" id="747"]
+[ext_resource type="Texture2D" uid="uid://hcp87xknsk10" path="res://assets/drugs/amrase.webp" id="748"]
+[ext_resource type="Texture2D" uid="uid://48214kyjks85" path="res://assets/drugs/digestin.webp" id="749"]
+[ext_resource type="Texture2D" uid="uid://b421rfhpoinda" path="res://assets/drugs/cyteal.webp" id="750"]
+[ext_resource type="Texture2D" uid="uid://vyp425usoo5f" path="res://assets/drugs/dgcare.webp" id="751"]
+[ext_resource type="Texture2D" uid="uid://c07w0r2mokobh" path="res://assets/drugs/depram.webp" id="752"]
+[ext_resource type="Texture2D" uid="uid://dw2ewrh0omij4" path="res://assets/drugs/amocerebral.webp" id="753"]
+[ext_resource type="Texture2D" uid="uid://bwhnbidnv1eug" path="res://assets/drugs/neurazine.webp" id="754"]
+[ext_resource type="Texture2D" uid="uid://ds5hsehsvv4kv" path="res://assets/drugs/gastorelive.webp" id="755"]
+[ext_resource type="Texture2D" uid="uid://c2o53673im608" path="res://assets/drugs/dermatop.webp" id="756"]
+[ext_resource type="Texture2D" uid="uid://ho70ousfrbmt" path="res://assets/drugs/ventalcomp.webp" id="757"]
+[ext_resource type="Texture2D" uid="uid://15cvlt31hsq3" path="res://assets/drugs/amoflux.webp" id="758"]
+[ext_resource type="Texture2D" uid="uid://bmvny32sopgpr" path="res://assets/drugs/bonecare.webp" id="759"]
+[ext_resource type="Texture2D" uid="uid://b7ns18broejko" path="res://assets/drugs/epicotil.webp" id="760"]
+[ext_resource type="Texture2D" uid="uid://ceo4n1urwtkg5" path="res://assets/drugs/elibutacand.webp" id="761"]
+[ext_resource type="Texture2D" uid="uid://xhmphytlq3tp" path="res://assets/drugs/actos.webp" id="762"]
+[ext_resource type="Texture2D" uid="uid://c7hu0oxa4gnxe" path="res://assets/drugs/ursoplus.webp" id="763"]
+[ext_resource type="Texture2D" uid="uid://dyy35hvj230tj" path="res://assets/drugs/kiroll.webp" id="764"]
+[ext_resource type="Texture2D" uid="uid://3705blvhoslo" path="res://assets/drugs/optiguard.webp" id="765"]
+[ext_resource type="Texture2D" uid="uid://dfhdkcds3xe6d" path="res://assets/drugs/avosoya.webp" id="766"]
+[ext_resource type="Texture2D" uid="uid://ebgkwu7lvq0o" path="res://assets/drugs/gripewater.webp" id="767"]
+[ext_resource type="Texture2D" uid="uid://diqfqrqb40s7s" path="res://assets/drugs/relaxon.webp" id="768"]
+[ext_resource type="Texture2D" uid="uid://cmmiarb0qk3rt" path="res://assets/drugs/loujain.webp" id="769"]
+[ext_resource type="Texture2D" uid="uid://d4kg4cc162gcd" path="res://assets/drugs/respatio.webp" id="770"]
+[ext_resource type="Texture2D" uid="uid://d2lib6fppfbuo" path="res://assets/drugs/amoclawins.webp" id="771"]
+[ext_resource type="Texture2D" uid="uid://cdwg6arhqxuwq" path="res://assets/drugs/nizoral.webp" id="772"]
+[ext_resource type="Texture2D" uid="uid://dr2cv8ulv4xda" path="res://assets/drugs/amriflucan.webp" id="773"]
+[ext_resource type="Texture2D" uid="uid://cr2pculpydxhw" path="res://assets/drugs/ginsoplus.webp" id="774"]
+[ext_resource type="Texture2D" uid="uid://b7m0vfabbhp51" path="res://assets/drugs/solcough.webp" id="775"]
+
+[node name="Drugs" type="Control" unique_id=1476133218]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_sfapg")
+
+[node name="ASPOCID" type="TextureRect" parent="." unique_id=1102138096]
+visible = false
+layout_mode = 0
+texture = ExtResource("2_bxps7")
+
+[node name="ATOR" type="TextureRect" parent="." unique_id=752879266]
+visible = false
+layout_mode = 0
+texture = ExtResource("2")
+
+[node name="CEREBROLYSIN" type="TextureRect" parent="." unique_id=2005835177]
+visible = false
+layout_mode = 0
+texture = ExtResource("3")
+
+[node name="FORTAMIND" type="TextureRect" parent="." unique_id=795856619]
+visible = false
+layout_mode = 0
+texture = ExtResource("4")
+
+[node name="MEMEXA" type="TextureRect" parent="." unique_id=947710998]
+visible = false
+layout_mode = 0
+texture = ExtResource("6")
+
+[node name="NEUROTON" type="TextureRect" parent="." unique_id=1781301333]
+visible = false
+layout_mode = 0
+texture = ExtResource("5")
+
+[node name="ALPHINTERN" type="TextureRect" parent="." unique_id=1299810989]
+visible = false
+layout_mode = 0
+texture = ExtResource("7")
+
+[node name="HIBIOTIC" type="TextureRect" parent="." unique_id=1726598742]
+visible = false
+layout_mode = 0
+texture = ExtResource("8")
+
+[node name="FLAGYL" type="TextureRect" parent="." unique_id=1676052785]
+visible = false
+layout_mode = 0
+texture = ExtResource("9")
+
+[node name="THIOTACID" type="TextureRect" parent="." unique_id=1823003839]
+visible = false
+layout_mode = 0
+texture = ExtResource("10")
+
+[node name="KARBALTA" type="TextureRect" parent="." unique_id=1829423907]
+visible = false
+layout_mode = 0
+texture = ExtResource("11")
+
+[node name="NEUROBION" type="TextureRect" parent="." unique_id=1689778102]
+visible = false
+layout_mode = 0
+texture = ExtResource("12")
+
+[node name="CALCIDOL" type="TextureRect" parent="." unique_id=1134710633]
+visible = false
+layout_mode = 0
+texture = ExtResource("13")
+
+[node name="DEVAROL" type="TextureRect" parent="." unique_id=1063591108]
+visible = false
+layout_mode = 0
+texture = ExtResource("14")
+
+[node name="CHOLEROSE" type="TextureRect" parent="." unique_id=504942275]
+visible = false
+layout_mode = 0
+texture = ExtResource("16")
+
+[node name="COLOVATIL" type="TextureRect" parent="." unique_id=1871834043]
+visible = false
+layout_mode = 0
+texture = ExtResource("20")
+
+[node name="GANATON" type="TextureRect" parent="." unique_id=199309404]
+visible = false
+layout_mode = 0
+texture = ExtResource("17")
+
+[node name="MUCOSTA" type="TextureRect" parent="." unique_id=2019531021]
+visible = false
+layout_mode = 0
+texture = ExtResource("18")
+
+[node name="NEXIUM" type="TextureRect" parent="." unique_id=1044454818]
+visible = false
+layout_mode = 0
+texture = ExtResource("19")
+
+[node name="RABEPRAZOLE" type="TextureRect" parent="." unique_id=677640073]
+visible = false
+layout_mode = 0
+texture = ExtResource("15")
+
+[node name="SYSTANE" type="TextureRect" parent="." unique_id=2071516718]
+visible = false
+layout_mode = 0
+texture = ExtResource("21")
+
+[node name="BROMOFLAM" type="TextureRect" parent="." unique_id=752300548]
+visible = false
+layout_mode = 0
+texture = ExtResource("23")
+
+[node name="COSOPT" type="TextureRect" parent="." unique_id=1030986285]
+visible = false
+layout_mode = 0
+texture = ExtResource("22")
+
+[node name="EXAMIDE" type="TextureRect" parent="." unique_id=339326750]
+visible = false
+layout_mode = 0
+texture = ExtResource("27")
+
+[node name="PLAVIX" type="TextureRect" parent="." unique_id=1366836171]
+visible = false
+layout_mode = 0
+texture = ExtResource("25")
+
+[node name="MAREVAN" type="TextureRect" parent="." unique_id=1250933447]
+visible = false
+layout_mode = 0
+texture = ExtResource("29")
+
+[node name="PROCORALAN" type="TextureRect" parent="." unique_id=1723006236]
+visible = false
+layout_mode = 0
+texture = ExtResource("28")
+
+[node name="ENTRESTO" type="TextureRect" parent="." unique_id=583202122]
+visible = false
+layout_mode = 0
+texture = ExtResource("26")
+
+[node name="EMOXCLAV" type="TextureRect" parent="." unique_id=1933641126]
+visible = false
+layout_mode = 0
+texture = ExtResource("54")
+
+[node name="FENISTIL" type="TextureRect" parent="." unique_id=291296416]
+visible = false
+layout_mode = 0
+texture = ExtResource("65")
+
+[node name="DEXATOBRIN" type="TextureRect" parent="." unique_id=1927262847]
+visible = false
+layout_mode = 0
+texture = ExtResource("55")
+
+[node name="METHOQUICK" type="TextureRect" parent="." unique_id=144474466]
+visible = false
+layout_mode = 0
+texture = ExtResource("70")
+
+[node name="DIVIDO" type="TextureRect" parent="." unique_id=1410523238]
+visible = false
+layout_mode = 0
+texture = ExtResource("57")
+
+[node name="GENUPHIL" type="TextureRect" parent="." unique_id=150094465]
+visible = false
+layout_mode = 0
+texture = ExtResource("80")
+
+[node name="BEPRA" type="TextureRect" parent="." unique_id=1816706594]
+visible = false
+layout_mode = 0
+texture = ExtResource("64")
+
+[node name="COLOVERIN" type="TextureRect" parent="." unique_id=294699762]
+visible = false
+layout_mode = 0
+texture = ExtResource("52")
+
+[node name="TINIFLOXACIN" type="TextureRect" parent="." unique_id=793147739]
+visible = false
+layout_mode = 0
+texture = ExtResource("79")
+
+[node name="GAPTIN" type="TextureRect" parent="." unique_id=1933187106]
+visible = false
+layout_mode = 0
+texture = ExtResource("46")
+
+[node name="NEUROVIT" type="TextureRect" parent="." unique_id=690503485]
+visible = false
+layout_mode = 0
+texture = ExtResource("68")
+
+[node name="TEGRETOL" type="TextureRect" parent="." unique_id=1395607931]
+visible = false
+layout_mode = 0
+texture = ExtResource("66")
+
+[node name="ROWACHOL" type="TextureRect" parent="." unique_id=425998237]
+visible = false
+layout_mode = 0
+texture = ExtResource("82")
+
+[node name="GASMOVAC" type="TextureRect" parent="." unique_id=1642000739]
+visible = false
+layout_mode = 0
+texture = ExtResource("50")
+
+[node name="NEWTONE" type="TextureRect" parent="." unique_id=922991747]
+visible = false
+layout_mode = 0
+texture = ExtResource("72")
+
+[node name="LIVABION" type="TextureRect" parent="." unique_id=7010091]
+visible = false
+layout_mode = 0
+texture = ExtResource("53")
+
+[node name="MOTILIUM" type="TextureRect" parent="." unique_id=1225407456]
+visible = false
+layout_mode = 0
+texture = ExtResource("44")
+
+[node name="ZURCAL" type="TextureRect" parent="." unique_id=2123141205]
+visible = false
+layout_mode = 0
+texture = ExtResource("47")
+
+[node name="KETOLGIN" type="TextureRect" parent="." unique_id=671891101]
+visible = false
+layout_mode = 0
+texture = ExtResource("69")
+
+[node name="COLCHICINE" type="TextureRect" parent="." unique_id=2145143026]
+visible = false
+layout_mode = 0
+texture = ExtResource("67")
+
+[node name="IMMUNOMASH" type="TextureRect" parent="." unique_id=1333895061]
+visible = false
+layout_mode = 0
+texture = ExtResource("73")
+
+[node name="TRIAMERICAN" type="TextureRect" parent="." unique_id=1076538591]
+visible = false
+layout_mode = 0
+texture = ExtResource("75")
+
+[node name="PRONTOPLUS" type="TextureRect" parent="." unique_id=287432084]
+visible = false
+layout_mode = 0
+texture = ExtResource("83")
+
+[node name="IVERZINE" type="TextureRect" parent="." unique_id=2012560859]
+visible = false
+layout_mode = 0
+texture = ExtResource("84")
+
+[node name="ACETYLCYSTEINE" type="TextureRect" parent="." unique_id=1757721009]
+visible = false
+layout_mode = 0
+texture = ExtResource("59")
+
+[node name="DISPRELONE" type="TextureRect" parent="." unique_id=1400815753]
+visible = false
+layout_mode = 0
+texture = ExtResource("61")
+
+[node name="PEPZOL" type="TextureRect" parent="." unique_id=275248668]
+visible = false
+layout_mode = 0
+texture = ExtResource("76")
+
+[node name="ANDORIVABAN" type="TextureRect" parent="." unique_id=1212006847]
+visible = false
+layout_mode = 0
+texture = ExtResource("56")
+
+[node name="FORADIL" type="TextureRect" parent="." unique_id=1483509894]
+visible = false
+layout_mode = 0
+texture = ExtResource("62")
+
+[node name="MIFLONIDE" type="TextureRect" parent="." unique_id=2136434598]
+visible = false
+layout_mode = 0
+texture = ExtResource("71")
+
+[node name="ASMAKAST" type="TextureRect" parent="." unique_id=1577013055]
+visible = false
+layout_mode = 0
+texture = ExtResource("60")
+
+[node name="MUCOPHYLLINE" type="TextureRect" parent="." unique_id=570452583]
+visible = false
+layout_mode = 0
+texture = ExtResource("48")
+
+[node name="GRALIPENTIN" type="TextureRect" parent="." unique_id=1498335422]
+visible = false
+layout_mode = 0
+texture = ExtResource("74")
+
+[node name="CAREDALUD" type="TextureRect" parent="." unique_id=673983284]
+visible = false
+layout_mode = 0
+texture = ExtResource("81")
+
+[node name="ROXOGESIC" type="TextureRect" parent="." unique_id=1607096186]
+visible = false
+layout_mode = 0
+texture = ExtResource("115")
+
+[node name="AMBEZIM" type="TextureRect" parent="." unique_id=1823004296]
+visible = false
+layout_mode = 0
+texture = ExtResource("45")
+
+[node name="KETOLAC" type="TextureRect" parent="." unique_id=194911754]
+visible = false
+layout_mode = 0
+texture = ExtResource("77")
+
+[node name="TAVONIFLOX" type="TextureRect" parent="." unique_id=1396427615]
+visible = false
+layout_mode = 0
+texture = ExtResource("104")
+
+[node name="ADOL" type="TextureRect" parent="." unique_id=17250719]
+visible = false
+layout_mode = 0
+texture = ExtResource("63")
+
+[node name="CELEBORG" type="TextureRect" parent="." unique_id=2040365971]
+visible = false
+layout_mode = 0
+texture = ExtResource("51")
+
+[node name="MOXEN" type="TextureRect" parent="." unique_id=1805734571]
+visible = false
+layout_mode = 0
+texture = ExtResource("78")
+
+[node name="CYMBALTA" type="TextureRect" parent="." unique_id=451999959]
+visible = false
+layout_mode = 0
+texture = ExtResource("86")
+
+[node name="DELTAVIT" type="TextureRect" parent="." unique_id=1522196609]
+visible = false
+layout_mode = 0
+texture = ExtResource("88")
+
+[node name="RECOXIBRIGHT" type="TextureRect" parent="." unique_id=641094097]
+visible = false
+layout_mode = 0
+texture = ExtResource("87")
+
+[node name="SPASMOFEN" type="TextureRect" parent="." unique_id=771478777]
+visible = false
+layout_mode = 0
+texture = ExtResource("89")
+
+[node name="ANTODINE" type="TextureRect" parent="." unique_id=1602483506]
+visible = false
+layout_mode = 0
+texture = ExtResource("85")
+
+[node name="GASTRAZOLE" type="TextureRect" parent="." unique_id=1438473077]
+visible = false
+layout_mode = 0
+texture = ExtResource("90")
+
+[node name="DUSPATALIN" type="TextureRect" parent="." unique_id=1704428706]
+visible = false
+layout_mode = 0
+texture = ExtResource("30")
+
+[node name="PROTOLANS" type="TextureRect" parent="." unique_id=1072830066]
+visible = false
+layout_mode = 0
+texture = ExtResource("37")
+
+[node name="MOSAPRIDE" type="TextureRect" parent="." unique_id=1896238550]
+visible = false
+layout_mode = 0
+texture = ExtResource("33")
+
+[node name="LELIPEL" type="TextureRect" parent="." unique_id=116103780]
+visible = false
+layout_mode = 0
+texture = ExtResource("32")
+
+[node name="FERNILAR" type="TextureRect" parent="." unique_id=1355572663]
+visible = false
+layout_mode = 0
+texture = ExtResource("43")
+
+[node name="NOTUSSIL" type="TextureRect" parent="." unique_id=1123838719]
+visible = false
+layout_mode = 0
+texture = ExtResource("34")
+
+[node name="STABLON" type="TextureRect" parent="." unique_id=973494071]
+visible = false
+layout_mode = 0
+texture = ExtResource("31")
+
+[node name="NEXICURE" type="TextureRect" parent="." unique_id=1013379918]
+visible = false
+layout_mode = 0
+texture = ExtResource("40")
+
+[node name="DICETEL" type="TextureRect" parent="." unique_id=1335192754]
+visible = false
+layout_mode = 0
+texture = ExtResource("111")
+
+[node name="NEURORUBINE" type="TextureRect" parent="." unique_id=636779089]
+visible = false
+layout_mode = 0
+texture = ExtResource("36")
+
+[node name="DULOXEPRIN" type="TextureRect" parent="." unique_id=545020627]
+visible = false
+layout_mode = 0
+texture = ExtResource("112")
+
+[node name="DISPERCAM" type="TextureRect" parent="." unique_id=229018587]
+visible = false
+layout_mode = 0
+texture = ExtResource("42")
+
+[node name="EZOGAST" type="TextureRect" parent="." unique_id=1340359065]
+visible = false
+layout_mode = 0
+texture = ExtResource("35")
+
+[node name="GIT" type="TextureRect" parent="." unique_id=686377572]
+visible = false
+layout_mode = 0
+texture = ExtResource("38")
+
+[node name="FLUXOPRIDE" type="TextureRect" parent="." unique_id=1575145468]
+visible = false
+layout_mode = 0
+texture = ExtResource("41")
+
+[node name="CLARIKAN" type="TextureRect" parent="." unique_id=472197644]
+visible = false
+layout_mode = 0
+texture = ExtResource("39")
+
+[node name="TRIMEDFLU" type="TextureRect" parent="." unique_id=169375791]
+visible = false
+layout_mode = 0
+texture = ExtResource("124")
+
+[node name="COLOVERIND" type="TextureRect" parent="." unique_id=622026467]
+visible = false
+layout_mode = 0
+texture = ExtResource("122")
+
+[node name="LACTODEL" type="TextureRect" parent="." unique_id=1333214733]
+visible = false
+layout_mode = 0
+texture = ExtResource("92")
+
+[node name="DOXIUM" type="TextureRect" parent="." unique_id=2130445592]
+visible = false
+layout_mode = 0
+texture = ExtResource("95")
+
+[node name="SPASMODIGESTIN" type="TextureRect" parent="." unique_id=657481783]
+visible = false
+layout_mode = 0
+texture = ExtResource("128")
+
+[node name="CERVITAM" type="TextureRect" parent="." unique_id=1806903485]
+visible = false
+layout_mode = 0
+texture = ExtResource("105")
+
+[node name="VERSERC" type="TextureRect" parent="." unique_id=306555650]
+visible = false
+layout_mode = 0
+texture = ExtResource("123")
+
+[node name="CLINDAM" type="TextureRect" parent="." unique_id=212460503]
+visible = false
+layout_mode = 0
+texture = ExtResource("100")
+
+[node name="ACNETROX" type="TextureRect" parent="." unique_id=659258410]
+visible = false
+layout_mode = 0
+texture = ExtResource("101")
+
+[node name="VIDROP" type="TextureRect" parent="." unique_id=1479349263]
+visible = false
+layout_mode = 0
+texture = ExtResource("125")
+
+[node name="LCARNITINE" type="TextureRect" parent="." unique_id=476668463]
+visible = false
+layout_mode = 0
+texture = ExtResource("117")
+
+[node name="SIMETHICONE" type="TextureRect" parent="." unique_id=1067269311]
+visible = false
+layout_mode = 0
+texture = ExtResource("143")
+
+[node name="TORBENER" type="TextureRect" parent="." unique_id=1447289929]
+visible = false
+layout_mode = 0
+texture = ExtResource("106")
+
+[node name="XORAXON" type="TextureRect" parent="." unique_id=1665156931]
+visible = false
+layout_mode = 0
+texture = ExtResource("119")
+
+[node name="MONOHEXAL" type="TextureRect" parent="." unique_id=122797887]
+visible = false
+layout_mode = 0
+texture = ExtResource("108")
+
+[node name="CSF" type="TextureRect" parent="." unique_id=768536286]
+visible = false
+layout_mode = 0
+texture = ExtResource("130")
+
+[node name="CSP" type="TextureRect" parent="." unique_id=1965655679]
+visible = false
+layout_mode = 0
+texture = ExtResource("93")
+
+[node name="NAVILUCA" type="TextureRect" parent="." unique_id=1035464868]
+visible = false
+layout_mode = 0
+texture = ExtResource("98")
+
+[node name="TEDIMERP" type="TextureRect" parent="." unique_id=753651919]
+visible = false
+layout_mode = 0
+texture = ExtResource("96")
+
+[node name="DOROFEN" type="TextureRect" parent="." unique_id=1672638521]
+visible = false
+layout_mode = 0
+texture = ExtResource("120")
+
+[node name="LIMITLESSMAN" type="TextureRect" parent="." unique_id=637449821]
+visible = false
+layout_mode = 0
+texture = ExtResource("116")
+
+[node name="QUICKSLIM" type="TextureRect" parent="." unique_id=1988675381]
+visible = false
+layout_mode = 0
+texture = ExtResource("118")
+
+[node name="BIOREFAMIN" type="TextureRect" parent="." unique_id=1953106558]
+visible = false
+layout_mode = 0
+texture = ExtResource("113")
+
+[node name="SPASMOAMRASE" type="TextureRect" parent="." unique_id=385913080]
+visible = false
+layout_mode = 0
+texture = ExtResource("127")
+
+[node name="FOLICAP" type="TextureRect" parent="." unique_id=203620878]
+visible = false
+layout_mode = 0
+texture = ExtResource("126")
+
+[node name="PROGEST" type="TextureRect" parent="." unique_id=128944577]
+visible = false
+layout_mode = 0
+texture = ExtResource("91")
+
+[node name="HEBITAXIME" type="TextureRect" parent="." unique_id=1392419969]
+visible = false
+layout_mode = 0
+texture = ExtResource("97")
+
+[node name="DEXA" type="TextureRect" parent="." unique_id=800239474]
+visible = false
+layout_mode = 0
+texture = ExtResource("139")
+
+[node name="DEXAMETHASONE" type="TextureRect" parent="." unique_id=1095627401]
+visible = false
+layout_mode = 0
+texture = ExtResource("144")
+
+[node name="ROTAHELEX" type="TextureRect" parent="." unique_id=2049268483]
+visible = false
+layout_mode = 0
+texture = ExtResource("114")
+
+[node name="RHINOPRO" type="TextureRect" parent="." unique_id=723408820]
+visible = false
+layout_mode = 0
+texture = ExtResource("103")
+
+[node name="SOMAZINA" type="TextureRect" parent="." unique_id=92345928]
+visible = false
+layout_mode = 0
+texture = ExtResource("94")
+
+[node name="TEBONINA" type="TextureRect" parent="." unique_id=648949861]
+visible = false
+layout_mode = 0
+texture = ExtResource("109")
+
+[node name="GLUCOVANCE" type="TextureRect" parent="." unique_id=764940851]
+visible = false
+layout_mode = 0
+texture = ExtResource("107")
+
+[node name="ALKAPRESS" type="TextureRect" parent="." unique_id=1716609689]
+visible = false
+layout_mode = 0
+texture = ExtResource("110")
+
+[node name="EPITENS" type="TextureRect" parent="." unique_id=528031648]
+visible = false
+layout_mode = 0
+texture = ExtResource("121")
+
+[node name="QUIBRON" type="TextureRect" parent="." unique_id=157121802]
+visible = false
+layout_mode = 0
+texture = ExtResource("102")
+
+[node name="PANADOLEXTRA" type="TextureRect" parent="." unique_id=917960816]
+visible = false
+layout_mode = 0
+texture = ExtResource("99")
+
+[node name="ATOREZA" type="TextureRect" parent="." unique_id=1114177102]
+visible = false
+layout_mode = 0
+texture = ExtResource("129")
+
+[node name="INFECTOMYCIN" type="TextureRect" parent="." unique_id=1428006028]
+visible = false
+layout_mode = 0
+texture = ExtResource("58")
+
+[node name="INHALEX" type="TextureRect" parent="." unique_id=1181015947]
+visible = false
+layout_mode = 0
+texture = ExtResource("131")
+
+[node name="LUCIDRIL" type="TextureRect" parent="." unique_id=524315165]
+visible = false
+layout_mode = 0
+texture = ExtResource("49")
+
+[node name="TRENTAL" type="TextureRect" parent="." unique_id=132988048]
+visible = false
+layout_mode = 0
+texture = ExtResource("132")
+
+[node name="SECNIDAZOLE" type="TextureRect" parent="." unique_id=559000762]
+visible = false
+layout_mode = 0
+texture = ExtResource("133")
+
+[node name="COLIURINAL" type="TextureRect" parent="." unique_id=1047472338]
+visible = false
+layout_mode = 0
+texture = ExtResource("134")
+
+[node name="PETRO" type="TextureRect" parent="." unique_id=197524705]
+visible = false
+layout_mode = 0
+texture = ExtResource("135")
+
+[node name="CEVAMOL" type="TextureRect" parent="." unique_id=1442155275]
+visible = false
+layout_mode = 0
+texture = ExtResource("146")
+
+[node name="ZISROCIN" type="TextureRect" parent="." unique_id=1413653829]
+visible = false
+layout_mode = 0
+texture = ExtResource("136")
+
+[node name="IVYBRONCH" type="TextureRect" parent="." unique_id=778280872]
+visible = false
+layout_mode = 0
+texture = ExtResource("138")
+
+[node name="DEXTROSE" type="TextureRect" parent="." unique_id=446955006]
+visible = false
+layout_mode = 0
+texture = ExtResource("147")
+
+[node name="PANTAZOL" type="TextureRect" parent="." unique_id=966894413]
+visible = false
+layout_mode = 0
+texture = ExtResource("148")
+
+[node name="VISCERALGINE" type="TextureRect" parent="." unique_id=2040564966]
+visible = false
+layout_mode = 0
+texture = ExtResource("140")
+
+[node name="ORNIDAZ" type="TextureRect" parent="." unique_id=786342185]
+visible = false
+layout_mode = 0
+texture = ExtResource("137")
+
+[node name="CORTIPLEX" type="TextureRect" parent="." unique_id=1687631506]
+visible = false
+layout_mode = 0
+texture = ExtResource("145")
+
+[node name="CURAM" type="TextureRect" parent="." unique_id=1842081994]
+visible = false
+layout_mode = 0
+texture = ExtResource("141")
+
+[node name="CETAL" type="TextureRect" parent="." unique_id=553295832]
+visible = false
+layout_mode = 0
+texture = ExtResource("142")
+
+[node name="MOTINORM" type="TextureRect" parent="." unique_id=1870747873]
+visible = false
+layout_mode = 0
+texture = ExtResource("151")
+
+[node name="PREDSOLFORTE" type="TextureRect" parent="." unique_id=1593593036]
+visible = false
+layout_mode = 0
+texture = ExtResource("152")
+
+[node name="DOLIPRANE" type="TextureRect" parent="." unique_id=2119529457]
+visible = false
+layout_mode = 0
+texture = ExtResource("157")
+
+[node name="TUSSISTOP" type="TextureRect" parent="." unique_id=635441896]
+visible = false
+layout_mode = 0
+texture = ExtResource("153")
+
+[node name="BETAFOS" type="TextureRect" parent="." unique_id=13063996]
+visible = false
+layout_mode = 0
+texture = ExtResource("149")
+
+[node name="DICLAC" type="TextureRect" parent="." unique_id=350676256]
+visible = false
+layout_mode = 0
+texture = ExtResource("156")
+
+[node name="CLASYNMO" type="TextureRect" parent="." unique_id=895586649]
+visible = false
+layout_mode = 0
+texture = ExtResource("154")
+
+[node name="POLYFAST" type="TextureRect" parent="." unique_id=324669134]
+visible = false
+layout_mode = 0
+texture = ExtResource("150")
+
+[node name="OCUGUARD" type="TextureRect" parent="." unique_id=1702588824]
+visible = false
+layout_mode = 0
+texture = ExtResource("155")
+
+[node name="OMEZ" type="TextureRect" parent="." unique_id=745671363]
+visible = false
+layout_mode = 0
+texture = ExtResource("158")
+
+[node name="EMEREST" type="TextureRect" parent="." unique_id=221751388]
+visible = false
+layout_mode = 0
+texture = ExtResource("159")
+
+[node name="HELICURE" type="TextureRect" parent="." unique_id=888311281]
+visible = false
+layout_mode = 0
+texture = ExtResource("160")
+
+[node name="RAMDEEP" type="TextureRect" parent="." unique_id=54605238]
+visible = false
+layout_mode = 0
+texture = ExtResource("161")
+
+[node name="STATOMAIN" type="TextureRect" parent="." unique_id=1825084360]
+visible = false
+layout_mode = 0
+texture = ExtResource("167")
+
+[node name="SIRDALUD" type="TextureRect" parent="." unique_id=833064267]
+visible = false
+layout_mode = 0
+texture = ExtResource("164")
+
+[node name="MASSAGIL" type="TextureRect" parent="." unique_id=2038043477]
+visible = false
+layout_mode = 0
+texture = ExtResource("162")
+
+[node name="CIPROCIN" type="TextureRect" parent="." unique_id=784607199]
+visible = false
+layout_mode = 0
+texture = ExtResource("163")
+
+[node name="VERDO" type="TextureRect" parent="." unique_id=1691093617]
+visible = false
+layout_mode = 0
+texture = ExtResource("170")
+
+[node name="FEROSE" type="TextureRect" parent="." unique_id=1894978021]
+visible = false
+layout_mode = 0
+texture = ExtResource("165")
+
+[node name="BUTAXIMARK" type="TextureRect" parent="." unique_id=140488350]
+visible = false
+layout_mode = 0
+texture = ExtResource("168")
+
+[node name="LUMIERE" type="TextureRect" parent="." unique_id=709544583]
+visible = false
+layout_mode = 0
+texture = ExtResource("169")
+
+[node name="ACNESTOP" type="TextureRect" parent="." unique_id=1605202394]
+visible = false
+layout_mode = 0
+texture = ExtResource("166")
+
+[node name="FUSIZON" type="TextureRect" parent="." unique_id=733374980]
+visible = false
+layout_mode = 0
+texture = ExtResource("178")
+
+[node name="DALACIN" type="TextureRect" parent="." unique_id=1113818148]
+visible = false
+layout_mode = 0
+texture = ExtResource("184")
+
+[node name="FITTBAR" type="TextureRect" parent="." unique_id=1767251641]
+visible = false
+layout_mode = 0
+texture = ExtResource("189")
+
+[node name="ITOMASH" type="TextureRect" parent="." unique_id=841736583]
+visible = false
+layout_mode = 0
+texture = ExtResource("188")
+
+[node name="ANDOURISTAT" type="TextureRect" parent="." unique_id=360975297]
+visible = false
+layout_mode = 0
+texture = ExtResource("190")
+
+[node name="ACTIVATE" type="TextureRect" parent="." unique_id=2134458284]
+visible = false
+layout_mode = 0
+texture = ExtResource("185")
+
+[node name="ALVITAL" type="TextureRect" parent="." unique_id=201980663]
+visible = false
+layout_mode = 0
+texture = ExtResource("177")
+
+[node name="ALPHANET" type="TextureRect" parent="." unique_id=1770550210]
+visible = false
+layout_mode = 0
+texture = ExtResource("183")
+
+[node name="SONO" type="TextureRect" parent="." unique_id=1016594039]
+visible = false
+layout_mode = 0
+texture = ExtResource("179")
+
+[node name="DOXYCOST" type="TextureRect" parent="." unique_id=1975137867]
+visible = false
+layout_mode = 0
+texture = ExtResource("180")
+
+[node name="ACNEZINC" type="TextureRect" parent="." unique_id=2094161965]
+visible = false
+layout_mode = 0
+texture = ExtResource("171")
+
+[node name="MARPALENE" type="TextureRect" parent="." unique_id=1081123478]
+visible = false
+layout_mode = 0
+texture = ExtResource("186")
+
+[node name="TAROLIMUS" type="TextureRect" parent="." unique_id=592937792]
+visible = false
+layout_mode = 0
+texture = ExtResource("172")
+
+[node name="SELENIUM" type="TextureRect" parent="." unique_id=75535585]
+visible = false
+layout_mode = 0
+texture = ExtResource("173")
+
+[node name="JOLLY" type="TextureRect" parent="." unique_id=1747932984]
+visible = false
+layout_mode = 0
+texture = ExtResource("181")
+
+[node name="VIBRAMYCIN" type="TextureRect" parent="." unique_id=770471556]
+visible = false
+layout_mode = 0
+texture = ExtResource("174")
+
+[node name="UNITONE" type="TextureRect" parent="." unique_id=2120406835]
+visible = false
+layout_mode = 0
+texture = ExtResource("175")
+
+[node name="BACTROBAN" type="TextureRect" parent="." unique_id=1935533064]
+visible = false
+layout_mode = 0
+texture = ExtResource("182")
+
+[node name="PANDERMAL" type="TextureRect" parent="." unique_id=909761068]
+visible = false
+layout_mode = 0
+texture = ExtResource("176")
+
+[node name="SUPLFECT" type="TextureRect" parent="." unique_id=1867528516]
+visible = false
+layout_mode = 0
+texture = ExtResource("187")
+
+[node name="CONAADIONE" type="TextureRect" parent="." unique_id=256809230]
+visible = false
+layout_mode = 0
+texture = ExtResource("191")
+
+[node name="ALDACTONE" type="TextureRect" parent="." unique_id=531932193]
+visible = false
+layout_mode = 0
+texture = ExtResource("192")
+
+[node name="VENTOLIN" type="TextureRect" parent="." unique_id=1557059230]
+visible = false
+layout_mode = 0
+texture = ExtResource("193")
+
+[node name="MIXTARD" type="TextureRect" parent="." unique_id=165547305]
+visible = false
+layout_mode = 0
+texture = ExtResource("196")
+
+[node name="DIABETIN" type="TextureRect" parent="." unique_id=1229097216]
+visible = false
+layout_mode = 0
+texture = ExtResource("197")
+
+[node name="AMARYL" type="TextureRect" parent="." unique_id=1904367148]
+visible = false
+layout_mode = 0
+texture = ExtResource("194")
+
+[node name="URSOFALK" type="TextureRect" parent="." unique_id=1987085730]
+visible = false
+layout_mode = 0
+texture = ExtResource("195")
+
+[node name="LIVERIN" type="TextureRect" parent="." unique_id=1754454561]
+visible = false
+layout_mode = 0
+texture = ExtResource("199")
+
+[node name="DUPHALAC" type="TextureRect" parent="." unique_id=1754500262]
+visible = false
+layout_mode = 0
+texture = ExtResource("198")
+
+[node name="ANTINAL" type="TextureRect" parent="." unique_id=1345987625]
+visible = false
+layout_mode = 0
+texture = ExtResource("202")
+
+[node name="ENTOCID" type="TextureRect" parent="." unique_id=1064993205]
+visible = false
+layout_mode = 0
+texture = ExtResource("205")
+
+[node name="DIGENORM" type="TextureRect" parent="." unique_id=39788944]
+visible = false
+layout_mode = 0
+texture = ExtResource("203")
+
+[node name="COLONA" type="TextureRect" parent="." unique_id=386303961]
+visible = false
+layout_mode = 0
+texture = ExtResource("204")
+
+[node name="TARGOFLOXIN" type="TextureRect" parent="." unique_id=2123850445]
+visible = false
+layout_mode = 0
+texture = ExtResource("200")
+
+[node name="UNIPHYLLIN" type="TextureRect" parent="." unique_id=1582218971]
+visible = false
+layout_mode = 0
+texture = ExtResource("201")
+
+[node name="SINGULAIR" type="TextureRect" parent="." unique_id=1140457945]
+visible = false
+layout_mode = 0
+texture = ExtResource("235")
+
+[node name="MUCOLATOR" type="TextureRect" parent="." unique_id=2068649410]
+visible = false
+layout_mode = 0
+texture = ExtResource("245")
+
+[node name="IVYROSPAN" type="TextureRect" parent="." unique_id=690592509]
+visible = false
+layout_mode = 0
+texture = ExtResource("244")
+
+[node name="MOVEFREE" type="TextureRect" parent="." unique_id=1633788848]
+visible = false
+layout_mode = 0
+texture = ExtResource("233")
+
+[node name="AMOFLUXIN" type="TextureRect" parent="." unique_id=201047157]
+visible = false
+layout_mode = 0
+texture = ExtResource("210")
+
+[node name="FARCOSOLVIN" type="TextureRect" parent="." unique_id=1726458874]
+visible = false
+layout_mode = 0
+texture = ExtResource("206")
+
+[node name="KLARIMIX" type="TextureRect" parent="." unique_id=1132789896]
+visible = false
+layout_mode = 0
+texture = ExtResource("213")
+
+[node name="ALGASON" type="TextureRect" parent="." unique_id=375824155]
+visible = false
+layout_mode = 0
+texture = ExtResource("222")
+
+[node name="DIPROFOS" type="TextureRect" parent="." unique_id=1251379175]
+visible = false
+layout_mode = 0
+texture = ExtResource("239")
+
+[node name="TOPZAD" type="TextureRect" parent="." unique_id=1266672359]
+visible = false
+layout_mode = 0
+texture = ExtResource("236")
+
+[node name="LEVCET" type="TextureRect" parent="." unique_id=640739068]
+visible = false
+layout_mode = 0
+texture = ExtResource("209")
+
+[node name="THREEZED" type="TextureRect" parent="." unique_id=289797717]
+visible = false
+layout_mode = 0
+texture = ExtResource("240")
+
+[node name="FLOXAMO" type="TextureRect" parent="." unique_id=1795520036]
+visible = false
+layout_mode = 0
+texture = ExtResource("214")
+
+[node name="BRUFEN" type="TextureRect" parent="." unique_id=1277904467]
+visible = false
+layout_mode = 0
+texture = ExtResource("208")
+
+[node name="CAPOZID" type="TextureRect" parent="." unique_id=1726585363]
+visible = false
+layout_mode = 0
+texture = ExtResource("225")
+
+[node name="BRONCHOLIN" type="TextureRect" parent="." unique_id=1034819888]
+visible = false
+layout_mode = 0
+texture = ExtResource("216")
+
+[node name="EPIDRON" type="TextureRect" parent="." unique_id=1813520481]
+visible = false
+layout_mode = 0
+texture = ExtResource("227")
+
+[node name="DIAX" type="TextureRect" parent="." unique_id=1886241921]
+visible = false
+layout_mode = 0
+texture = ExtResource("243")
+
+[node name="DIPENACID" type="TextureRect" parent="." unique_id=583825262]
+visible = false
+layout_mode = 0
+texture = ExtResource("217")
+
+[node name="MUCOSOL" type="TextureRect" parent="." unique_id=191574793]
+visible = false
+layout_mode = 0
+texture = ExtResource("241")
+
+[node name="PROCTOGLYVENOL" type="TextureRect" parent="." unique_id=640890935]
+visible = false
+layout_mode = 0
+texture = ExtResource("211")
+
+[node name="DAFREX" type="TextureRect" parent="." unique_id=68070534]
+visible = false
+layout_mode = 0
+texture = ExtResource("228")
+
+[node name="BETADINE" type="TextureRect" parent="." unique_id=1990512471]
+visible = false
+layout_mode = 0
+texture = ExtResource("231")
+
+[node name="NORMALSALINE" type="TextureRect" parent="." unique_id=1642861371]
+visible = false
+layout_mode = 0
+texture = ExtResource("232")
+
+[node name="CEFTRIAXONE" type="TextureRect" parent="." unique_id=1538338815]
+visible = false
+layout_mode = 0
+texture = ExtResource("229")
+
+[node name="BUSCOPAN" type="TextureRect" parent="." unique_id=1482291307]
+visible = false
+layout_mode = 0
+texture = ExtResource("215")
+
+[node name="EPICOTIL" type="TextureRect" parent="." unique_id=295227789]
+visible = false
+layout_mode = 0
+texture = ExtResource("760")
+
+[node name="CORTIGEN" type="TextureRect" parent="." unique_id=191702747]
+visible = false
+layout_mode = 0
+texture = ExtResource("237")
+
+[node name="CARNIVITAFORTE" type="TextureRect" parent="." unique_id=849923393]
+visible = false
+layout_mode = 0
+texture = ExtResource("238")
+
+[node name="ADENOXFORTE" type="TextureRect" parent="." unique_id=863457320]
+visible = false
+layout_mode = 0
+texture = ExtResource("218")
+
+[node name="CIDOTESTON" type="TextureRect" parent="." unique_id=1646969385]
+visible = false
+layout_mode = 0
+texture = ExtResource("219")
+
+[node name="DOXY" type="TextureRect" parent="." unique_id=2018698215]
+visible = false
+layout_mode = 0
+texture = ExtResource("220")
+
+[node name="AZGOVANC" type="TextureRect" parent="." unique_id=1314656226]
+visible = false
+layout_mode = 0
+texture = ExtResource("242")
+
+[node name="EVASTINE" type="TextureRect" parent="." unique_id=1772485645]
+visible = false
+layout_mode = 0
+texture = ExtResource("226")
+
+[node name="TOPLEXIL" type="TextureRect" parent="." unique_id=1138585265]
+visible = false
+layout_mode = 0
+texture = ExtResource("207")
+
+[node name="TEMPRA" type="TextureRect" parent="." unique_id=280359700]
+visible = false
+layout_mode = 0
+texture = ExtResource("221")
+
+[node name="DOLPHIN" type="TextureRect" parent="." unique_id=1428197333]
+visible = false
+layout_mode = 0
+texture = ExtResource("230")
+
+[node name="SEPTRIN" type="TextureRect" parent="." unique_id=1625277755]
+visible = false
+layout_mode = 0
+texture = ExtResource("223")
+
+[node name="FLORNITH" type="TextureRect" parent="." unique_id=1565182622]
+visible = false
+layout_mode = 0
+texture = ExtResource("224")
+
+[node name="MENTHOLAX" type="TextureRect" parent="." unique_id=1342291659]
+visible = false
+layout_mode = 0
+texture = ExtResource("234")
+
+[node name="VITAMAXPLUS" type="TextureRect" parent="." unique_id=429013153]
+visible = false
+layout_mode = 0
+texture = ExtResource("212")
+
+[node name="HEALSEC" type="TextureRect" parent="." unique_id=1014394520]
+visible = false
+layout_mode = 0
+texture = ExtResource("246")
+
+[node name="MIDODRINE" type="TextureRect" parent="." unique_id=1595483098]
+visible = false
+layout_mode = 0
+texture = ExtResource("247")
+
+[node name="EMOX" type="TextureRect" parent="." unique_id=1720398322]
+visible = false
+layout_mode = 0
+texture = ExtResource("249")
+
+[node name="DOLPHINK" type="TextureRect" parent="." unique_id=1813795643]
+visible = false
+layout_mode = 0
+texture = ExtResource("248")
+
+[node name="DOSPA" type="TextureRect" parent="." unique_id=2026357696]
+visible = false
+layout_mode = 0
+texture = ExtResource("250")
+
+[node name="CONAZ" type="TextureRect" parent="." unique_id=1796468582]
+visible = false
+layout_mode = 0
+texture = ExtResource("251")
+
+[node name="BUSCAMOL" type="TextureRect" parent="." unique_id=455533462]
+visible = false
+layout_mode = 0
+texture = ExtResource("252")
+
+[node name="DURICEF" type="TextureRect" parent="." unique_id=911124592]
+visible = false
+layout_mode = 0
+texture = ExtResource("253")
+
+[node name="CONGESTAL" type="TextureRect" parent="." unique_id=2144231266]
+visible = false
+layout_mode = 0
+texture = ExtResource("254")
+
+[node name="GUAFLEX" type="TextureRect" parent="." unique_id=1950711002]
+visible = false
+layout_mode = 0
+texture = ExtResource("255")
+
+[node name="GALVUS" type="TextureRect" parent="." unique_id=2007881538]
+visible = false
+layout_mode = 0
+texture = ExtResource("256")
+
+[node name="CIDOPHAGE" type="TextureRect" parent="." unique_id=519361763]
+visible = false
+layout_mode = 0
+texture = ExtResource("257")
+
+[node name="SIGMALIP" type="TextureRect" parent="." unique_id=206868801]
+visible = false
+layout_mode = 0
+texture = ExtResource("258")
+
+[node name="SPARCIN" type="TextureRect" parent="." unique_id=1150711060]
+visible = false
+layout_mode = 0
+texture = ExtResource("259")
+
+[node name="URIVIN" type="TextureRect" parent="." unique_id=1948746163]
+visible = false
+layout_mode = 0
+texture = ExtResource("260")
+
+[node name="FELDENE" type="TextureRect" parent="." unique_id=1736487089]
+visible = false
+layout_mode = 0
+texture = ExtResource("261")
+
+[node name="SIGMAFENAC" type="TextureRect" parent="." unique_id=1807910540]
+visible = false
+layout_mode = 0
+texture = ExtResource("262")
+
+[node name="EUCAL" type="TextureRect" parent="." unique_id=155550387]
+visible = false
+layout_mode = 0
+texture = ExtResource("263")
+
+[node name="DENSITIN" type="TextureRect" parent="." unique_id=517491991]
+visible = false
+layout_mode = 0
+texture = ExtResource("264")
+
+[node name="CONCOR" type="TextureRect" parent="." unique_id=1217710430]
+visible = false
+layout_mode = 0
+texture = ExtResource("265")
+
+[node name="FARCOVIT" type="TextureRect" parent="." unique_id=1934290094]
+visible = false
+layout_mode = 0
+texture = ExtResource("266")
+
+[node name="OTAL" type="TextureRect" parent="." unique_id=731242011]
+visible = false
+layout_mode = 0
+texture = ExtResource("267")
+
+[node name="CIPROFAR" type="TextureRect" parent="." unique_id=288560256]
+visible = false
+layout_mode = 0
+texture = ExtResource("268")
+
+[node name="CEPHRADINE" type="TextureRect" parent="." unique_id=1833088942]
+visible = false
+layout_mode = 0
+texture = ExtResource("269")
+
+[node name="EPIGENT" type="TextureRect" parent="." unique_id=442514380]
+visible = false
+layout_mode = 0
+texture = ExtResource("270")
+
+[node name="TRIACTIN" type="TextureRect" parent="." unique_id=358819757]
+visible = false
+layout_mode = 0
+texture = ExtResource("271")
+
+[node name="RHEUMAFEN" type="TextureRect" parent="." unique_id=456425107]
+visible = false
+layout_mode = 0
+texture = ExtResource("272")
+
+[node name="DERMATIN" type="TextureRect" parent="." unique_id=1618176708]
+visible = false
+layout_mode = 0
+texture = ExtResource("273")
+
+[node name="AMPICILLIN" type="TextureRect" parent="." unique_id=9596937]
+visible = false
+layout_mode = 0
+texture = ExtResource("274")
+
+[node name="GARAMYCIN" type="TextureRect" parent="." unique_id=1013213938]
+visible = false
+layout_mode = 0
+texture = ExtResource("275")
+
+[node name="AMRIZOLE" type="TextureRect" parent="." unique_id=653808616]
+visible = false
+layout_mode = 0
+texture = ExtResource("276")
+
+[node name="MISOTAC" type="TextureRect" parent="." unique_id=1201780551]
+visible = false
+layout_mode = 0
+texture = ExtResource("277")
+
+[node name="HAEMACAPS" type="TextureRect" parent="." unique_id=1435520853]
+visible = false
+layout_mode = 0
+texture = ExtResource("278")
+
+[node name="TAMSULIN" type="TextureRect" parent="." unique_id=684959312]
+visible = false
+layout_mode = 0
+texture = ExtResource("284")
+
+[node name="VOLTAREN" type="TextureRect" parent="." unique_id=508226954]
+visible = false
+layout_mode = 0
+texture = ExtResource("283")
+
+[node name="PROXIMOL" type="TextureRect" parent="." unique_id=1241373089]
+visible = false
+layout_mode = 0
+texture = ExtResource("280")
+
+[node name="KELLAGON" type="TextureRect" parent="." unique_id=1780686631]
+visible = false
+layout_mode = 0
+texture = ExtResource("286")
+
+[node name="ROWATINEX" type="TextureRect" parent="." unique_id=2030910392]
+visible = false
+layout_mode = 0
+texture = ExtResource("282")
+
+[node name="LETROZOLE" type="TextureRect" parent="." unique_id=408911684]
+visible = false
+layout_mode = 0
+texture = ExtResource("279")
+
+[node name="DEXAFLOX" type="TextureRect" parent="." unique_id=814772593]
+visible = false
+layout_mode = 0
+texture = ExtResource("285")
+
+[node name="TEARSGUARD" type="TextureRect" parent="." unique_id=763676356]
+visible = false
+layout_mode = 0
+texture = ExtResource("281")
+
+[node name="RAPIFLAM" type="TextureRect" parent="." unique_id=1664242392]
+visible = false
+layout_mode = 0
+texture = ExtResource("287")
+
+[node name="OLAPEX" type="TextureRect" parent="." unique_id=1337452320]
+visible = false
+layout_mode = 0
+texture = ExtResource("289")
+
+[node name="TRILEPTAL" type="TextureRect" parent="." unique_id=230454222]
+visible = false
+layout_mode = 0
+texture = ExtResource("288")
+
+[node name="EXTRAGESIC" type="TextureRect" parent="." unique_id=996650001]
+visible = false
+layout_mode = 0
+texture = ExtResource("290")
+
+[node name="EXTRAUMA" type="TextureRect" parent="." unique_id=2077040036]
+visible = false
+layout_mode = 0
+texture = ExtResource("292")
+
+[node name="RHEUMARENE" type="TextureRect" parent="." unique_id=1271815645]
+visible = false
+layout_mode = 0
+texture = ExtResource("295")
+
+[node name="FUSIDERM" type="TextureRect" parent="." unique_id=784774830]
+visible = false
+layout_mode = 0
+texture = ExtResource("294")
+
+[node name="GANTOLIEF" type="TextureRect" parent="." unique_id=1548966847]
+visible = false
+layout_mode = 0
+texture = ExtResource("291")
+
+[node name="ESOMELODAN" type="TextureRect" parent="." unique_id=1027960944]
+visible = false
+layout_mode = 0
+texture = ExtResource("293")
+
+[node name="NIZATECT" type="TextureRect" parent="." unique_id=1922211546]
+visible = false
+layout_mode = 0
+texture = ExtResource("296")
+
+[node name="CEPOREX" type="TextureRect" parent="." unique_id=689433505]
+visible = false
+layout_mode = 0
+texture = ExtResource("297")
+
+[node name="PHYSIOMER" type="TextureRect" parent="." unique_id=2113525315]
+visible = false
+layout_mode = 0
+texture = ExtResource("334")
+
+[node name="PANTOGAR" type="TextureRect" parent="." unique_id=511337660]
+visible = false
+layout_mode = 0
+texture = ExtResource("298")
+
+[node name="HAIRPLUSBACK" type="TextureRect" parent="." unique_id=1691037903]
+visible = false
+layout_mode = 0
+texture = ExtResource("304")
+
+[node name="BETNOVATE" type="TextureRect" parent="." unique_id=1544497233]
+visible = false
+layout_mode = 0
+texture = ExtResource("309")
+
+[node name="ELTROXIN" type="TextureRect" parent="." unique_id=63870722]
+visible = false
+layout_mode = 0
+texture = ExtResource("332")
+
+[node name="SOMATROPIN" type="TextureRect" parent="." unique_id=66912774]
+visible = false
+layout_mode = 0
+texture = ExtResource("333")
+
+[node name="ZINCTRON" type="TextureRect" parent="." unique_id=1719321195]
+visible = false
+layout_mode = 0
+texture = ExtResource("317")
+
+[node name="CATAFLAM" type="TextureRect" parent="." unique_id=320963782]
+visible = false
+layout_mode = 0
+texture = ExtResource("330")
+
+[node name="ASPIRIN" type="TextureRect" parent="." unique_id=434608919]
+visible = false
+layout_mode = 0
+texture = ExtResource("313")
+
+[node name="STOPAIN" type="TextureRect" parent="." unique_id=79705289]
+visible = false
+layout_mode = 0
+texture = ExtResource("314")
+
+[node name="BIODERM" type="TextureRect" parent="." unique_id=1043925264]
+visible = false
+layout_mode = 0
+texture = ExtResource("335")
+
+[node name="SORAL" type="TextureRect" parent="." unique_id=1019291640]
+visible = false
+layout_mode = 0
+texture = ExtResource("336")
+
+[node name="PROFENID" type="TextureRect" parent="." unique_id=1614769816]
+visible = false
+layout_mode = 0
+texture = ExtResource("320")
+
+[node name="AMCINOL" type="TextureRect" parent="." unique_id=710831913]
+visible = false
+layout_mode = 0
+texture = ExtResource("302")
+
+[node name="CIPAZOLE" type="TextureRect" parent="." unique_id=1692796324]
+visible = false
+layout_mode = 0
+texture = ExtResource("315")
+
+[node name="SOFTCLEANSER" type="TextureRect" parent="." unique_id=947531776]
+visible = false
+layout_mode = 0
+texture = ExtResource("310")
+
+[node name="UTOCLIND" type="TextureRect" parent="." unique_id=398326505]
+visible = false
+layout_mode = 0
+texture = ExtResource("321")
+
+[node name="DECLOPHEN" type="TextureRect" parent="." unique_id=1945908940]
+visible = false
+layout_mode = 0
+texture = ExtResource("305")
+
+[node name="NASACORT" type="TextureRect" parent="." unique_id=1042300116]
+visible = false
+layout_mode = 0
+texture = ExtResource("340")
+
+[node name="MINOPHYLLINE" type="TextureRect" parent="." unique_id=1767426320]
+visible = false
+layout_mode = 0
+texture = ExtResource("306")
+
+[node name="BABETONE" type="TextureRect" parent="." unique_id=1226182744]
+visible = false
+layout_mode = 0
+texture = ExtResource("316")
+
+[node name="OFRAMAX" type="TextureRect" parent="." unique_id=1371632343]
+visible = false
+layout_mode = 0
+texture = ExtResource("307")
+
+[node name="DELAREX" type="TextureRect" parent="." unique_id=503198967]
+visible = false
+layout_mode = 0
+texture = ExtResource("322")
+
+[node name="TAVEGYL" type="TextureRect" parent="." unique_id=299578859]
+visible = false
+layout_mode = 0
+texture = ExtResource("308")
+
+[node name="CECLOR" type="TextureRect" parent="." unique_id=1372918890]
+visible = false
+layout_mode = 0
+texture = ExtResource("300")
+
+[node name="ULTRAGRISEOFULVIN" type="TextureRect" parent="." unique_id=839916193]
+visible = false
+layout_mode = 0
+texture = ExtResource("318")
+
+[node name="CUTISTAD" type="TextureRect" parent="." unique_id=780888021]
+visible = false
+layout_mode = 0
+texture = ExtResource("311")
+
+[node name="QUADRIDERM" type="TextureRect" parent="." unique_id=1372874589]
+visible = false
+layout_mode = 0
+texture = ExtResource("319")
+
+[node name="ALBOTHYL" type="TextureRect" parent="." unique_id=995143201]
+visible = false
+layout_mode = 0
+texture = ExtResource("337")
+
+[node name="FUNGICAN" type="TextureRect" parent="." unique_id=912418032]
+visible = false
+layout_mode = 0
+texture = ExtResource("339")
+
+[node name="DAKTACORT" type="TextureRect" parent="." unique_id=1035585544]
+visible = false
+layout_mode = 0
+texture = ExtResource("323")
+
+[node name="YASMIN" type="TextureRect" parent="." unique_id=90823305]
+visible = false
+layout_mode = 0
+texture = ExtResource("329")
+
+[node name="DOSTINEX" type="TextureRect" parent="." unique_id=393561717]
+visible = false
+layout_mode = 0
+texture = ExtResource("324")
+
+[node name="OCTATRON" type="TextureRect" parent="." unique_id=592908435]
+visible = false
+layout_mode = 0
+texture = ExtResource("325")
+
+[node name="SOLUPRED" type="TextureRect" parent="." unique_id=1321613423]
+visible = false
+layout_mode = 0
+texture = ExtResource("303")
+
+[node name="HISTAZINE" type="TextureRect" parent="." unique_id=1762687258]
+visible = false
+layout_mode = 0
+texture = ExtResource("326")
+
+[node name="ELICASAL" type="TextureRect" parent="." unique_id=2000909251]
+visible = false
+layout_mode = 0
+texture = ExtResource("331")
+
+[node name="CARBAMIDE" type="TextureRect" parent="." unique_id=1106033634]
+visible = false
+layout_mode = 0
+texture = ExtResource("338")
+
+[node name="ERYTHROMYCIN" type="TextureRect" parent="." unique_id=1312847564]
+visible = false
+layout_mode = 0
+texture = ExtResource("301")
+
+[node name="PYRAL" type="TextureRect" parent="." unique_id=1116459310]
+visible = false
+layout_mode = 0
+texture = ExtResource("312")
+
+[node name="PREDSOL" type="TextureRect" parent="." unique_id=708891392]
+visible = false
+layout_mode = 0
+texture = ExtResource("327")
+
+[node name="TROSYD" type="TextureRect" parent="." unique_id=1148230516]
+visible = false
+layout_mode = 0
+texture = ExtResource("328")
+
+[node name="TRIVAROL" type="TextureRect" parent="." unique_id=1701752830]
+visible = false
+layout_mode = 0
+texture = ExtResource("299")
+
+[node name="KATREX" type="TextureRect" parent="." unique_id=1586641964]
+visible = false
+layout_mode = 0
+texture = ExtResource("406")
+
+[node name="MOSEGOR" type="TextureRect" parent="." unique_id=1366413545]
+visible = false
+layout_mode = 0
+texture = ExtResource("410")
+
+[node name="TOTAVIT" type="TextureRect" parent="." unique_id=1037598874]
+visible = false
+layout_mode = 0
+texture = ExtResource("405")
+
+[node name="FLUVERMAL" type="TextureRect" parent="." unique_id=458763863]
+visible = false
+layout_mode = 0
+texture = ExtResource("407")
+
+[node name="THERAGRAN" type="TextureRect" parent="." unique_id=1257155666]
+visible = false
+layout_mode = 0
+texture = ExtResource("409")
+
+[node name="CARBIMAZOLE" type="TextureRect" parent="." unique_id=1565840452]
+visible = false
+layout_mode = 0
+texture = ExtResource("408")
+
+[node name="NAPIZOLE" type="TextureRect" parent="." unique_id=2020807747]
+visible = false
+layout_mode = 0
+texture = ExtResource("348_qsofq")
+
+[node name="OCTOVENT" type="TextureRect" parent="." unique_id=1198025834]
+visible = false
+layout_mode = 0
+texture = ExtResource("385")
+
+[node name="KENACORT" type="TextureRect" parent="." unique_id=462505684]
+visible = false
+layout_mode = 0
+texture = ExtResource("391")
+
+[node name="ANALLERGE" type="TextureRect" parent="." unique_id=146133993]
+visible = false
+layout_mode = 0
+texture = ExtResource("379")
+
+[node name="EPIMAG" type="TextureRect" parent="." unique_id=189705287]
+visible = false
+layout_mode = 0
+texture = ExtResource("396")
+
+[node name="SPASMOFREE" type="TextureRect" parent="." unique_id=934762396]
+visible = false
+layout_mode = 0
+texture = ExtResource("364")
+
+[node name="CLOMID" type="TextureRect" parent="." unique_id=696114582]
+visible = false
+layout_mode = 0
+texture = ExtResource("361")
+
+[node name="ACETYLCISTEIN" type="TextureRect" parent="." unique_id=1463148616]
+visible = false
+layout_mode = 0
+texture = ExtResource("351")
+
+[node name="FERROTRON" type="TextureRect" parent="." unique_id=731718731]
+visible = false
+layout_mode = 0
+texture = ExtResource("353")
+
+[node name="LOSEC" type="TextureRect" parent="." unique_id=163917569]
+visible = false
+layout_mode = 0
+texture = ExtResource("367")
+
+[node name="FARCOTILIUM" type="TextureRect" parent="." unique_id=1704919735]
+visible = false
+layout_mode = 0
+texture = ExtResource("376")
+
+[node name="TAVACIN" type="TextureRect" parent="." unique_id=863906655]
+visible = false
+layout_mode = 0
+texture = ExtResource("403")
+
+[node name="ABIMOLEXTRA" type="TextureRect" parent="." unique_id=1730183910]
+visible = false
+layout_mode = 0
+texture = ExtResource("347")
+
+[node name="XIMACEF" type="TextureRect" parent="." unique_id=1352724393]
+visible = false
+layout_mode = 0
+texture = ExtResource("404")
+
+[node name="MIPHENICOL" type="TextureRect" parent="." unique_id=1671354546]
+visible = false
+layout_mode = 0
+texture = ExtResource("386")
+
+[node name="CALCICAL" type="TextureRect" parent="." unique_id=966211184]
+visible = false
+layout_mode = 0
+texture = ExtResource("343")
+
+[node name="ALPHACHYMOTRYPSIN" type="TextureRect" parent="." unique_id=37799767]
+visible = false
+layout_mode = 0
+texture = ExtResource("355")
+
+[node name="PROFENAZONE" type="TextureRect" parent="." unique_id=1913155784]
+visible = false
+layout_mode = 0
+texture = ExtResource("374")
+
+[node name="KETOFAN" type="TextureRect" parent="." unique_id=1946287954]
+visible = false
+layout_mode = 0
+texture = ExtResource("341")
+
+[node name="NAVIDOXINE" type="TextureRect" parent="." unique_id=242041403]
+visible = false
+layout_mode = 0
+texture = ExtResource("389")
+
+[node name="HAEMOJET" type="TextureRect" parent="." unique_id=1071106717]
+visible = false
+layout_mode = 0
+texture = ExtResource("381")
+
+[node name="BIOVIT" type="TextureRect" parent="." unique_id=1554574920]
+visible = false
+layout_mode = 0
+texture = ExtResource("366")
+
+[node name="INDOMETHACIN" type="TextureRect" parent="." unique_id=1176422799]
+visible = false
+layout_mode = 0
+texture = ExtResource("400")
+
+[node name="EPICOGEL" type="TextureRect" parent="." unique_id=362202735]
+visible = false
+layout_mode = 0
+texture = ExtResource("346")
+
+[node name="VALTREX" type="TextureRect" parent="." unique_id=1426384387]
+visible = false
+layout_mode = 0
+texture = ExtResource("348")
+
+[node name="KLACID" type="TextureRect" parent="." unique_id=264526553]
+visible = false
+layout_mode = 0
+texture = ExtResource("401")
+
+[node name="SOLCOUGH" type="TextureRect" parent="." unique_id=2067042677]
+visible = false
+layout_mode = 0
+texture = ExtResource("775")
+
+[node name="ORAZONE" type="TextureRect" parent="." unique_id=183527626]
+visible = false
+layout_mode = 0
+texture = ExtResource("402")
+
+[node name="SULIDE" type="TextureRect" parent="." unique_id=570255474]
+visible = false
+layout_mode = 0
+texture = ExtResource("360")
+
+[node name="METHORELAX" type="TextureRect" parent="." unique_id=748533007]
+visible = false
+layout_mode = 0
+texture = ExtResource("342")
+
+[node name="NODEPRINE" type="TextureRect" parent="." unique_id=1033063412]
+visible = false
+layout_mode = 0
+texture = ExtResource("368")
+
+[node name="CORASORE" type="TextureRect" parent="." unique_id=1043381415]
+visible = false
+layout_mode = 0
+texture = ExtResource("373")
+
+[node name="PANTOLOC" type="TextureRect" parent="." unique_id=949567565]
+visible = false
+layout_mode = 0
+texture = ExtResource("349")
+
+[node name="CELEBREX" type="TextureRect" parent="." unique_id=110854464]
+visible = false
+layout_mode = 0
+texture = ExtResource("350")
+
+[node name="FROBEN" type="TextureRect" parent="." unique_id=2141953401]
+visible = false
+layout_mode = 0
+texture = ExtResource("357")
+
+[node name="NEOSPORE" type="TextureRect" parent="." unique_id=628078747]
+visible = false
+layout_mode = 0
+texture = ExtResource("352")
+
+[node name="PEVISONE" type="TextureRect" parent="." unique_id=1868403328]
+visible = false
+layout_mode = 0
+texture = ExtResource("369")
+
+[node name="NOMIGRAIN" type="TextureRect" parent="." unique_id=479611007]
+visible = false
+layout_mode = 0
+texture = ExtResource("354")
+
+[node name="TAMOXIFEN" type="TextureRect" parent="." unique_id=1531029734]
+visible = false
+layout_mode = 0
+texture = ExtResource("370")
+
+[node name="CALCIMATE" type="TextureRect" parent="." unique_id=1753105689]
+visible = false
+layout_mode = 0
+texture = ExtResource("344")
+
+[node name="REPARIL" type="TextureRect" parent="." unique_id=2123784048]
+visible = false
+layout_mode = 0
+texture = ExtResource("371")
+
+[node name="ACYCLOVIR" type="TextureRect" parent="." unique_id=1876427097]
+visible = false
+layout_mode = 0
+texture = ExtResource("345")
+
+[node name="SUNSOLA" type="TextureRect" parent="." unique_id=339815169]
+visible = false
+layout_mode = 0
+texture = ExtResource("384")
+
+[node name="DOGMATIL" type="TextureRect" parent="." unique_id=87044392]
+visible = false
+layout_mode = 0
+texture = ExtResource("356")
+
+[node name="DANSET" type="TextureRect" parent="." unique_id=780235278]
+visible = false
+layout_mode = 0
+texture = ExtResource("358")
+
+[node name="FACTIVE" type="TextureRect" parent="." unique_id=1857639364]
+visible = false
+layout_mode = 0
+texture = ExtResource("359")
+
+[node name="VENDEXINE" type="TextureRect" parent="." unique_id=73781975]
+visible = false
+layout_mode = 0
+texture = ExtResource("362")
+
+[node name="MEKAKO" type="TextureRect" parent="." unique_id=157568052]
+visible = false
+layout_mode = 0
+texture = ExtResource("380")
+
+[node name="MAREXAL" type="TextureRect" parent="." unique_id=510260072]
+visible = false
+layout_mode = 0
+texture = ExtResource("388")
+
+[node name="OLFEN" type="TextureRect" parent="." unique_id=1044569225]
+visible = false
+layout_mode = 0
+texture = ExtResource("365")
+
+[node name="MULTIRELAX" type="TextureRect" parent="." unique_id=843602016]
+visible = false
+layout_mode = 0
+texture = ExtResource("392")
+
+[node name="INSUMANCOMP" type="TextureRect" parent="." unique_id=1355940416]
+visible = false
+layout_mode = 0
+texture = ExtResource("372")
+
+[node name="GONAPURE" type="TextureRect" parent="." unique_id=1606876557]
+visible = false
+layout_mode = 0
+texture = ExtResource("375")
+
+[node name="MAXILASE" type="TextureRect" parent="." unique_id=174217380]
+visible = false
+layout_mode = 0
+texture = ExtResource("377")
+
+[node name="CEFOTAX" type="TextureRect" parent="." unique_id=768308150]
+visible = false
+layout_mode = 0
+texture = ExtResource("378")
+
+[node name="DOLOD" type="TextureRect" parent="." unique_id=511745748]
+visible = false
+layout_mode = 0
+texture = ExtResource("382")
+
+[node name="PARAMOL" type="TextureRect" parent="." unique_id=661508414]
+visible = false
+layout_mode = 0
+texture = ExtResource("383")
+
+[node name="MILGA" type="TextureRect" parent="." unique_id=1360727194]
+visible = false
+layout_mode = 0
+texture = ExtResource("387")
+
+[node name="VELOSEF" type="TextureRect" parent="." unique_id=1134758300]
+visible = false
+layout_mode = 0
+texture = ExtResource("390")
+
+[node name="MOBINORM" type="TextureRect" parent="." unique_id=1575303884]
+visible = false
+layout_mode = 0
+texture = ExtResource("393")
+
+[node name="OPTIPRED" type="TextureRect" parent="." unique_id=1109443552]
+visible = false
+layout_mode = 0
+texture = ExtResource("394")
+
+[node name="CORNETEARS" type="TextureRect" parent="." unique_id=1760484170]
+visible = false
+layout_mode = 0
+texture = ExtResource("395")
+
+[node name="LANOXIN" type="TextureRect" parent="." unique_id=2082551334]
+visible = false
+layout_mode = 0
+texture = ExtResource("397")
+
+[node name="CORDARONE" type="TextureRect" parent="." unique_id=656755013]
+visible = false
+layout_mode = 0
+texture = ExtResource("398")
+
+[node name="LASILACTONE" type="TextureRect" parent="." unique_id=362566166]
+visible = false
+layout_mode = 0
+texture = ExtResource("399")
+
+[node name="EUCARBON" type="TextureRect" parent="." unique_id=1947408215]
+visible = false
+layout_mode = 0
+texture = ExtResource("419")
+
+[node name="CLAFORAN" type="TextureRect" parent="." unique_id=922872686]
+visible = false
+layout_mode = 0
+texture = ExtResource("418")
+
+[node name="KETORALPLUS" type="TextureRect" parent="." unique_id=347638186]
+visible = false
+layout_mode = 0
+texture = ExtResource("416")
+
+[node name="DIPROSALIC" type="TextureRect" parent="." unique_id=724885748]
+visible = false
+layout_mode = 0
+texture = ExtResource("414")
+
+[node name="NIZAPEX" type="TextureRect" parent="." unique_id=504141145]
+visible = false
+layout_mode = 0
+texture = ExtResource("415")
+
+[node name="RAMETAX" type="TextureRect" parent="." unique_id=865876294]
+visible = false
+layout_mode = 0
+texture = ExtResource("420")
+
+[node name="BIONAL" type="TextureRect" parent="." unique_id=840481789]
+visible = false
+layout_mode = 0
+texture = ExtResource("412")
+
+[node name="FLEBOTON" type="TextureRect" parent="." unique_id=1850360383]
+visible = false
+layout_mode = 0
+texture = ExtResource("413")
+
+[node name="TENOXICAM" type="TextureRect" parent="." unique_id=1744346259]
+visible = false
+layout_mode = 0
+texture = ExtResource("411")
+
+[node name="EXACINOP" type="TextureRect" parent="." unique_id=227253926]
+visible = false
+layout_mode = 0
+texture = ExtResource("417")
+
+[node name="PICOLAX" type="TextureRect" parent="." unique_id=711949669]
+visible = false
+layout_mode = 0
+texture = ExtResource("427")
+
+[node name="MARCOFEN" type="TextureRect" parent="." unique_id=90492234]
+visible = false
+layout_mode = 0
+texture = ExtResource("422")
+
+[node name="LIGNOPANTHEN" type="TextureRect" parent="." unique_id=1291372950]
+visible = false
+layout_mode = 0
+texture = ExtResource("428")
+
+[node name="VITAMOUNT" type="TextureRect" parent="." unique_id=1397575416]
+visible = false
+layout_mode = 0
+texture = ExtResource("423")
+
+[node name="MELOXICAM" type="TextureRect" parent="." unique_id=867087798]
+visible = false
+layout_mode = 0
+texture = ExtResource("424")
+
+[node name="LAMAZI" type="TextureRect" parent="." unique_id=1850996230]
+visible = false
+layout_mode = 0
+texture = ExtResource("425")
+
+[node name="CYRINOL" type="TextureRect" parent="." unique_id=2079170968]
+visible = false
+layout_mode = 0
+texture = ExtResource("421")
+
+[node name="KAPRON" type="TextureRect" parent="." unique_id=359543767]
+visible = false
+layout_mode = 0
+texture = ExtResource("426")
+
+[node name="DICYNONE" type="TextureRect" parent="." unique_id=1218413046]
+visible = false
+layout_mode = 0
+texture = ExtResource("429")
+
+[node name="INDOCID" type="TextureRect" parent="." unique_id=439477047]
+visible = false
+layout_mode = 0
+texture = ExtResource("430")
+
+[node name="MYOLGIN" type="TextureRect" parent="." unique_id=1793733229]
+visible = false
+layout_mode = 0
+texture = ExtResource("431")
+
+[node name="AZIONCE" type="TextureRect" parent="." unique_id=1177686245]
+visible = false
+layout_mode = 0
+texture = ExtResource("432")
+
+[node name="DICLONATRIUM" type="TextureRect" parent="." unique_id=609349481]
+visible = false
+layout_mode = 0
+texture = ExtResource("433")
+
+[node name="VALINIL" type="TextureRect" parent="." unique_id=670325713]
+visible = false
+layout_mode = 0
+texture = ExtResource("434")
+
+[node name="OXA" type="TextureRect" parent="." unique_id=855608025]
+visible = false
+layout_mode = 0
+texture = ExtResource("435")
+
+[node name="AMITRIPTINE" type="TextureRect" parent="." unique_id=1211329571]
+visible = false
+layout_mode = 0
+texture = ExtResource("436")
+
+[node name="INDERAL" type="TextureRect" parent="." unique_id=1075613308]
+visible = false
+layout_mode = 0
+texture = ExtResource("438")
+
+[node name="PEOPODAK" type="TextureRect" parent="." unique_id=1777619679]
+visible = false
+layout_mode = 0
+texture = ExtResource("437")
+
+[node name="GOLD" type="TextureRect" parent="." unique_id=617429720]
+visible = false
+layout_mode = 0
+texture = ExtResource("439")
+
+[node name="EPICOCILLIN" type="TextureRect" parent="." unique_id=465206350]
+visible = false
+layout_mode = 0
+texture = ExtResource("440")
+
+[node name="HYDROSAFE" type="TextureRect" parent="." unique_id=2063359853]
+visible = false
+layout_mode = 0
+texture = ExtResource("441")
+
+[node name="MOBITIL" type="TextureRect" parent="." unique_id=10278984]
+visible = false
+layout_mode = 0
+texture = ExtResource("442")
+
+[node name="AMIPROSTONE" type="TextureRect" parent="." unique_id=196334263]
+visible = false
+layout_mode = 0
+texture = ExtResource("443")
+
+[node name="ESTERC" type="TextureRect" parent="." unique_id=1117097162]
+visible = false
+layout_mode = 0
+texture = ExtResource("478")
+
+[node name="STREPTOQUIN" type="TextureRect" parent="." unique_id=1802766511]
+visible = false
+layout_mode = 0
+texture = ExtResource("464")
+
+[node name="DINITRA" type="TextureRect" parent="." unique_id=1216401686]
+visible = false
+layout_mode = 0
+texture = ExtResource("487")
+
+[node name="DULCADA" type="TextureRect" parent="." unique_id=945659771]
+visible = false
+layout_mode = 0
+texture = ExtResource("494")
+
+[node name="ZITHROKAN" type="TextureRect" parent="." unique_id=619395990]
+visible = false
+layout_mode = 0
+texture = ExtResource("471")
+
+[node name="SEROFLO" type="TextureRect" parent="." unique_id=486094056]
+visible = false
+layout_mode = 0
+texture = ExtResource("467")
+
+[node name="CEFIXIME" type="TextureRect" parent="." unique_id=2025442187]
+visible = false
+layout_mode = 0
+texture = ExtResource("477")
+
+[node name="SMECTA" type="TextureRect" parent="." unique_id=1758759724]
+visible = false
+layout_mode = 0
+texture = ExtResource("466")
+
+[node name="CONCORPLUS" type="TextureRect" parent="." unique_id=1222986532]
+visible = false
+layout_mode = 0
+texture = ExtResource("481")
+
+[node name="BRADIPECT" type="TextureRect" parent="." unique_id=1976857215]
+visible = false
+layout_mode = 0
+texture = ExtResource("468")
+
+[node name="VASTAREL" type="TextureRect" parent="." unique_id=769308269]
+visible = false
+layout_mode = 0
+texture = ExtResource("473")
+
+[node name="NOLVADEX" type="TextureRect" parent="." unique_id=12193168]
+visible = false
+layout_mode = 0
+texture = ExtResource("469")
+
+[node name="KAPECT" type="TextureRect" parent="." unique_id=1923808535]
+visible = false
+layout_mode = 0
+texture = ExtResource("465")
+
+[node name="NITAZODE" type="TextureRect" parent="." unique_id=207690203]
+visible = false
+layout_mode = 0
+texture = ExtResource("485")
+
+[node name="CEFAXONE" type="TextureRect" parent="." unique_id=815324586]
+visible = false
+layout_mode = 0
+texture = ExtResource("491")
+
+[node name="PANTHENOL" type="TextureRect" parent="." unique_id=1474136164]
+visible = false
+layout_mode = 0
+texture = ExtResource("488")
+
+[node name="FEROGLOBIN" type="TextureRect" parent="." unique_id=1898057978]
+visible = false
+layout_mode = 0
+texture = ExtResource("492")
+
+[node name="MUCOGEL" type="TextureRect" parent="." unique_id=523923524]
+visible = false
+layout_mode = 0
+texture = ExtResource("470")
+
+[node name="ORCHAZID" type="TextureRect" parent="." unique_id=237931771]
+visible = false
+layout_mode = 0
+texture = ExtResource("479")
+
+[node name="NITROMAK" type="TextureRect" parent="." unique_id=1218377751]
+visible = false
+layout_mode = 0
+texture = ExtResource("472")
+
+[node name="MIOPAN" type="TextureRect" parent="." unique_id=964041709]
+visible = false
+layout_mode = 0
+texture = ExtResource("489")
+
+[node name="METACARDIA" type="TextureRect" parent="." unique_id=1143351650]
+visible = false
+layout_mode = 0
+texture = ExtResource("493")
+
+[node name="DEPOVIT" type="TextureRect" parent="." unique_id=342256143]
+visible = false
+layout_mode = 0
+texture = ExtResource("475")
+
+[node name="FOSTIMON" type="TextureRect" parent="." unique_id=1387414240]
+visible = false
+layout_mode = 0
+texture = ExtResource("482")
+
+[node name="MERIONAL" type="TextureRect" parent="." unique_id=72435585]
+visible = false
+layout_mode = 0
+texture = ExtResource("476")
+
+[node name="DISFLATYL" type="TextureRect" parent="." unique_id=2143491004]
+visible = false
+layout_mode = 0
+texture = ExtResource("474")
+
+[node name="PREGDINAPEX" type="TextureRect" parent="." unique_id=564141210]
+visible = false
+layout_mode = 0
+texture = ExtResource("480")
+
+[node name="FAVERIN" type="TextureRect" parent="." unique_id=618463918]
+visible = false
+layout_mode = 0
+texture = ExtResource("483")
+
+[node name="CYMBATEX" type="TextureRect" parent="." unique_id=713477776]
+visible = false
+layout_mode = 0
+texture = ExtResource("484")
+
+[node name="VARIC" type="TextureRect" parent="." unique_id=310442790]
+visible = false
+layout_mode = 0
+texture = ExtResource("490")
+
+[node name="TORSERETIC" type="TextureRect" parent="." unique_id=450053234]
+visible = false
+layout_mode = 0
+texture = ExtResource("486")
+
+[node name="DEXILANT" type="TextureRect" parent="." unique_id=751425717]
+visible = false
+layout_mode = 0
+texture = ExtResource("502")
+
+[node name="MOVEASY" type="TextureRect" parent="." unique_id=1843871233]
+visible = false
+layout_mode = 0
+texture = ExtResource("503")
+
+[node name="BETOLVEX" type="TextureRect" parent="." unique_id=481092887]
+visible = false
+layout_mode = 0
+texture = ExtResource("498")
+
+[node name="LIBRAX" type="TextureRect" parent="." unique_id=1381712279]
+visible = false
+layout_mode = 0
+texture = ExtResource("504")
+
+[node name="ARCALION" type="TextureRect" parent="." unique_id=1587592751]
+visible = false
+layout_mode = 0
+texture = ExtResource("505")
+
+[node name="VANO" type="TextureRect" parent="." unique_id=228525027]
+visible = false
+layout_mode = 0
+texture = ExtResource("506")
+
+[node name="DERMOCORT" type="TextureRect" parent="." unique_id=1559495578]
+visible = false
+layout_mode = 0
+texture = ExtResource("497")
+
+[node name="ZYRTEC" type="TextureRect" parent="." unique_id=1955077742]
+visible = false
+layout_mode = 0
+texture = ExtResource("507")
+
+[node name="TABOCINE" type="TextureRect" parent="." unique_id=81102776]
+visible = false
+layout_mode = 0
+texture = ExtResource("500")
+
+[node name="SPASMOCURE" type="TextureRect" parent="." unique_id=1728108231]
+visible = false
+layout_mode = 0
+texture = ExtResource("495")
+
+[node name="BIPROFENID" type="TextureRect" parent="." unique_id=16739601]
+visible = false
+layout_mode = 0
+texture = ExtResource("496")
+
+[node name="CLINDAVERT" type="TextureRect" parent="." unique_id=1628246190]
+visible = false
+layout_mode = 0
+texture = ExtResource("499")
+
+[node name="VOLTARENGEL" type="TextureRect" parent="." unique_id=1532282266]
+visible = false
+layout_mode = 0
+texture = ExtResource("501")
+
+[node name="POWERCAPS" type="TextureRect" parent="." unique_id=1219392943]
+visible = false
+layout_mode = 0
+texture = ExtResource("460")
+
+[node name="KONAKION" type="TextureRect" parent="." unique_id=587575980]
+visible = false
+layout_mode = 0
+texture = ExtResource("451")
+
+[node name="EFALEX" type="TextureRect" parent="." unique_id=1711913652]
+visible = false
+layout_mode = 0
+texture = ExtResource("449")
+
+[node name="CARNIVITA" type="TextureRect" parent="." unique_id=1748897797]
+visible = false
+layout_mode = 0
+texture = ExtResource("446")
+
+[node name="TEBOFORTIN" type="TextureRect" parent="." unique_id=1760983740]
+visible = false
+layout_mode = 0
+texture = ExtResource("461")
+
+[node name="ATTENSERA" type="TextureRect" parent="." unique_id=483545816]
+visible = false
+layout_mode = 0
+texture = ExtResource("448")
+
+[node name="ZESPERONE" type="TextureRect" parent="." unique_id=1340225299]
+visible = false
+layout_mode = 0
+texture = ExtResource("456")
+
+[node name="FLUROQUINOMOX" type="TextureRect" parent="." unique_id=1975749886]
+visible = false
+layout_mode = 0
+texture = ExtResource("463")
+
+[node name="COAVAZIR" type="TextureRect" parent="." unique_id=1743066792]
+visible = false
+layout_mode = 0
+texture = ExtResource("444")
+
+[node name="APEXIDONE" type="TextureRect" parent="." unique_id=1685961735]
+visible = false
+layout_mode = 0
+texture = ExtResource("450")
+
+[node name="SIFROL" type="TextureRect" parent="." unique_id=2136406106]
+visible = false
+layout_mode = 0
+texture = ExtResource("454")
+
+[node name="LUSTRAL" type="TextureRect" parent="." unique_id=520048216]
+visible = false
+layout_mode = 0
+texture = ExtResource("447")
+
+[node name="PRAVOTIN" type="TextureRect" parent="." unique_id=1835739873]
+visible = false
+layout_mode = 0
+texture = ExtResource("445")
+
+[node name="CALCITRON" type="TextureRect" parent="." unique_id=1164966828]
+visible = false
+layout_mode = 0
+texture = ExtResource("457")
+
+[node name="FERROSANOL" type="TextureRect" parent="." unique_id=498844132]
+visible = false
+layout_mode = 0
+texture = ExtResource("462")
+
+[node name="CEREBROMAP" type="TextureRect" parent="." unique_id=2128643136]
+visible = false
+layout_mode = 0
+texture = ExtResource("458")
+
+[node name="MPIVIROPACK" type="TextureRect" parent="." unique_id=1341766722]
+visible = false
+layout_mode = 0
+texture = ExtResource("455")
+
+[node name="RIBAVIRIN" type="TextureRect" parent="." unique_id=1234944656]
+visible = false
+layout_mode = 0
+texture = ExtResource("452")
+
+[node name="TRYPTIZOL" type="TextureRect" parent="." unique_id=1381159083]
+visible = false
+layout_mode = 0
+texture = ExtResource("459")
+
+[node name="PARAFON" type="TextureRect" parent="." unique_id=463851850]
+visible = false
+layout_mode = 0
+texture = ExtResource("453")
+
+[node name="CARNITOL" type="TextureRect" parent="." unique_id=2145196313]
+visible = false
+layout_mode = 0
+texture = ExtResource("508")
+
+[node name="BREXIN" type="TextureRect" parent="." unique_id=456909712]
+visible = false
+layout_mode = 0
+texture = ExtResource("509")
+
+[node name="RAVEMANTINE" type="TextureRect" parent="." unique_id=893374553]
+visible = false
+layout_mode = 0
+texture = ExtResource("510")
+
+[node name="HARPAGIN" type="TextureRect" parent="." unique_id=1778462290]
+visible = false
+layout_mode = 0
+texture = ExtResource("511")
+
+[node name="UROSOLVINE" type="TextureRect" parent="." unique_id=1915462164]
+visible = false
+layout_mode = 0
+texture = ExtResource("512")
+
+[node name="CALDIN" type="TextureRect" parent="." unique_id=656588671]
+visible = false
+layout_mode = 0
+texture = ExtResource("513")
+
+[node name="MONICORT" type="TextureRect" parent="." unique_id=436962704]
+visible = false
+layout_mode = 0
+texture = ExtResource("514")
+
+[node name="KALOBIN" type="TextureRect" parent="." unique_id=733210249]
+visible = false
+layout_mode = 0
+texture = ExtResource("544")
+
+[node name="SOFENACIN" type="TextureRect" parent="." unique_id=1928677380]
+visible = false
+layout_mode = 0
+texture = ExtResource("516")
+
+[node name="VITAZINC" type="TextureRect" parent="." unique_id=543171510]
+visible = false
+layout_mode = 0
+texture = ExtResource("545")
+
+[node name="MEBO" type="TextureRect" parent="." unique_id=1281612735]
+visible = false
+layout_mode = 0
+texture = ExtResource("542")
+
+[node name="FLAMIFAST" type="TextureRect" parent="." unique_id=203914178]
+visible = false
+layout_mode = 0
+texture = ExtResource("534")
+
+[node name="LIBOSENSE" type="TextureRect" parent="." unique_id=617695387]
+visible = false
+layout_mode = 0
+texture = ExtResource("547")
+
+[node name="TRIBGOLD" type="TextureRect" parent="." unique_id=11591656]
+visible = false
+layout_mode = 0
+texture = ExtResource("520")
+
+[node name="AUGMENTIN" type="TextureRect" parent="." unique_id=1416182790]
+visible = false
+layout_mode = 0
+texture = ExtResource("521")
+
+[node name="NEXIMASH" type="TextureRect" parent="." unique_id=197440544]
+visible = false
+layout_mode = 0
+texture = ExtResource("531")
+
+[node name="HEPAFORT" type="TextureRect" parent="." unique_id=1764370200]
+visible = false
+layout_mode = 0
+texture = ExtResource("526")
+
+[node name="LIPANTHYL" type="TextureRect" parent="." unique_id=478106076]
+visible = false
+layout_mode = 0
+texture = ExtResource("546")
+
+[node name="REMOWAX" type="TextureRect" parent="." unique_id=594756299]
+visible = false
+layout_mode = 0
+texture = ExtResource("522")
+
+[node name="MODURETIC" type="TextureRect" parent="." unique_id=446302400]
+visible = false
+layout_mode = 0
+texture = ExtResource("541")
+
+[node name="DIACEREIN" type="TextureRect" parent="." unique_id=874127875]
+visible = false
+layout_mode = 0
+texture = ExtResource("548")
+
+[node name="MOBIC" type="TextureRect" parent="." unique_id=777116916]
+visible = false
+layout_mode = 0
+texture = ExtResource("527")
+
+[node name="PHENADONE" type="TextureRect" parent="." unique_id=1061493249]
+visible = false
+layout_mode = 0
+texture = ExtResource("525")
+
+[node name="FLOXGUARD" type="TextureRect" parent="." unique_id=687383164]
+visible = false
+layout_mode = 0
+texture = ExtResource("523")
+
+[node name="GYNODAKTARIN" type="TextureRect" parent="." unique_id=246410950]
+visible = false
+layout_mode = 0
+texture = ExtResource("532")
+
+[node name="ANUVA" type="TextureRect" parent="." unique_id=1562220159]
+visible = false
+layout_mode = 0
+texture = ExtResource("524")
+
+[node name="EPICEPHIN" type="TextureRect" parent="." unique_id=376083769]
+visible = false
+layout_mode = 0
+texture = ExtResource("533")
+
+[node name="ALLVENT" type="TextureRect" parent="." unique_id=258055586]
+visible = false
+layout_mode = 0
+texture = ExtResource("517")
+
+[node name="NEUROPATEX" type="TextureRect" parent="." unique_id=22221392]
+visible = false
+layout_mode = 0
+texture = ExtResource("535")
+
+[node name="MEDEXAFLAM" type="TextureRect" parent="." unique_id=22412827]
+visible = false
+layout_mode = 0
+texture = ExtResource("515")
+
+[node name="AVIVAVASC" type="TextureRect" parent="." unique_id=197093773]
+visible = false
+layout_mode = 0
+texture = ExtResource("518")
+
+[node name="VUCEFETAX" type="TextureRect" parent="." unique_id=1787041670]
+visible = false
+layout_mode = 0
+texture = ExtResource("378")
+
+[node name="MIXDERM" type="TextureRect" parent="." unique_id=1510465354]
+visible = false
+layout_mode = 0
+texture = ExtResource("528")
+
+[node name="BABYDRINK" type="TextureRect" parent="." unique_id=950187555]
+visible = false
+layout_mode = 0
+texture = ExtResource("529")
+
+[node name="DECAL" type="TextureRect" parent="." unique_id=1525317219]
+visible = false
+layout_mode = 0
+texture = ExtResource("543")
+
+[node name="HYFRESH" type="TextureRect" parent="." unique_id=825700620]
+visible = false
+layout_mode = 0
+texture = ExtResource("530")
+
+[node name="OFLOXIN" type="TextureRect" parent="." unique_id=140280410]
+visible = false
+layout_mode = 0
+texture = ExtResource("536")
+
+[node name="DIEASE" type="TextureRect" parent="." unique_id=417743024]
+visible = false
+layout_mode = 0
+texture = ExtResource("519")
+
+[node name="ANTICOX" type="TextureRect" parent="." unique_id=390509445]
+visible = false
+layout_mode = 0
+texture = ExtResource("537")
+
+[node name="ISOPTOFENICOL" type="TextureRect" parent="." unique_id=1142351517]
+visible = false
+layout_mode = 0
+texture = ExtResource("540")
+
+[node name="NONOWATER" type="TextureRect" parent="." unique_id=252209938]
+visible = false
+layout_mode = 0
+texture = ExtResource("538")
+
+[node name="BABYREST" type="TextureRect" parent="." unique_id=416533379]
+visible = false
+layout_mode = 0
+texture = ExtResource("539")
+
+[node name="URINEX" type="TextureRect" parent="." unique_id=798595155]
+visible = false
+layout_mode = 0
+texture = ExtResource("549")
+
+[node name="GENURIN" type="TextureRect" parent="." unique_id=642369821]
+visible = false
+layout_mode = 0
+texture = ExtResource("550")
+
+[node name="DERMOVATE" type="TextureRect" parent="." unique_id=1527611161]
+visible = false
+layout_mode = 0
+texture = ExtResource("551")
+
+[node name="SALICYLICACID" type="TextureRect" parent="." unique_id=1058578269]
+visible = false
+layout_mode = 0
+texture = ExtResource("552")
+
+[node name="FUCITHALMIC" type="TextureRect" parent="." unique_id=1972623063]
+visible = false
+layout_mode = 0
+texture = ExtResource("553")
+
+[node name="AIRONYL" type="TextureRect" parent="." unique_id=1264437350]
+visible = false
+layout_mode = 0
+texture = ExtResource("554")
+
+[node name="HALORANGE" type="TextureRect" parent="." unique_id=1504714155]
+visible = false
+layout_mode = 0
+texture = ExtResource("555")
+
+[node name="CALMEPAM" type="TextureRect" parent="." unique_id=1918440403]
+visible = false
+layout_mode = 0
+texture = ExtResource("556")
+
+[node name="SUPRAVIT" type="TextureRect" parent="." unique_id=1811259159]
+visible = false
+layout_mode = 0
+texture = ExtResource("557")
+
+[node name="OXYBRAL" type="TextureRect" parent="." unique_id=969667746]
+visible = false
+layout_mode = 0
+texture = ExtResource("558")
+
+[node name="VITAFERROL" type="TextureRect" parent="." unique_id=1264706006]
+visible = false
+layout_mode = 0
+texture = ExtResource("559")
+
+[node name="TAVANIC" type="TextureRect" parent="." unique_id=926823872]
+visible = false
+layout_mode = 0
+texture = ExtResource("560")
+
+[node name="ABIMOL" type="TextureRect" parent="." unique_id=40226385]
+visible = false
+layout_mode = 0
+texture = ExtResource("561")
+
+[node name="ALERID" type="TextureRect" parent="." unique_id=1029580679]
+visible = false
+layout_mode = 0
+texture = ExtResource("562")
+
+[node name="REHYDRAN" type="TextureRect" parent="." unique_id=2054364620]
+visible = false
+layout_mode = 0
+texture = ExtResource("563")
+
+[node name="SULBIN" type="TextureRect" parent="." unique_id=550584882]
+visible = false
+layout_mode = 0
+texture = ExtResource("564")
+
+[node name="PRIMPERAN" type="TextureRect" parent="." unique_id=1843876907]
+visible = false
+layout_mode = 0
+texture = ExtResource("565")
+
+[node name="GASTREG" type="TextureRect" parent="." unique_id=832719055]
+visible = false
+layout_mode = 0
+texture = ExtResource("566")
+
+[node name="CLARITINE" type="TextureRect" parent="." unique_id=1588019488]
+visible = false
+layout_mode = 0
+texture = ExtResource("567")
+
+[node name="UNICTAM" type="TextureRect" parent="." unique_id=388541374]
+visible = false
+layout_mode = 0
+texture = ExtResource("569")
+
+[node name="SINEUP" type="TextureRect" parent="." unique_id=892387089]
+visible = false
+layout_mode = 0
+texture = ExtResource("577")
+
+[node name="ORCHADEXOLINE" type="TextureRect" parent="." unique_id=433971712]
+visible = false
+layout_mode = 0
+texture = ExtResource("588")
+
+[node name="OCUMETHYL" type="TextureRect" parent="." unique_id=197594014]
+visible = false
+layout_mode = 0
+texture = ExtResource("571")
+
+[node name="RUTAC" type="TextureRect" parent="." unique_id=632376609]
+visible = false
+layout_mode = 0
+texture = ExtResource("583")
+
+[node name="SALINEX" type="TextureRect" parent="." unique_id=465723897]
+visible = false
+layout_mode = 0
+texture = ExtResource("586")
+
+[node name="SELGON" type="TextureRect" parent="." unique_id=1347648419]
+visible = false
+layout_mode = 0
+texture = ExtResource("572")
+
+[node name="TRISOLVIN" type="TextureRect" parent="." unique_id=1286938558]
+visible = false
+layout_mode = 0
+texture = ExtResource("590")
+
+[node name="AVIPECT" type="TextureRect" parent="." unique_id=1821177860]
+visible = false
+layout_mode = 0
+texture = ExtResource("570")
+
+[node name="CEFZIL" type="TextureRect" parent="." unique_id=1205973819]
+visible = false
+layout_mode = 0
+texture = ExtResource("575")
+
+[node name="FERROBELLA" type="TextureRect" parent="." unique_id=2132954203]
+visible = false
+layout_mode = 0
+texture = ExtResource("582")
+
+[node name="ACNESCAVE" type="TextureRect" parent="." unique_id=1106143148]
+visible = false
+layout_mode = 0
+texture = ExtResource("568")
+
+[node name="LITUP" type="TextureRect" parent="." unique_id=869644980]
+visible = false
+layout_mode = 0
+texture = ExtResource("578")
+
+[node name="HERBAMIX" type="TextureRect" parent="." unique_id=732530398]
+visible = false
+layout_mode = 0
+texture = ExtResource("573")
+
+[node name="TRESS" type="TextureRect" parent="." unique_id=751424974]
+visible = false
+layout_mode = 0
+texture = ExtResource("579")
+
+[node name="NEODIGESTIN" type="TextureRect" parent="." unique_id=1460576705]
+visible = false
+layout_mode = 0
+texture = ExtResource("584")
+
+[node name="SANSOVIT" type="TextureRect" parent="." unique_id=1747521476]
+visible = false
+layout_mode = 0
+texture = ExtResource("574")
+
+[node name="BECOZYME" type="TextureRect" parent="." unique_id=1685066546]
+visible = false
+layout_mode = 0
+texture = ExtResource("580")
+
+[node name="NORDITROPIN" type="TextureRect" parent="." unique_id=680776647]
+visible = false
+layout_mode = 0
+texture = ExtResource("589")
+
+[node name="APPETIZER" type="TextureRect" parent="." unique_id=1813370708]
+visible = false
+layout_mode = 0
+texture = ExtResource("203")
+
+[node name="MRTUMEE" type="TextureRect" parent="." unique_id=75303945]
+visible = false
+layout_mode = 0
+texture = ExtResource("581")
+
+[node name="VERM" type="TextureRect" parent="." unique_id=797090694]
+visible = false
+layout_mode = 0
+texture = ExtResource("587")
+
+[node name="VERDEX" type="TextureRect" parent="." unique_id=741584844]
+visible = false
+layout_mode = 0
+texture = ExtResource("585")
+
+[node name="ARTHINEUR" type="TextureRect" parent="." unique_id=372399118]
+visible = false
+layout_mode = 0
+texture = ExtResource("576")
+
+[node name="MENOGON" type="TextureRect" parent="." unique_id=476596493]
+visible = false
+layout_mode = 0
+texture = ExtResource("591")
+
+[node name="CHORIOMON" type="TextureRect" parent="." unique_id=500706161]
+visible = false
+layout_mode = 0
+texture = ExtResource("600")
+
+[node name="DUPHASTON" type="TextureRect" parent="." unique_id=376651538]
+visible = false
+layout_mode = 0
+texture = ExtResource("597")
+
+[node name="SEROXAT" type="TextureRect" parent="." unique_id=2046097139]
+visible = false
+layout_mode = 0
+texture = ExtResource("601")
+
+[node name="CONTROLOC" type="TextureRect" parent="." unique_id=796517062]
+visible = false
+layout_mode = 0
+texture = ExtResource("594")
+
+[node name="AMIPRIDE" type="TextureRect" parent="." unique_id=1287485928]
+visible = false
+layout_mode = 0
+texture = ExtResource("604")
+
+[node name="MOVICOL" type="TextureRect" parent="." unique_id=1887329254]
+visible = false
+layout_mode = 0
+texture = ExtResource("602")
+
+[node name="URICOL" type="TextureRect" parent="." unique_id=1886095274]
+visible = false
+layout_mode = 0
+texture = ExtResource("598")
+
+[node name="CIPRODIAZOLE" type="TextureRect" parent="." unique_id=152238991]
+visible = false
+layout_mode = 0
+texture = ExtResource("592")
+
+[node name="HEXGABALIN" type="TextureRect" parent="." unique_id=1144357990]
+visible = false
+layout_mode = 0
+texture = ExtResource("593")
+
+[node name="METEOSPASMYL" type="TextureRect" parent="." unique_id=1193968770]
+visible = false
+layout_mode = 0
+texture = ExtResource("599")
+
+[node name="OFLAM" type="TextureRect" parent="." unique_id=627946370]
+visible = false
+layout_mode = 0
+texture = ExtResource("603")
+
+[node name="DESA" type="TextureRect" parent="." unique_id=1317779390]
+visible = false
+layout_mode = 0
+texture = ExtResource("596")
+
+[node name="BIODROXIL" type="TextureRect" parent="." unique_id=1345833172]
+visible = false
+layout_mode = 0
+texture = ExtResource("595")
+
+[node name="FUCITOP" type="TextureRect" parent="." unique_id=2028209952]
+visible = false
+layout_mode = 0
+texture = ExtResource("605")
+
+[node name="MUPIRAX" type="TextureRect" parent="." unique_id=738707008]
+visible = false
+layout_mode = 0
+texture = ExtResource("606")
+
+[node name="BIAPHINE" type="TextureRect" parent="." unique_id=1090634566]
+visible = false
+layout_mode = 0
+texture = ExtResource("607")
+
+[node name="GRIPEWATER" type="TextureRect" parent="." unique_id=1895671124]
+visible = false
+layout_mode = 0
+texture = ExtResource("767")
+
+[node name="HOSTACORTIN" type="TextureRect" parent="." unique_id=938062155]
+visible = false
+layout_mode = 0
+texture = ExtResource("611")
+
+[node name="CALCIPLUS" type="TextureRect" parent="." unique_id=1089829152]
+visible = false
+layout_mode = 0
+texture = ExtResource("609")
+
+[node name="LAMIFEN" type="TextureRect" parent="." unique_id=359404474]
+visible = false
+layout_mode = 0
+texture = ExtResource("610")
+
+[node name="TINOX" type="TextureRect" parent="." unique_id=197751661]
+visible = false
+layout_mode = 0
+texture = ExtResource("623")
+
+[node name="YUTOPAR" type="TextureRect" parent="." unique_id=1259387845]
+visible = false
+layout_mode = 0
+texture = ExtResource("629")
+
+[node name="UTROCARE" type="TextureRect" parent="." unique_id=944238918]
+visible = false
+layout_mode = 0
+texture = ExtResource("627")
+
+[node name="DEPOMEDROL" type="TextureRect" parent="." unique_id=1745456485]
+visible = false
+layout_mode = 0
+texture = ExtResource("628")
+
+[node name="ELIDEL" type="TextureRect" parent="." unique_id=1964163200]
+visible = false
+layout_mode = 0
+texture = ExtResource("626")
+
+[node name="OCTOZINC" type="TextureRect" parent="." unique_id=403740867]
+visible = false
+layout_mode = 0
+texture = ExtResource("624")
+
+[node name="CENTALIFY" type="TextureRect" parent="." unique_id=1512536515]
+visible = false
+layout_mode = 0
+texture = ExtResource("625")
+
+[node name="ACHTENON" type="TextureRect" parent="." unique_id=1191910281]
+visible = false
+layout_mode = 0
+texture = ExtResource("612")
+
+[node name="RESPATIO" type="TextureRect" parent="." unique_id=889468242]
+visible = false
+layout_mode = 0
+texture = ExtResource("770")
+
+[node name="BRONCHOPHANE" type="TextureRect" parent="." unique_id=1946367312]
+visible = false
+layout_mode = 0
+texture = ExtResource("619")
+
+[node name="ANTIVER" type="TextureRect" parent="." unique_id=409389777]
+visible = false
+layout_mode = 0
+texture = ExtResource("614")
+
+[node name="CETAFEN" type="TextureRect" parent="." unique_id=1799245728]
+visible = false
+layout_mode = 0
+texture = ExtResource("620")
+
+[node name="ALFACARENO" type="TextureRect" parent="." unique_id=276102352]
+visible = false
+layout_mode = 0
+texture = ExtResource("617")
+
+[node name="HICAL" type="TextureRect" parent="." unique_id=827578245]
+visible = false
+layout_mode = 0
+texture = ExtResource("621")
+
+[node name="FLUMOX" type="TextureRect" parent="." unique_id=1349941649]
+visible = false
+layout_mode = 0
+texture = ExtResource("622")
+
+[node name="EPIFENAC" type="TextureRect" parent="." unique_id=612842026]
+visible = false
+layout_mode = 0
+texture = ExtResource("615")
+
+[node name="UNASYN" type="TextureRect" parent="." unique_id=15076845]
+visible = false
+layout_mode = 0
+texture = ExtResource("616")
+
+[node name="OTRIVIN" type="TextureRect" parent="." unique_id=575144245]
+visible = false
+layout_mode = 0
+texture = ExtResource("618")
+
+[node name="SUTENT" type="TextureRect" parent="." unique_id=949784415]
+visible = false
+layout_mode = 0
+texture = ExtResource("630")
+
+[node name="LOCASTEN" type="TextureRect" parent="." unique_id=950409578]
+visible = false
+layout_mode = 0
+texture = ExtResource("631")
+
+[node name="PANOX" type="TextureRect" parent="." unique_id=120229321]
+visible = false
+layout_mode = 0
+texture = ExtResource("632")
+
+[node name="NEVILOB" type="TextureRect" parent="." unique_id=2122524498]
+visible = false
+layout_mode = 0
+texture = ExtResource("633")
+
+[node name="CANDALKAN" type="TextureRect" parent="." unique_id=2057226020]
+visible = false
+layout_mode = 0
+texture = ExtResource("634")
+
+[node name="JUSPRIN" type="TextureRect" parent="." unique_id=416062517]
+visible = false
+layout_mode = 0
+texture = ExtResource("635")
+
+[node name="MARKFAST" type="TextureRect" parent="." unique_id=635672697]
+visible = false
+layout_mode = 0
+texture = ExtResource("636")
+
+[node name="RIMACTANE" type="TextureRect" parent="." unique_id=1390363196]
+visible = false
+layout_mode = 0
+texture = ExtResource("637")
+
+[node name="SEPTAZOLE" type="TextureRect" parent="." unique_id=1292755480]
+visible = false
+layout_mode = 0
+texture = ExtResource("638")
+
+[node name="TERRAMYCIN" type="TextureRect" parent="." unique_id=1575293170]
+visible = false
+layout_mode = 0
+texture = ExtResource("639")
+
+[node name="UNIVIT" type="TextureRect" parent="." unique_id=1401513876]
+visible = false
+layout_mode = 0
+texture = ExtResource("640")
+
+[node name="SERVIFLOX" type="TextureRect" parent="." unique_id=19097997]
+visible = false
+layout_mode = 0
+texture = ExtResource("641")
+
+[node name="SINECOD" type="TextureRect" parent="." unique_id=286107082]
+visible = false
+layout_mode = 0
+texture = ExtResource("642")
+
+[node name="SALBOVENT" type="TextureRect" parent="." unique_id=610682081]
+visible = false
+layout_mode = 0
+texture = ExtResource("643")
+
+[node name="CATAFAST" type="TextureRect" parent="." unique_id=1568217897]
+visible = false
+layout_mode = 0
+texture = ExtResource("645")
+
+[node name="GSAC" type="TextureRect" parent="." unique_id=968491531]
+visible = false
+layout_mode = 0
+texture = ExtResource("644")
+
+[node name="GINSOPLUS" type="TextureRect" parent="." unique_id=1668967712]
+visible = false
+layout_mode = 0
+texture = ExtResource("774")
+
+[node name="CIPRAPRO" type="TextureRect" parent="." unique_id=523896732]
+visible = false
+layout_mode = 0
+texture = ExtResource("646")
+
+[node name="FAMOTAK" type="TextureRect" parent="." unique_id=640444183]
+visible = false
+layout_mode = 0
+texture = ExtResource("647")
+
+[node name="MARVIT" type="TextureRect" parent="." unique_id=1603775909]
+visible = false
+layout_mode = 0
+texture = ExtResource("648")
+
+[node name="MOMENTA" type="TextureRect" parent="." unique_id=1041125600]
+visible = false
+layout_mode = 0
+texture = ExtResource("649")
+
+[node name="POLYFRESH" type="TextureRect" parent="." unique_id=1531567625]
+visible = false
+layout_mode = 0
+texture = ExtResource("650")
+
+[node name="TREFLUCAN" type="TextureRect" parent="." unique_id=1168895351]
+visible = false
+layout_mode = 0
+texture = ExtResource("660")
+
+[node name="LEVOCAR" type="TextureRect" parent="." unique_id=1143504709]
+visible = false
+layout_mode = 0
+texture = ExtResource("653")
+
+[node name="COGINTOL" type="TextureRect" parent="." unique_id=2138379232]
+visible = false
+layout_mode = 0
+texture = ExtResource("677")
+
+[node name="BIOMOX" type="TextureRect" parent="." unique_id=374659058]
+visible = false
+layout_mode = 0
+texture = ExtResource("656")
+
+[node name="LIOMETACEN" type="TextureRect" parent="." unique_id=443856772]
+visible = false
+layout_mode = 0
+texture = ExtResource("674")
+
+[node name="ADOLOR" type="TextureRect" parent="." unique_id=1310681233]
+visible = false
+layout_mode = 0
+texture = ExtResource("651")
+
+[node name="AMPIFLUX" type="TextureRect" parent="." unique_id=402730276]
+visible = false
+layout_mode = 0
+texture = ExtResource("675")
+
+[node name="IALUGEN" type="TextureRect" parent="." unique_id=1255254189]
+visible = false
+layout_mode = 0
+texture = ExtResource("652")
+
+[node name="FORTECORTIN" type="TextureRect" parent="." unique_id=1343114868]
+visible = false
+layout_mode = 0
+texture = ExtResource("658")
+
+[node name="BALSAM" type="TextureRect" parent="." unique_id=1702305681]
+visible = false
+layout_mode = 0
+texture = ExtResource("676")
+
+[node name="HAEMOTON" type="TextureRect" parent="." unique_id=802726573]
+visible = false
+layout_mode = 0
+texture = ExtResource("664")
+
+[node name="NEURIMAX" type="TextureRect" parent="." unique_id=1014423039]
+visible = false
+layout_mode = 0
+texture = ExtResource("659")
+
+[node name="OMEPAK" type="TextureRect" parent="." unique_id=1308491951]
+visible = false
+layout_mode = 0
+texture = ExtResource("671")
+
+[node name="TRAMADOL" type="TextureRect" parent="." unique_id=1371171362]
+visible = false
+layout_mode = 0
+texture = ExtResource("668")
+
+[node name="BIDALKIN" type="TextureRect" parent="." unique_id=1480579821]
+visible = false
+layout_mode = 0
+texture = ExtResource("661")
+
+[node name="CANESTEN" type="TextureRect" parent="." unique_id=121756561]
+visible = false
+layout_mode = 0
+texture = ExtResource("669")
+
+[node name="DIFLUCAN" type="TextureRect" parent="." unique_id=750735047]
+visible = false
+layout_mode = 0
+texture = ExtResource("654")
+
+[node name="MINOXIDIL" type="TextureRect" parent="." unique_id=1189533626]
+visible = false
+layout_mode = 0
+texture = ExtResource("655")
+
+[node name="OSPAMOX" type="TextureRect" parent="." unique_id=175388453]
+visible = false
+layout_mode = 0
+texture = ExtResource("657")
+
+[node name="CLARITHRO" type="TextureRect" parent="." unique_id=878075170]
+visible = false
+layout_mode = 0
+texture = ExtResource("662")
+
+[node name="CEFOBID" type="TextureRect" parent="." unique_id=2025390747]
+visible = false
+layout_mode = 0
+texture = ExtResource("666")
+
+[node name="MUCO" type="TextureRect" parent="." unique_id=222236884]
+visible = false
+layout_mode = 0
+texture = ExtResource("670")
+
+[node name="ZADITEN" type="TextureRect" parent="." unique_id=1185872775]
+visible = false
+layout_mode = 0
+texture = ExtResource("663")
+
+[node name="MEGAFEN" type="TextureRect" parent="." unique_id=529603176]
+visible = false
+layout_mode = 0
+texture = ExtResource("672")
+
+[node name="CONJYCLEAR" type="TextureRect" parent="." unique_id=359578434]
+visible = false
+layout_mode = 0
+texture = ExtResource("667")
+
+[node name="ARTELAC" type="TextureRect" parent="." unique_id=354748613]
+visible = false
+layout_mode = 0
+texture = ExtResource("665")
+
+[node name="KENACOMB" type="TextureRect" parent="." unique_id=1421979775]
+visible = false
+layout_mode = 0
+texture = ExtResource("673")
+
+[node name="COSAMINE" type="TextureRect" parent="." unique_id=1288146260]
+visible = false
+layout_mode = 0
+texture = ExtResource("678")
+
+[node name="FLECTOR" type="TextureRect" parent="." unique_id=639429392]
+visible = false
+layout_mode = 0
+texture = ExtResource("679")
+
+[node name="RINGER" type="TextureRect" parent="." unique_id=1786507449]
+visible = false
+layout_mode = 0
+texture = ExtResource("680")
+
+[node name="THIOPHENICOL" type="TextureRect" parent="." unique_id=605139464]
+visible = false
+layout_mode = 0
+texture = ExtResource("683")
+
+[node name="LACTEOLFORTE" type="TextureRect" parent="." unique_id=211745344]
+visible = false
+layout_mode = 0
+texture = ExtResource("682")
+
+[node name="NAPHCON" type="TextureRect" parent="." unique_id=1395332676]
+visible = false
+layout_mode = 0
+texture = ExtResource("681")
+
+[node name="FURAZOLE" type="TextureRect" parent="." unique_id=1590998494]
+visible = false
+layout_mode = 0
+texture = ExtResource("709")
+
+[node name="SPASCOLON" type="TextureRect" parent="." unique_id=771258595]
+visible = false
+layout_mode = 0
+texture = ExtResource("714")
+
+[node name="MERTI" type="TextureRect" parent="." unique_id=1080706901]
+visible = false
+layout_mode = 0
+texture = ExtResource("686")
+
+[node name="HEMOCLAR" type="TextureRect" parent="." unique_id=1102883859]
+visible = false
+layout_mode = 0
+texture = ExtResource("687")
+
+[node name="LEVOHISTAM" type="TextureRect" parent="." unique_id=758774173]
+visible = false
+layout_mode = 0
+texture = ExtResource("695")
+
+[node name="PKMERZ" type="TextureRect" parent="." unique_id=1626949268]
+visible = false
+layout_mode = 0
+texture = ExtResource("708")
+
+[node name="FLAMOTAL" type="TextureRect" parent="." unique_id=128146448]
+visible = false
+layout_mode = 0
+texture = ExtResource("723")
+
+[node name="FLOPADEX" type="TextureRect" parent="." unique_id=1758137824]
+visible = false
+layout_mode = 0
+texture = ExtResource("710")
+
+[node name="VESICARE" type="TextureRect" parent="." unique_id=2114588305]
+visible = false
+layout_mode = 0
+texture = ExtResource("700")
+
+[node name="QUINABIOTIC" type="TextureRect" parent="." unique_id=840391575]
+visible = false
+layout_mode = 0
+texture = ExtResource("702")
+
+[node name="AGNUCASTON" type="TextureRect" parent="." unique_id=2088228254]
+visible = false
+layout_mode = 0
+texture = ExtResource("720")
+
+[node name="ALLERBAN" type="TextureRect" parent="." unique_id=1371834065]
+visible = false
+layout_mode = 0
+texture = ExtResource("698")
+
+[node name="SEDOKAST" type="TextureRect" parent="." unique_id=1469441887]
+visible = false
+layout_mode = 0
+texture = ExtResource("692")
+
+[node name="WINTRIAXONE" type="TextureRect" parent="." unique_id=12503396]
+visible = false
+layout_mode = 0
+texture = ExtResource("690")
+
+[node name="ZITHROMAX" type="TextureRect" parent="." unique_id=39432442]
+visible = false
+layout_mode = 0
+texture = ExtResource("719")
+
+[node name="EFFORTIL" type="TextureRect" parent="." unique_id=736591928]
+visible = false
+layout_mode = 0
+texture = ExtResource("716")
+
+[node name="GABALEPSY" type="TextureRect" parent="." unique_id=108388190]
+visible = false
+layout_mode = 0
+texture = ExtResource("705")
+
+[node name="ACECLOCOPA" type="TextureRect" parent="." unique_id=1528064611]
+visible = false
+layout_mode = 0
+texture = ExtResource("693")
+
+[node name="ELONDA" type="TextureRect" parent="." unique_id=38808650]
+visible = false
+layout_mode = 0
+texture = ExtResource("684")
+
+[node name="KLENVA" type="TextureRect" parent="." unique_id=534939908]
+visible = false
+layout_mode = 0
+texture = ExtResource("699")
+
+[node name="CARDURA" type="TextureRect" parent="." unique_id=1218918062]
+visible = false
+layout_mode = 0
+texture = ExtResource("697")
+
+[node name="TABUNEX" type="TextureRect" parent="." unique_id=196450738]
+visible = false
+layout_mode = 0
+texture = ExtResource("688")
+
+[node name="DOLABACTIN" type="TextureRect" parent="." unique_id=1338341408]
+visible = false
+layout_mode = 0
+texture = ExtResource("718")
+
+[node name="AMRIFLUCAN" type="TextureRect" parent="." unique_id=46939953]
+visible = false
+layout_mode = 0
+texture = ExtResource("773")
+
+[node name="FLOXABACT" type="TextureRect" parent="." unique_id=883266911]
+visible = false
+layout_mode = 0
+texture = ExtResource("707")
+
+[node name="MICONAZ" type="TextureRect" parent="." unique_id=896583077]
+visible = false
+layout_mode = 0
+texture = ExtResource("717")
+
+[node name="TIRALEPSY" type="TextureRect" parent="." unique_id=1606365516]
+visible = false
+layout_mode = 0
+texture = ExtResource("694")
+
+[node name="BETO" type="TextureRect" parent="." unique_id=1801214605]
+visible = false
+layout_mode = 0
+texture = ExtResource("701")
+
+[node name="BIOSTRONG" type="TextureRect" parent="." unique_id=1224219874]
+visible = false
+layout_mode = 0
+texture = ExtResource("711")
+
+[node name="SAFAMOOD" type="TextureRect" parent="." unique_id=1440109897]
+visible = false
+layout_mode = 0
+texture = ExtResource("685")
+
+[node name="ESMOPUMP" type="TextureRect" parent="." unique_id=205990261]
+visible = false
+layout_mode = 0
+texture = ExtResource("706")
+
+[node name="PANADOL" type="TextureRect" parent="." unique_id=553648791]
+visible = false
+layout_mode = 0
+texture = ExtResource("721")
+
+[node name="IVYPRONT" type="TextureRect" parent="." unique_id=385569497]
+visible = false
+layout_mode = 0
+texture = ExtResource("712")
+
+[node name="ZINCOSIL" type="TextureRect" parent="." unique_id=1270138837]
+visible = false
+layout_mode = 0
+texture = ExtResource("691")
+
+[node name="MELOQUIN" type="TextureRect" parent="." unique_id=1715676076]
+visible = false
+layout_mode = 0
+texture = ExtResource("724")
+
+[node name="EFEMYO" type="TextureRect" parent="." unique_id=874866867]
+visible = false
+layout_mode = 0
+texture = ExtResource("713")
+
+[node name="TOBRADEX" type="TextureRect" parent="." unique_id=2010737815]
+visible = false
+layout_mode = 0
+texture = ExtResource("722")
+
+[node name="VIAVAG" type="TextureRect" parent="." unique_id=377726713]
+visible = false
+layout_mode = 0
+texture = ExtResource("703")
+
+[node name="ZANDROS" type="TextureRect" parent="." unique_id=503229468]
+visible = false
+layout_mode = 0
+texture = ExtResource("696")
+
+[node name="ARTICAVOL" type="TextureRect" parent="." unique_id=1166588574]
+visible = false
+layout_mode = 0
+texture = ExtResource("689")
+
+[node name="DECLOPHENGEL" type="TextureRect" parent="." unique_id=1972228337]
+visible = false
+layout_mode = 0
+texture = ExtResource("704")
+
+[node name="QUEEN" type="TextureRect" parent="." unique_id=1801515196]
+visible = false
+layout_mode = 0
+texture = ExtResource("715")
+
+[node name="CUTIVATE" type="TextureRect" parent="." unique_id=828410449]
+visible = false
+layout_mode = 0
+texture = ExtResource("725")
+
+[node name="TRIFLUCAN" type="TextureRect" parent="." unique_id=1560964266]
+visible = false
+layout_mode = 0
+texture = ExtResource("734")
+
+[node name="FLADAZOLE" type="TextureRect" parent="." unique_id=314518145]
+visible = false
+layout_mode = 0
+texture = ExtResource("737")
+
+[node name="ZITHROCIN" type="TextureRect" parent="." unique_id=275488055]
+visible = false
+layout_mode = 0
+texture = ExtResource("744")
+
+[node name="APIDONE" type="TextureRect" parent="." unique_id=1048752570]
+visible = false
+layout_mode = 0
+texture = ExtResource("741")
+
+[node name="VASCULAR" type="TextureRect" parent="." unique_id=1547091949]
+visible = false
+layout_mode = 0
+texture = ExtResource("735")
+
+[node name="ULTRACALCE" type="TextureRect" parent="." unique_id=352281771]
+visible = false
+layout_mode = 0
+texture = ExtResource("738")
+
+[node name="ZINOL" type="TextureRect" parent="." unique_id=1198983859]
+visible = false
+layout_mode = 0
+texture = ExtResource("728")
+
+[node name="HEPATICUM" type="TextureRect" parent="." unique_id=1464677532]
+visible = false
+layout_mode = 0
+texture = ExtResource("743")
+
+[node name="OXYMET" type="TextureRect" parent="." unique_id=2034457920]
+visible = false
+layout_mode = 0
+texture = ExtResource("726")
+
+[node name="SOLUCORTEF" type="TextureRect" parent="." unique_id=1944164291]
+visible = false
+layout_mode = 0
+texture = ExtResource("739")
+
+[node name="INTRAFER" type="TextureRect" parent="." unique_id=323732495]
+visible = false
+layout_mode = 0
+texture = ExtResource("745")
+
+[node name="OSTOVAL" type="TextureRect" parent="." unique_id=1982274213]
+visible = false
+layout_mode = 0
+texture = ExtResource("727")
+
+[node name="LIVIAL" type="TextureRect" parent="." unique_id=961641038]
+visible = false
+layout_mode = 0
+texture = ExtResource("740")
+
+[node name="MARIAGON" type="TextureRect" parent="." unique_id=108581512]
+visible = false
+layout_mode = 0
+texture = ExtResource("736")
+
+[node name="METHOTREXATE" type="TextureRect" parent="." unique_id=843780626]
+visible = false
+layout_mode = 0
+texture = ExtResource("730")
+
+[node name="BETADERM" type="TextureRect" parent="." unique_id=2068371638]
+visible = false
+layout_mode = 0
+texture = ExtResource("731")
+
+[node name="ADWIFLAM" type="TextureRect" parent="." unique_id=44869495]
+visible = false
+layout_mode = 0
+texture = ExtResource("732")
+
+[node name="OSTMAP" type="TextureRect" parent="." unique_id=1448709019]
+visible = false
+layout_mode = 0
+texture = ExtResource("729")
+
+[node name="CLEOCIN" type="TextureRect" parent="." unique_id=1326048435]
+visible = false
+layout_mode = 0
+texture = ExtResource("733")
+
+[node name="ESCITA" type="TextureRect" parent="." unique_id=1983771558]
+visible = false
+layout_mode = 0
+texture = ExtResource("742")
+
+[node name="ZOLAM" type="TextureRect" parent="." unique_id=2077896950]
+visible = false
+layout_mode = 0
+texture = ExtResource("746")
+
+[node name="CYTEAL" type="TextureRect" parent="." unique_id=1616242206]
+visible = false
+layout_mode = 0
+texture = ExtResource("750")
+
+[node name="DIGESTIN" type="TextureRect" parent="." unique_id=27524888]
+visible = false
+layout_mode = 0
+texture = ExtResource("749")
+
+[node name="AMOCEREBRAL" type="TextureRect" parent="." unique_id=1384985263]
+visible = false
+layout_mode = 0
+texture = ExtResource("753")
+
+[node name="DGCARE" type="TextureRect" parent="." unique_id=1617920876]
+visible = false
+layout_mode = 0
+texture = ExtResource("751")
+
+[node name="AMRASE" type="TextureRect" parent="." unique_id=1634360027]
+visible = false
+layout_mode = 0
+texture = ExtResource("748")
+
+[node name="DEPRAM" type="TextureRect" parent="." unique_id=325917405]
+visible = false
+layout_mode = 0
+texture = ExtResource("752")
+
+[node name="PONSTAN" type="TextureRect" parent="." unique_id=1758215436]
+visible = false
+layout_mode = 0
+texture = ExtResource("747")
+
+[node name="NEURAZINE" type="TextureRect" parent="." unique_id=1879453141]
+visible = false
+layout_mode = 0
+texture = ExtResource("754")
+
+[node name="GASTORELIVE" type="TextureRect" parent="." unique_id=724688174]
+visible = false
+layout_mode = 0
+texture = ExtResource("755")
+
+[node name="DERMATOP" type="TextureRect" parent="." unique_id=748754134]
+visible = false
+layout_mode = 0
+texture = ExtResource("756")
+
+[node name="VENTALCOMP" type="TextureRect" parent="." unique_id=838053105]
+visible = false
+layout_mode = 0
+texture = ExtResource("757")
+
+[node name="AMOFLUX" type="TextureRect" parent="." unique_id=836612918]
+visible = false
+layout_mode = 0
+texture = ExtResource("758")
+
+[node name="BONECARE" type="TextureRect" parent="." unique_id=1181363471]
+visible = false
+layout_mode = 0
+texture = ExtResource("759")
+
+[node name="ELIBUTACAND" type="TextureRect" parent="." unique_id=1917072752]
+visible = false
+layout_mode = 0
+texture = ExtResource("761")
+
+[node name="ACTOS" type="TextureRect" parent="." unique_id=1442534555]
+visible = false
+layout_mode = 0
+texture = ExtResource("762")
+
+[node name="URSOPLUS" type="TextureRect" parent="." unique_id=1100204789]
+visible = false
+layout_mode = 0
+texture = ExtResource("763")
+
+[node name="KIROLL" type="TextureRect" parent="." unique_id=909526945]
+visible = false
+layout_mode = 0
+texture = ExtResource("764")
+
+[node name="OPTIGUARD" type="TextureRect" parent="." unique_id=601212384]
+visible = false
+layout_mode = 0
+texture = ExtResource("765")
+
+[node name="AVOSOYA" type="TextureRect" parent="." unique_id=1644704593]
+visible = false
+layout_mode = 0
+texture = ExtResource("766")
+
+[node name="COLLOMAK" type="TextureRect" parent="." unique_id=969992517]
+visible = false
+layout_mode = 0
+texture = ExtResource("601")
+
+[node name="PLAQUENIL" type="TextureRect" parent="." unique_id=1808628401]
+visible = false
+layout_mode = 0
+texture = ExtResource("608")
+
+[node name="RELAXON" type="TextureRect" parent="." unique_id=71085476]
+visible = false
+layout_mode = 0
+texture = ExtResource("768")
+
+[node name="LOUJAIN" type="TextureRect" parent="." unique_id=430989311]
+visible = false
+layout_mode = 0
+texture = ExtResource("769")
+
+[node name="DEPOFORT" type="TextureRect" parent="." unique_id=1965330771]
+visible = false
+layout_mode = 0
+texture = ExtResource("613")
+
+[node name="AMOCLAWINS" type="TextureRect" parent="." unique_id=1399679695]
+visible = false
+layout_mode = 0
+texture = ExtResource("771")
+
+[node name="NIZORAL" type="TextureRect" parent="." unique_id=842943944]
+visible = false
+layout_mode = 0
+texture = ExtResource("772")

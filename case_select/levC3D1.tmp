@@ -1,0 +1,240 @@
+[gd_scene load_steps=8 format=3 uid="uid://bga5ijptwwdsq"]
+
+[ext_resource type="Script" path="res://level_select/level_select.gd" id="1_2kays"]
+[ext_resource type="Theme" uid="uid://dhjauti4tyal7" path="res://themes/theme.tres" id="2_d6hi5"]
+[ext_resource type="Texture2D" uid="uid://dau3yrqn2bhgr" path="res://assets/icons/left_arrow.png" id="3_rh7jy"]
+
+[sub_resource type="Animation" id="Animation_k61nn"]
+resource_name = "Load"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1080, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_es3lr"]
+resource_name = "Out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1080, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_5k1xv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1080, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c1sl5"]
+_data = {
+"Load": SubResource("Animation_k61nn"),
+"Out": SubResource("Animation_es3lr"),
+"RESET": SubResource("Animation_5k1xv")
+}
+
+[node name="LevelSelect" type="Control"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1080.0
+offset_right = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2kays")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.507
+anchor_top = 0.5
+anchor_right = 0.507
+anchor_bottom = 0.5
+offset_left = -491.56
+offset_top = -912.0
+offset_right = 492.44
+offset_bottom = 872.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_d6hi5")
+
+[node name="Panel" type="Panel" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+
+[node name="HBoxContainer" type="HSplitContainer" parent="MarginContainer/Panel"]
+layout_mode = 2
+anchor_right = 0.992
+anchor_bottom = 0.054
+offset_right = -0.128052
+offset_bottom = -1.33601
+split_offset = 300
+
+[node name="BackButton" type="TextureButton" parent="MarginContainer/Panel/HBoxContainer"]
+custom_minimum_size = Vector2(100, 95)
+layout_mode = 2
+texture_normal = ExtResource("3_rh7jy")
+texture_pressed = ExtResource("3_rh7jy")
+texture_hover = ExtResource("3_rh7jy")
+texture_disabled = ExtResource("3_rh7jy")
+texture_focused = ExtResource("3_rh7jy")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="MarginContainer/Panel/HBoxContainer"]
+layout_mode = 2
+text = "Level Select"
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -464.0
+offset_top = -764.0
+offset_right = 468.0
+offset_bottom = 868.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Panel/MarginContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 50
+
+[node name="1" type="Button" parent="MarginContainer/Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="2" type="Button" parent="MarginContainer/Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="3" type="Button" parent="MarginContainer/Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="4" type="Button" parent="MarginContainer/Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="5" type="Button" parent="MarginContainer/Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="6" type="Button" parent="MarginContainer/Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="7" type="Button" parent="MarginContainer/Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="8" type="Button" parent="MarginContainer/Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="9" type="Button" parent="MarginContainer/Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="10" type="Button" parent="MarginContainer/Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="11" type="Button" parent="MarginContainer/Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="12" type="Button" parent="MarginContainer/Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="13" type="Button" parent="MarginContainer/Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="14" type="Button" parent="MarginContainer/Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="15" type="Button" parent="MarginContainer/Panel/MarginContainer/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_c1sl5")
+}
+
+[connection signal="button_down" from="MarginContainer/Panel/HBoxContainer/BackButton" to="." method="_on_back_button_button_down"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

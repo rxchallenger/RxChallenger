@@ -1,0 +1,638 @@
+[gd_scene format=3 uid="uid://cni0o2wjvvgg4"]
+
+[ext_resource type="Script" uid="uid://de4072yi0qyqj" path="res://main_menu/main_menu.gd" id="1_aa8jm"]
+[ext_resource type="Theme" uid="uid://cv40tygwaw1ho" path="res://themes/theme.tres" id="3_iri28"]
+[ext_resource type="Theme" uid="uid://d2eakbmaefnt6" path="res://addons/silent_wolf/assets/themes/sw_theme.tres" id="3_ochsb"]
+[ext_resource type="Texture2D" uid="uid://dblnu1ilk6bkr" path="res://assets/icons/case.webp" id="4_23jm8"]
+[ext_resource type="Texture2D" uid="uid://dn10aisbyx1su" path="res://assets/icons/leaderboards.webp" id="5_84lh5"]
+[ext_resource type="Texture2D" uid="uid://dt4bhj32obd54" path="res://assets/icons/database.webp" id="6_edd16"]
+[ext_resource type="Texture2D" uid="uid://huc8ypyexyg" path="res://assets/icons/setting.webp" id="7_2ooid"]
+[ext_resource type="Texture2D" uid="uid://b2arcwpnj7lix" path="res://assets/icons/exit.webp" id="8_7w5mo"]
+[ext_resource type="Texture2D" uid="uid://bvenlc4wuiv8o" path="res://assets/icons/i.webp" id="9_fsuws"]
+[ext_resource type="Texture2D" uid="uid://bv2iul2lvfax3" path="res://assets/icons/left_arrow.webp" id="10_n0aqu"]
+[ext_resource type="Texture2D" uid="uid://bqdjnffmu3inu" path="res://assets/icons/web.webp" id="11_m5wb0"]
+[ext_resource type="StyleBox" uid="uid://c2qa4jcj4l7ce" path="res://themes/orange_style_button.tres" id="11_qub3y"]
+[ext_resource type="Texture2D" uid="uid://bjdodskludtv4" path="res://assets/icons/faq.webp" id="12_43ryc"]
+[ext_resource type="Texture2D" uid="uid://dvfu2vxc4cybb" path="res://assets/icons/privacy.webp" id="13_62rel"]
+[ext_resource type="Texture2D" uid="uid://bewxsocbugcyw" path="res://assets/icons/terms.webp" id="14_g5e3k"]
+[ext_resource type="Texture2D" uid="uid://beuputfosygsq" path="res://assets/icons/aboutus.webp" id="15_4h3f8"]
+[ext_resource type="Texture2D" uid="uid://cmdlmyih4pvom" path="res://assets/icons/contact.webp" id="16_eg5fs"]
+[ext_resource type="Texture2D" uid="uid://cj73bcfd0bqu1" path="res://assets/icons/icon-512.webp" id="18_iri28"]
+
+[sub_resource type="Animation" id="Animation_skhfl"]
+resource_name = "DatabaseOut"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1080, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_g8h0v"]
+resource_name = "Load"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1080, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_gnbjm"]
+resource_name = "Out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1080, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_25x3h"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1080, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bp057"]
+_data = {
+&"DatabaseOut": SubResource("Animation_skhfl"),
+&"Load": SubResource("Animation_g8h0v"),
+&"Out": SubResource("Animation_gnbjm"),
+&"RESET": SubResource("Animation_25x3h")
+}
+
+[node name="MainMenu" type="Control" unique_id=555370461]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1080.0
+offset_right = 1080.0002
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aa8jm")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=781370308]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 215.0
+offset_top = -780.0
+offset_right = 454.0
+offset_bottom = -561.0
+theme = ExtResource("3_ochsb")
+
+[node name="PlayerName" type="Label" parent="VBoxContainer" unique_id=1925810375]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Player Name"
+horizontal_alignment = 1
+
+[node name="LoginButton" type="Button" parent="VBoxContainer" unique_id=700087761]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Log in"
+
+[node name="LogoutButton" type="Button" parent="VBoxContainer" unique_id=230446239]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Log Out"
+
+[node name="RegisterButton" type="Button" parent="VBoxContainer" unique_id=1138575103]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Register"
+
+[node name="UID" type="Control" parent="." unique_id=388249334]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -540.0
+offset_top = -960.0
+offset_right = -500.0
+offset_bottom = -920.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="get_distribution_name" type="TextEdit" parent="UID" unique_id=1315442004]
+layout_mode = 0
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = -20.0
+offset_right = 1035.92
+offset_bottom = 156.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_distribution_name"
+editable = false
+wrap_mode = 1
+
+[node name="get_name" type="TextEdit" parent="UID" unique_id=1839301930]
+layout_mode = 0
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = 156.0
+offset_right = 1035.92
+offset_bottom = 324.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_name"
+editable = false
+wrap_mode = 1
+
+[node name="get_processor_name" type="TextEdit" parent="UID" unique_id=162706283]
+layout_mode = 0
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = 324.0
+offset_right = 1035.92
+offset_bottom = 571.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_processor_name"
+editable = false
+wrap_mode = 1
+
+[node name="get_user_data_dir" type="TextEdit" parent="UID" unique_id=308147235]
+layout_mode = 0
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = 571.0
+offset_right = 1035.92
+offset_bottom = 830.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_user_data_dir"
+editable = false
+wrap_mode = 1
+
+[node name="get_video_adapter_driver_info" type="TextEdit" parent="UID" unique_id=1050519148]
+layout_mode = 0
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = 830.0
+offset_right = 1035.92
+offset_bottom = 1058.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_video_adapter_driver_info"
+editable = false
+wrap_mode = 1
+
+[node name="get_unique_id" type="TextEdit" parent="UID" unique_id=289238765]
+layout_mode = 0
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = 1054.0
+offset_right = 1035.92
+offset_bottom = 1287.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_unique_id"
+editable = false
+wrap_mode = 1
+
+[node name="get_processor_count" type="TextEdit" parent="UID" unique_id=392448949]
+layout_mode = 0
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = 1287.0
+offset_right = 1035.92
+offset_bottom = 1463.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_processor_count"
+editable = false
+wrap_mode = 1
+
+[node name="get_model_name" type="TextEdit" parent="UID" unique_id=2062640274]
+layout_mode = 0
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = 1463.0
+offset_right = 1035.92
+offset_bottom = 1639.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_model_name"
+editable = false
+wrap_mode = 1
+
+[node name="get_executable_path" type="TextEdit" parent="UID" unique_id=308570926]
+layout_mode = 0
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = 1639.0
+offset_right = 1035.92
+offset_bottom = 1900.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_executable_path"
+editable = false
+wrap_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2138570517]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_bp057")
+autoplay = &"Load"
+
+[node name="MenuGridContainer" type="VBoxContainer" parent="." unique_id=1700757680]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -286.0
+offset_top = -300.0
+offset_right = 270.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_iri28")
+theme_override_constants/separation = 20
+
+[node name="CaseSelectButton" type="Button" parent="MenuGridContainer" unique_id=712023969]
+layout_mode = 2
+text = "Case Select"
+icon = ExtResource("4_23jm8")
+expand_icon = true
+
+[node name="GuideButton" type="Button" parent="MenuGridContainer" unique_id=827801758]
+visible = false
+layout_mode = 2
+text = "Guide"
+expand_icon = true
+
+[node name="LeaderBoardButton" type="Button" parent="MenuGridContainer" unique_id=687100340]
+layout_mode = 2
+text = "Leaderboard"
+icon = ExtResource("5_84lh5")
+expand_icon = true
+
+[node name="DatabaseButton" type="Button" parent="MenuGridContainer" unique_id=571299153]
+layout_mode = 2
+text = "Database"
+icon = ExtResource("6_edd16")
+expand_icon = true
+
+[node name="SettingsButton" type="Button" parent="MenuGridContainer" unique_id=1494676807]
+layout_mode = 2
+text = "Settings"
+icon = ExtResource("7_2ooid")
+expand_icon = true
+
+[node name="ExitButton" type="Button" parent="MenuGridContainer" unique_id=370434515]
+layout_mode = 2
+text = "Exit"
+icon = ExtResource("8_7w5mo")
+expand_icon = true
+
+[node name="Icon" type="TextureButton" parent="." unique_id=1414777866]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -470.0
+offset_top = -780.0
+offset_right = -360.0
+offset_bottom = -670.0
+texture_normal = ExtResource("9_fsuws")
+texture_pressed = ExtResource("9_fsuws")
+texture_hover = ExtResource("9_fsuws")
+texture_disabled = ExtResource("9_fsuws")
+texture_focused = ExtResource("9_fsuws")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="PanelMarginContainer" type="MarginContainer" parent="Icon" unique_id=1450362765]
+visible = false
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 4.295
+anchor_top = 7.027
+anchor_right = 4.295
+anchor_bottom = 7.027
+offset_left = -362.45
+offset_top = -369.97
+offset_right = 362.55
+offset_bottom = 481.03
+theme = ExtResource("3_iri28")
+
+[node name="Panel" type="Panel" parent="Icon/PanelMarginContainer" unique_id=2020936688]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Icon/PanelMarginContainer/Panel" unique_id=763257625]
+layout_mode = 0
+offset_left = 344.0
+offset_top = 8.0
+offset_right = 459.0
+offset_bottom = 91.0
+text = "Info"
+
+[node name="IconTextureRect" type="TextureRect" parent="Icon/PanelMarginContainer/Panel" unique_id=1449467548]
+layout_mode = 0
+offset_left = 250.0
+offset_right = 342.0
+offset_bottom = 92.0
+texture = ExtResource("9_fsuws")
+expand_mode = 1
+
+[node name="IconBackButton" type="TextureButton" parent="Icon/PanelMarginContainer/Panel" unique_id=96245498]
+layout_mode = 0
+offset_left = 20.0
+offset_right = 121.0
+offset_bottom = 101.0
+texture_normal = ExtResource("10_n0aqu")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="IconDoneButton" type="Button" parent="Icon/PanelMarginContainer/Panel" unique_id=338549146]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 677.0
+offset_right = 467.0
+offset_bottom = 778.0
+theme_override_styles/normal = ExtResource("11_qub3y")
+text = "Done"
+
+[node name="ContentMarginContainer" type="MarginContainer" parent="Icon" unique_id=1867407465]
+visible = false
+layout_mode = 0
+offset_left = 202.0
+offset_top = 531.0
+offset_right = 740.0
+offset_bottom = 1049.0
+theme = ExtResource("3_iri28")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Icon/ContentMarginContainer" unique_id=11291031]
+layout_mode = 2
+
+[node name="WebsiteHBoxContainer" type="HBoxContainer" parent="Icon/ContentMarginContainer/VBoxContainer" unique_id=888170673]
+layout_mode = 2
+
+[node name="WebsiteLabel" type="Label" parent="Icon/ContentMarginContainer/VBoxContainer/WebsiteHBoxContainer" unique_id=2126928553]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Website"
+
+[node name="WebsiteButton" type="TextureButton" parent="Icon/ContentMarginContainer/VBoxContainer/WebsiteHBoxContainer" unique_id=1918384297]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+texture_normal = ExtResource("11_m5wb0")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="FAQHBoxContainer" type="HBoxContainer" parent="Icon/ContentMarginContainer/VBoxContainer" unique_id=884334217]
+layout_mode = 2
+
+[node name="FAQLabel" type="Label" parent="Icon/ContentMarginContainer/VBoxContainer/FAQHBoxContainer" unique_id=1082337780]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "FAQ"
+
+[node name="FAQButton" type="TextureButton" parent="Icon/ContentMarginContainer/VBoxContainer/FAQHBoxContainer" unique_id=179851502]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+texture_normal = ExtResource("12_43ryc")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="PrivacyHBoxContainer" type="HBoxContainer" parent="Icon/ContentMarginContainer/VBoxContainer" unique_id=2063873843]
+layout_mode = 2
+
+[node name="PrivacyLabel" type="Label" parent="Icon/ContentMarginContainer/VBoxContainer/PrivacyHBoxContainer" unique_id=1668449605]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Privacy"
+
+[node name="PrivacyButton" type="TextureButton" parent="Icon/ContentMarginContainer/VBoxContainer/PrivacyHBoxContainer" unique_id=185063155]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+texture_normal = ExtResource("13_62rel")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="TermsHBoxContainer" type="HBoxContainer" parent="Icon/ContentMarginContainer/VBoxContainer" unique_id=213681429]
+layout_mode = 2
+
+[node name="TermsLabel" type="Label" parent="Icon/ContentMarginContainer/VBoxContainer/TermsHBoxContainer" unique_id=1190756534]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Terms"
+
+[node name="TermsButton" type="TextureButton" parent="Icon/ContentMarginContainer/VBoxContainer/TermsHBoxContainer" unique_id=1263730234]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+texture_normal = ExtResource("14_g5e3k")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="AboutUsHBoxContainer" type="HBoxContainer" parent="Icon/ContentMarginContainer/VBoxContainer" unique_id=1446375052]
+layout_mode = 2
+
+[node name="AboutUsLabel" type="Label" parent="Icon/ContentMarginContainer/VBoxContainer/AboutUsHBoxContainer" unique_id=393586678]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "About Us"
+
+[node name="AboutUsButton" type="TextureButton" parent="Icon/ContentMarginContainer/VBoxContainer/AboutUsHBoxContainer" unique_id=251002691]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+texture_normal = ExtResource("15_4h3f8")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="ContactUsHBoxContainer" type="HBoxContainer" parent="Icon/ContentMarginContainer/VBoxContainer" unique_id=226538722]
+layout_mode = 2
+
+[node name="ContactUsLabel" type="Label" parent="Icon/ContentMarginContainer/VBoxContainer/ContactUsHBoxContainer" unique_id=333853444]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "Contact Us"
+
+[node name="ContactUsButton" type="TextureButton" parent="Icon/ContentMarginContainer/VBoxContainer/ContactUsHBoxContainer" unique_id=882506279]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+texture_normal = ExtResource("16_eg5fs")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="IMC" type="TextureButton" parent="." unique_id=686117627]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -340.0
+offset_top = -780.0
+offset_right = -239.0
+offset_bottom = -679.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("18_iri28")
+texture_pressed = ExtResource("18_iri28")
+texture_hover = ExtResource("18_iri28")
+texture_disabled = ExtResource("18_iri28")
+texture_focused = ExtResource("18_iri28")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Timer" type="Timer" parent="." unique_id=626077122]
+wait_time = 0.2
+autostart = true
+
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
+[connection signal="pressed" from="VBoxContainer/LoginButton" to="." method="_on_login_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/LogoutButton" to="." method="_on_logout_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/RegisterButton" to="." method="_on_register_button_pressed"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="button_down" from="MenuGridContainer/CaseSelectButton" to="." method="_on_case_select_button_button_down"]
+[connection signal="button_down" from="MenuGridContainer/LeaderBoardButton" to="." method="_on_leader_board_button_button_down"]
+[connection signal="button_down" from="MenuGridContainer/DatabaseButton" to="." method="_on_database_button_button_down"]
+[connection signal="button_down" from="MenuGridContainer/SettingsButton" to="." method="_on_settings_button_button_down"]
+[connection signal="button_down" from="MenuGridContainer/ExitButton" to="." method="_on_exit_button_button_down"]
+[connection signal="button_down" from="Icon" to="." method="_on_icon_button_down"]
+[connection signal="button_down" from="Icon/PanelMarginContainer/Panel/IconBackButton" to="." method="_on_icon_back_button_button_down"]
+[connection signal="button_down" from="Icon/PanelMarginContainer/Panel/IconDoneButton" to="." method="_on_icon_done_button_button_down"]
+[connection signal="button_down" from="Icon/ContentMarginContainer/VBoxContainer/WebsiteHBoxContainer/WebsiteButton" to="." method="_on_website_button_button_down"]
+[connection signal="button_down" from="Icon/ContentMarginContainer/VBoxContainer/FAQHBoxContainer/FAQButton" to="." method="_on_faq_button_button_down"]
+[connection signal="button_down" from="Icon/ContentMarginContainer/VBoxContainer/PrivacyHBoxContainer/PrivacyButton" to="." method="_on_privacy_button_button_down"]
+[connection signal="button_down" from="Icon/ContentMarginContainer/VBoxContainer/TermsHBoxContainer/TermsButton" to="." method="_on_terms_button_button_down"]
+[connection signal="button_down" from="Icon/ContentMarginContainer/VBoxContainer/AboutUsHBoxContainer/AboutUsButton" to="." method="_on_about_us_button_button_down"]
+[connection signal="button_down" from="Icon/ContentMarginContainer/VBoxContainer/ContactUsHBoxContainer/ContactUsButton" to="." method="_on_contact_us_button_button_down"]
+[connection signal="button_down" from="IMC" to="." method="_on_imc_button_down"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

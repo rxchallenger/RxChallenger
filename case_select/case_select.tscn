@@ -1,0 +1,1222 @@
+[gd_scene format=3 uid="uid://bga5ijptwwdsq"]
+
+[ext_resource type="Script" uid="uid://q1bcij6nf1j5" path="res://case_select/case_select.gd" id="1_rmpei"]
+[ext_resource type="Texture2D" uid="uid://1ssirsgp5s6n" path="res://assets/icons/padlock.webp" id="2_0f5t0"]
+[ext_resource type="Texture2D" uid="uid://c20pic42vafs4" path="res://assets/icons/open_padlock.webp" id="3_2y2uj"]
+[ext_resource type="Theme" uid="uid://cv40tygwaw1ho" path="res://themes/theme.tres" id="4_l8gu1"]
+[ext_resource type="Texture2D" uid="uid://bv2iul2lvfax3" path="res://assets/icons/left_arrow.webp" id="5_dgauc"]
+[ext_resource type="Texture2D" uid="uid://dblnu1ilk6bkr" path="res://assets/icons/case.webp" id="5_ytnog"]
+[ext_resource type="StyleBox" uid="uid://gpqhdbfg8r8w" path="res://themes/red_style_button.tres" id="7_wd2vd"]
+
+[sub_resource type="Animation" id="Animation_k61nn"]
+resource_name = "Load"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1080, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_es3lr"]
+resource_name = "Out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1080, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_5k1xv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1080, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c1sl5"]
+_data = {
+&"Load": SubResource("Animation_k61nn"),
+&"Out": SubResource("Animation_es3lr"),
+&"RESET": SubResource("Animation_5k1xv")
+}
+
+[node name="CaseSelect" type="Control" unique_id=1109091122 node_paths=PackedStringArray("Case_1_Button")]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1080.0
+offset_right = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_rmpei")
+locked_icon = ExtResource("2_0f5t0")
+unlocked_icon = ExtResource("3_2y2uj")
+Case_1_Button = NodePath("CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer/1")
+
+[node name="CaseMarginContainer" type="MarginContainer" parent="." unique_id=1202325618]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.507
+anchor_top = 0.5
+anchor_right = 0.507
+anchor_bottom = 0.5
+offset_left = -491.56
+offset_top = -812.0
+offset_right = 492.44
+offset_bottom = 872.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_l8gu1")
+
+[node name="Panel" type="Panel" parent="CaseMarginContainer" unique_id=1170257194]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+
+[node name="CaseIcon" type="TextureRect" parent="CaseMarginContainer/Panel" unique_id=1504890308]
+layout_mode = 0
+offset_left = 272.0
+offset_top = 6.0
+offset_right = 361.0
+offset_bottom = 95.0
+texture = ExtResource("5_ytnog")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="HBoxContainer" type="HSplitContainer" parent="CaseMarginContainer/Panel" unique_id=1376849114]
+layout_mode = 0
+anchor_right = 0.992
+anchor_bottom = 0.054
+offset_right = -0.128052
+offset_bottom = -1.33601
+split_offsets = PackedInt32Array(350)
+split_offset = 350
+
+[node name="BackButton" type="TextureButton" parent="CaseMarginContainer/Panel/HBoxContainer" unique_id=673587696]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 95)
+layout_mode = 2
+mouse_filter = 1
+texture_normal = ExtResource("5_dgauc")
+texture_pressed = ExtResource("5_dgauc")
+texture_hover = ExtResource("5_dgauc")
+texture_disabled = ExtResource("5_dgauc")
+texture_focused = ExtResource("5_dgauc")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="Label" type="Label" parent="CaseMarginContainer/Panel/HBoxContainer" unique_id=1528616300]
+layout_mode = 2
+mouse_filter = 1
+text = "Case Select"
+
+[node name="ContentMarginContainer" type="MarginContainer" parent="CaseMarginContainer/Panel" unique_id=241966512]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -464.0
+offset_top = -733.0
+offset_right = 468.0
+offset_bottom = 812.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ContentScrollContainer" type="ScrollContainer" parent="CaseMarginContainer/Panel/ContentMarginContainer" unique_id=1113307637]
+unique_name_in_owner = true
+layout_mode = 2
+follow_focus = true
+
+[node name="ContentVBoxContainer" type="VBoxContainer" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer" unique_id=106242402]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 50
+
+[node name="1" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=957237480]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="2" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=148676563]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="3" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1641095467]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="4" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1219830398]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="5" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=578126097]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="6" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2133742195]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="7" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=175871144]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="8" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=900397527]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="9" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1519066330]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="10" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=121601169]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="11" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=232687512]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="12" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=446218252]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="13" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1697479298]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="14" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=488767984]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="15" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=434333714]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="16" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=869336991]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="17" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1615736163]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="18" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1406053669]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="19" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=231580247]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="20" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=435209605]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="21" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1883758189]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="22" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=574750046]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="23" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1629250656]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="24" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=424932775]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="25" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=949400895]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="26" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2020278304]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="27" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=532684471]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="28" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1453196636]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="29" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1214279479]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="30" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1229643616]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="31" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1963663542]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="32" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1162038634]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="33" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1994564330]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="34" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=468077130]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="35" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2132621584]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="36" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=375558056]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="37" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1978042367]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="38" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=591367251]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="39" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1455525751]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="40" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2089451736]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="41" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=452676690]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="42" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1774654877]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="43" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=762873076]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="44" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=63077411]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="45" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1115589859]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="46" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1828710540]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="47" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1974414614]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="48" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2099685720]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="49" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=7128768]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="50" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=507003523]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="51" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1108407164]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="52" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1843604117]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="53" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=113670785]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="54" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=923964953]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="55" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=613937047]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="56" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1789185251]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="57" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2059320902]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="58" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1237523442]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="59" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=380464865]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="60" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=202564234]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="61" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=56014813]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="62" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2012303709]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="63" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=570085643]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="64" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=412872459]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="65" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1614302360]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="66" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=107127732]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="67" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=604812803]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="68" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1206046194]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="69" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=188728417]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="70" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1568805220]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="71" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1859312313]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="72" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1574452904]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="73" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1627270493]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="74" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2074528056]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="75" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1585156747]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="76" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1127686104]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="77" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=582072025]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="78" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1716221856]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="79" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1814500279]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="80" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1130629436]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="81" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2113193815]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="82" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=361750440]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="83" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1605220338]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="84" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1285820419]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="85" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=117352527]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="86" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=736338730]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="87" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=353978329]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="88" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1922757813]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="89" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2102832147]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="90" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=438684656]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="91" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1541849100]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="92" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2063657392]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="93" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=634206828]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="94" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=544885661]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="95" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=722935505]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="96" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1536405400]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="97" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=839892863]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="98" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1576515946]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="99" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1922927743]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="100" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=389202031]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="101" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1879157234]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="102" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2062759845]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="103" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=784754]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="104" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=558696418]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="105" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=705208798]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="106" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1787750786]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="107" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1125654482]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="108" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1269775347]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="109" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=637764482]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="110" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=575280859]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="111" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1809754842]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="112" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=928875447]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="113" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1255898204]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="114" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=453710546]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="115" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1628613254]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="116" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=691131346]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="117" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=183948594]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="118" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=757943901]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="119" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=78117695]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="120" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=415664377]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="121" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=231016645]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="122" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1785875333]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="123" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=461006946]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="124" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=373953655]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="125" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=614442516]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="126" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1701977038]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="127" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1714106932]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="128" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1707974460]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="129" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=768333430]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="130" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1804513428]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="131" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1028813985]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="132" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=921489862]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="133" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=35108715]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="134" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=319131777]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="135" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=887768611]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="136" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=235446369]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="137" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=185798660]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="138" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=590617992]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="139" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=490080229]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="140" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=974511115]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="141" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=746822924]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="142" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1158958858]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="143" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1553395357]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="144" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1813068292]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="145" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2013529221]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="146" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1894462139]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="147" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1991634250]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="148" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1312843023]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="149" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1855283497]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="150" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1245298767]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="151" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1041869979]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="152" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=993760259]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="153" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=585937390]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="154" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=908926419]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="155" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2087011367]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="156" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=163305902]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="157" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1981671040]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="158" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1808722193]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="159" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1110094808]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="160" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=267094258]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="161" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=868199726]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="162" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=891045109]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="163" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2087970677]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="164" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1538535956]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="165" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=138675907]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="166" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=755389668]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="167" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1747425960]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="168" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1641580424]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="169" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1023413554]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="170" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1007637802]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="171" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=372621068]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="172" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1816903454]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="173" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=895192743]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="174" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2133409739]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="175" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=94289658]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="176" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=275800797]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="177" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=557745633]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="178" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=836271713]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="179" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1923287241]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="180" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=408701607]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="181" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1808334891]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="182" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1827706446]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="183" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=67992934]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="184" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2045044964]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="185" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=337719630]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="186" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=506146604]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="187" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=727891509]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="188" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=455741336]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="189" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1478986970]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="190" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1763619112]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="191" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2100375894]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="192" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1324205174]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="193" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1537148634]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="194" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1068391484]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="195" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1582553612]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="196" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=971209376]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="197" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1925682697]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="198" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=155989026]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="199" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=512517421]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="200" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1318589832]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="201" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=124731739]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="202" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1030112741]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="203" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=591725385]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="204" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=419844084]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="205" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=481515687]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="206" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=611538635]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="207" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1869630040]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="208" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=629643277]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="209" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=461200116]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="210" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=677699542]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="211" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=743088100]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="212" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=676425021]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="213" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2065490059]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="214" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1344567001]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="215" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1190478960]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="216" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=714643121]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="217" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=590051441]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="218" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1708212737]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="219" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=459294727]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="220" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=831423993]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="221" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=802422494]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="222" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=588549977]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="223" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2121332525]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="224" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1771400076]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="225" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1030819230]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="226" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=548287090]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="227" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=645559251]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="228" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1545511153]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="229" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1228425269]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="230" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1211488133]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="231" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2145851537]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="232" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=890144899]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="233" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=860861975]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="234" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1837847863]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="235" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=851338818]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="236" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2033922964]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="237" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=278390683]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="238" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1870636441]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="239" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2015242261]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="240" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1781970791]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="241" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1855850127]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="242" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=2118357138]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="243" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=801616171]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="244" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1144177997]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="245" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=494919212]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="246" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1451843033]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="247" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1383860578]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="248" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1304575509]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="249" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1590124202]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="250" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1114090169]
+layout_mode = 2
+mouse_filter = 1
+
+[node name="StayTuned" type="Button" parent="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer" unique_id=1552427343]
+layout_mode = 2
+mouse_filter = 1
+theme_override_styles/normal = ExtResource("7_wd2vd")
+theme_override_styles/normal_mirrored = ExtResource("7_wd2vd")
+theme_override_styles/pressed = ExtResource("7_wd2vd")
+theme_override_styles/pressed_mirrored = ExtResource("7_wd2vd")
+theme_override_styles/hover = ExtResource("7_wd2vd")
+theme_override_styles/hover_mirrored = ExtResource("7_wd2vd")
+theme_override_styles/hover_pressed = ExtResource("7_wd2vd")
+theme_override_styles/hover_pressed_mirrored = ExtResource("7_wd2vd")
+theme_override_styles/disabled = ExtResource("7_wd2vd")
+theme_override_styles/disabled_mirrored = ExtResource("7_wd2vd")
+theme_override_styles/focus = ExtResource("7_wd2vd")
+text = "Stay Tuned For Updates!"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=469471595]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_c1sl5")
+
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
+[connection signal="button_down" from="CaseMarginContainer/Panel/HBoxContainer/BackButton" to="." method="_on_back_button_button_down"]
+[connection signal="button_down" from="CaseMarginContainer/Panel/ContentMarginContainer/ContentScrollContainer/ContentVBoxContainer/StayTuned" to="." method="_on_stay_tuned_button_down"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

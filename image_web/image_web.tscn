@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://b1hpetgn0gssx"]
+
+[ext_resource type="Script" uid="uid://mug574kwgcdv" path="res://image_web/image_web.gd" id="1_ug2qc"]
+[ext_resource type="PackedScene" uid="uid://cixysanw10nsx" path="res://image_web/image_download_api/image_download_api.tscn" id="2_qsv0j"]
+[ext_resource type="PackedScene" uid="uid://d1ln63nghpb33" path="res://image_web/image_status/image_status.tscn" id="3_85bi5"]
+
+[node name="ImageWeb" type="ColorRect" unique_id=1083384743 node_paths=PackedStringArray("image_tr", "image_status", "image_download_api")]
+visible = false
+offset_right = 640.0
+offset_bottom = 675.0
+size_flags_vertical = 3
+color = Color(0.0962047, 0.0962048, 0.0962047, 1)
+script = ExtResource("1_ug2qc")
+image_tr = NodePath("Image TR")
+image_status = NodePath("Image Status")
+image_download_api = NodePath("Image Download API")
+
+[node name="Image TR" type="TextureRect" parent="." unique_id=336436660]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="Image Status" parent="." unique_id=704311929 instance=ExtResource("3_85bi5")]
+layout_mode = 0
+
+[node name="Image Download API" parent="." unique_id=957060171 instance=ExtResource("2_qsv0j")]

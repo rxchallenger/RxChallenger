@@ -1,0 +1,351 @@
+[gd_scene format=3 uid="uid://n4yaykhhi4n8"]
+
+[ext_resource type="Script" uid="uid://dvexx7yet0dmx" path="res://parallax/bg.gd" id="1_wfu4t"]
+[ext_resource type="Texture2D" uid="uid://kps1dpptx1er" path="res://parallax/bg.jpg" id="2_he035"]
+[ext_resource type="Texture2D" uid="uid://db738y10lgk74" path="res://parallax/pharmacy_cup.png" id="3_u1yt0"]
+[ext_resource type="Texture2D" uid="uid://dhgq5yhinrtos" path="res://parallax/prescription.png" id="4_fxkjv"]
+[ext_resource type="Texture2D" uid="uid://bl24aly20cjfx" path="res://parallax/tablet_stripe.png" id="5_ypmqa"]
+[ext_resource type="Texture2D" uid="uid://bij1cwg6gwdnf" path="res://parallax/vitamins.png" id="6_kd22p"]
+[ext_resource type="Texture2D" uid="uid://cjmbpcg03ngrg" path="res://parallax/vaccination.png" id="7_4vi4l"]
+[ext_resource type="Texture2D" uid="uid://ck07v4psoh8r3" path="res://parallax/capsule.png" id="8_bd2w3"]
+[ext_resource type="Texture2D" uid="uid://7m53gdtadcm7" path="res://parallax/heart.png" id="9_3cf6n"]
+[ext_resource type="Texture2D" uid="uid://bbs3xjx4rhj2h" path="res://parallax/pharmacy_logo.png" id="10_sp3em"]
+[ext_resource type="Texture2D" uid="uid://bua5qd53rnth4" path="res://parallax/mortar.png" id="11_by61h"]
+[ext_resource type="Texture2D" uid="uid://bjarp1mfuuhim" path="res://parallax/tablets.png" id="12_qa77g"]
+[ext_resource type="Texture2D" uid="uid://dmn87tnd8qm2g" path="res://parallax/sanke.png" id="13_bb8nk"]
+[ext_resource type="Texture2D" uid="uid://qsoyye2oonnb" path="res://parallax/tablets2.png" id="13_q0qe1"]
+[ext_resource type="Texture2D" uid="uid://psgos27yyf00" path="res://parallax/container.png" id="14_eaye5"]
+[ext_resource type="Texture2D" uid="uid://cm5mler73qhcr" path="res://parallax/vaccine.png" id="15_o15an"]
+[ext_resource type="Texture2D" uid="uid://tsc8fed4otwq" path="res://parallax/pill.png" id="16_m22d1"]
+[ext_resource type="Texture2D" uid="uid://bdugif61ar5s7" path="res://parallax/pills.png" id="17_bn52g"]
+[ext_resource type="Texture2D" uid="uid://sdwegfg0o8kx" path="res://parallax/pharmacy.png" id="18_q61ya"]
+[ext_resource type="Texture2D" uid="uid://cghk4knawlic2" path="res://parallax/pills2.png" id="18_qb4ok"]
+[ext_resource type="Texture2D" uid="uid://cfqcu370e26vd" path="res://parallax/pills3.png" id="19_ef1ry"]
+[ext_resource type="Texture2D" uid="uid://b3vsag1vvyac5" path="res://parallax/tablet.png" id="19_vk0e1"]
+[ext_resource type="Texture2D" uid="uid://cprr1s2rg7vh0" path="res://parallax/mobile_pharmacy.png" id="20_x6fkg"]
+[ext_resource type="Texture2D" uid="uid://bc25yx0owi5j" path="res://parallax/invoice.png" id="21_dfupc"]
+[ext_resource type="Texture2D" uid="uid://sq3oe4x0jeuj" path="res://parallax/pills4.png" id="21_y3bid"]
+[ext_resource type="Texture2D" uid="uid://buonke88qybtt" path="res://parallax/pills5.png" id="22_dx0ys"]
+[ext_resource type="Texture2D" uid="uid://bunooixdp5vw8" path="res://parallax/stethoscope.png" id="22_g8kxg"]
+[ext_resource type="Texture2D" uid="uid://my168rpvs217" path="res://parallax/browse.png" id="23_42e23"]
+[ext_resource type="Texture2D" uid="uid://fs5bj7qy3a0s" path="res://parallax/pills6.png" id="23_viplh"]
+[ext_resource type="Texture2D" uid="uid://cqedmrs06v206" path="res://parallax/online_pharmacy2.png" id="23_ydiy6"]
+[ext_resource type="Texture2D" uid="uid://dgjjxd2u52egq" path="res://parallax/pills7.png" id="24_epqkx"]
+[ext_resource type="Texture2D" uid="uid://u0vehv8gvryx" path="res://parallax/genetic.png" id="24_huaaf"]
+[ext_resource type="Texture2D" uid="uid://curs0gdxjahjc" path="res://parallax/cross.png" id="25_qu651"]
+[ext_resource type="Texture2D" uid="uid://ve8oyjjxh1fs" path="res://parallax/pills8.png" id="25_uf7r3"]
+[ext_resource type="Texture2D" uid="uid://vynpbl4117jl" path="res://parallax/pills9.png" id="26_b1quw"]
+[ext_resource type="Texture2D" uid="uid://diofsrhf02hnj" path="res://parallax/pills10.png" id="27_uwwph"]
+[ext_resource type="Texture2D" uid="uid://fdwjrhncif1y" path="res://parallax/pills11.png" id="28_ybh8h"]
+[ext_resource type="Texture2D" uid="uid://ce7ab1popgev6" path="res://parallax/healthcare.png" id="29_kw6b5"]
+[ext_resource type="Texture2D" uid="uid://jp36pjl8orc8" path="res://parallax/drugs.png" id="30_277a8"]
+[ext_resource type="Texture2D" uid="uid://dkw7vep4hh2kl" path="res://parallax/medicine.png" id="33_v8rs0"]
+[ext_resource type="Texture2D" uid="uid://226thyx0pn2" path="res://parallax/jar.png" id="34_7f6jw"]
+[ext_resource type="Texture2D" uid="uid://dvjjl4ed0x35g" path="res://parallax/bill.png" id="35_td6pb"]
+
+[sub_resource type="Animation" id="Animation_qpq8o"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-6.28319]
+}
+
+[sub_resource type="Animation" id="Animation_d5xr3"]
+resource_name = "parallax"
+length = 60.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 60),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [-6.28319, 6.28319]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vv40r"]
+_data = {
+&"RESET": SubResource("Animation_qpq8o"),
+&"parallax": SubResource("Animation_d5xr3")
+}
+
+[node name="Bg" type="ParallaxBackground" unique_id=1140529872]
+scale = Vector2(1.5, 1.5)
+transform = Transform2D(1.5, 0, 0, 1.5, 0, 0)
+script = ExtResource("1_wfu4t")
+
+[node name="BgTextureRect" type="TextureRect" parent="." unique_id=1607975577]
+self_modulate = Color(1, 1, 1, 0.784314)
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.667
+offset_right = -360.0
+offset_bottom = -0.640015
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_he035")
+expand_mode = 1
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="." unique_id=528317713]
+unique_name_in_owner = true
+position = Vector2(720, 0)
+rotation = -6.28319
+motion_mirroring = Vector2(1600, 800)
+
+[node name="Cup" type="Sprite2D" parent="ParallaxLayer" unique_id=19081779]
+position = Vector2(-170.667, 528)
+rotation = 0.455531
+scale = Vector2(3, 3)
+texture = ExtResource("3_u1yt0")
+
+[node name="Rx" type="Sprite2D" parent="ParallaxLayer" unique_id=2021569426]
+position = Vector2(639.376, 701.901)
+rotation = -0.455531
+scale = Vector2(0.41825, 0.41825)
+texture = ExtResource("4_fxkjv")
+
+[node name="Bottle" type="Sprite2D" parent="ParallaxLayer" unique_id=386141327]
+position = Vector2(-619.001, -22.6824)
+rotation = 0.195477
+scale = Vector2(3, 3)
+texture = ExtResource("6_kd22p")
+
+[node name="Stripe" type="Sprite2D" parent="ParallaxLayer" unique_id=1719421170]
+position = Vector2(-1126.95, 5.3932)
+rotation = 0.195477
+scale = Vector2(3, 3)
+texture = ExtResource("5_ypmqa")
+
+[node name="Vacination" type="Sprite2D" parent="ParallaxLayer" unique_id=1688140192]
+position = Vector2(-978.659, -1215.87)
+rotation = 0.195477
+scale = Vector2(0.545494, 0.545494)
+texture = ExtResource("7_4vi4l")
+
+[node name="Capsule" type="Sprite2D" parent="ParallaxLayer" unique_id=1817312632]
+position = Vector2(266.103, -1378.91)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("8_bd2w3")
+
+[node name="Heart" type="Sprite2D" parent="ParallaxLayer" unique_id=626414490]
+position = Vector2(-1753.3, -1399.3)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("9_3cf6n")
+
+[node name="Logo" type="Sprite2D" parent="ParallaxLayer" unique_id=1552907198]
+position = Vector2(276.877, -1813.96)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("10_sp3em")
+
+[node name="Mortar" type="Sprite2D" parent="ParallaxLayer" unique_id=1987602606]
+position = Vector2(-3135.94, 54.5868)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("11_by61h")
+
+[node name="Tablets" type="Sprite2D" parent="ParallaxLayer" unique_id=1634147457]
+position = Vector2(674.486, -1415.02)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("12_qa77g")
+
+[node name="Tablets2" type="Sprite2D" parent="ParallaxLayer" unique_id=1265340449]
+position = Vector2(-1773.08, -1724.66)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("13_q0qe1")
+
+[node name="Snake" type="Sprite2D" parent="ParallaxLayer" unique_id=2137935315]
+position = Vector2(1179.05, -90.1054)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("13_bb8nk")
+
+[node name="Container" type="Sprite2D" parent="ParallaxLayer" unique_id=548830919]
+position = Vector2(-910.135, -2788.72)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("14_eaye5")
+
+[node name="Vaccine" type="Sprite2D" parent="ParallaxLayer" unique_id=1162657367]
+position = Vector2(1533.18, -1665.61)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("15_o15an")
+
+[node name="Pill" type="Sprite2D" parent="ParallaxLayer" unique_id=406530696]
+position = Vector2(-1572.09, -2894.82)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("16_m22d1")
+
+[node name="Pills" type="Sprite2D" parent="ParallaxLayer" unique_id=602361085]
+position = Vector2(-410.753, -2531.17)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("17_bn52g")
+
+[node name="Pills2" type="Sprite2D" parent="ParallaxLayer" unique_id=1114730034]
+position = Vector2(-210.931, 1453.38)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("18_qb4ok")
+
+[node name="Pills3" type="Sprite2D" parent="ParallaxLayer" unique_id=782337973]
+position = Vector2(-1235.77, 1390.07)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("19_ef1ry")
+
+[node name="Pills4" type="Sprite2D" parent="ParallaxLayer" unique_id=2061818073]
+position = Vector2(1526.26, -109.454)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("21_y3bid")
+
+[node name="Pills5" type="Sprite2D" parent="ParallaxLayer" unique_id=362173900]
+position = Vector2(1657.33, 263.334)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("22_dx0ys")
+
+[node name="Pills6" type="Sprite2D" parent="ParallaxLayer" unique_id=656842699]
+position = Vector2(1838.67, 786.667)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("23_viplh")
+
+[node name="Pills7" type="Sprite2D" parent="ParallaxLayer" unique_id=272778495]
+position = Vector2(2120, 414)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("24_epqkx")
+
+[node name="Pills8" type="Sprite2D" parent="ParallaxLayer" unique_id=1134440743]
+position = Vector2(453.915, -2995.73)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("25_uf7r3")
+
+[node name="Pills9" type="Sprite2D" parent="ParallaxLayer" unique_id=520027259]
+position = Vector2(123.658, -3200.81)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("26_b1quw")
+
+[node name="Pills10" type="Sprite2D" parent="ParallaxLayer" unique_id=1827589640]
+position = Vector2(-1958.89, -2455.25)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("27_uwwph")
+
+[node name="Pills11" type="Sprite2D" parent="ParallaxLayer" unique_id=362752651]
+position = Vector2(-591.863, -3104.2)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("28_ybh8h")
+
+[node name="Pharmacy" type="Sprite2D" parent="ParallaxLayer" unique_id=1920453749]
+position = Vector2(561.595, 1455.41)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("18_q61ya")
+
+[node name="Pharmacy2" type="Sprite2D" parent="ParallaxLayer" unique_id=440968747]
+position = Vector2(1644.76, -1304.22)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("23_ydiy6")
+
+[node name="Tablet" type="Sprite2D" parent="ParallaxLayer" unique_id=410586344]
+position = Vector2(1074.27, -1214.14)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("19_vk0e1")
+
+[node name="Mobile" type="Sprite2D" parent="ParallaxLayer" unique_id=859156598]
+position = Vector2(-2282.37, 111.093)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("20_x6fkg")
+
+[node name="Invoice" type="Sprite2D" parent="ParallaxLayer" unique_id=1302272098]
+position = Vector2(-2831.85, -1079.59)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("21_dfupc")
+
+[node name="Seto" type="Sprite2D" parent="ParallaxLayer" unique_id=1334229478]
+position = Vector2(-1717.07, -303.547)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("22_g8kxg")
+
+[node name="Browse" type="Sprite2D" parent="ParallaxLayer" unique_id=944487752]
+position = Vector2(-1282.01, 333.191)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("23_42e23")
+
+[node name="Genetic" type="Sprite2D" parent="ParallaxLayer" unique_id=2008452671]
+position = Vector2(-1598.12, 710.272)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("24_huaaf")
+
+[node name="Cross" type="Sprite2D" parent="ParallaxLayer" unique_id=568226574]
+position = Vector2(-3332.63, -271.822)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("25_qu651")
+
+[node name="Healthcare" type="Sprite2D" parent="ParallaxLayer" unique_id=1593081909]
+position = Vector2(-2260.3, -1246.54)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("29_kw6b5")
+
+[node name="Drugs" type="Sprite2D" parent="ParallaxLayer" unique_id=568340800]
+position = Vector2(-2274.07, 1658.52)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("30_277a8")
+
+[node name="Medicine" type="Sprite2D" parent="ParallaxLayer" unique_id=1569935141]
+position = Vector2(42.2671, 2109.56)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("33_v8rs0")
+
+[node name="Jar" type="Sprite2D" parent="ParallaxLayer" unique_id=550948273]
+position = Vector2(-943.002, 1635.82)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("34_7f6jw")
+
+[node name="Bill" type="Sprite2D" parent="ParallaxLayer" unique_id=680947633]
+position = Vector2(-2403.69, -1982.96)
+rotation = 0.195477
+scale = Vector2(0.425329, 0.425329)
+texture = ExtResource("35_td6pb")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1122466501]
+root_node = NodePath("../ParallaxLayer")
+libraries/ = SubResource("AnimationLibrary_vv40r")
+autoplay = &"parallax"
+speed_scale = 0.2

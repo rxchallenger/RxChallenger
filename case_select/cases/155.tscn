@@ -1,0 +1,465 @@
+[gd_scene format=3 uid="uid://upq777betjmi"]
+
+[ext_resource type="Script" uid="uid://djm8oieu1gae4" path="res://case_select/cases/level.gd" id="1_d5luo"]
+[ext_resource type="PackedScene" uid="uid://on4q4h1por6p" path="res://case_margin_container/case_margin_container.tscn" id="2_knky6"]
+[ext_resource type="Texture2D" uid="uid://0uqfjpsp1c3o" path="res://assets/prescriptions/155.webp" id="3_iyvru"]
+[ext_resource type="StyleBox" uid="uid://dn0vu6dbt7tsa" path="res://themes/disabled_style_box_flat.tres" id="4_0h7kq"]
+[ext_resource type="PackedScene" uid="uid://bhlyncdwpb8i4" path="res://tools_panel/tools_panel.tscn" id="4_642mx"]
+[ext_resource type="StyleBox" uid="uid://djhr1wvyv2t8y" path="res://themes/green_style_button.tres" id="5_gwad6"]
+[ext_resource type="PackedScene" uid="uid://bc2svnfkweofl" path="res://virtual_keyboard/virtual_keyboard.tscn" id="5_ksk3g"]
+[ext_resource type="Texture2D" uid="uid://qmmv1a4powqw" path="res://assets/icons/done.webp" id="6_d61t4"]
+[ext_resource type="PackedScene" uid="uid://y4asa2ro60fl" path="res://tip_panel/tip_panel.tscn" id="6_o6325"]
+[ext_resource type="Texture2D" uid="uid://b41bjfh7gkfq3" path="res://assets/icons/alt.webp" id="7_eljhg"]
+[ext_resource type="PackedScene" uid="uid://c0k5romw047p5" path="res://clinical/clinical.tscn" id="7_if3w8"]
+[ext_resource type="Texture2D" uid="uid://bkyp35rdc4d4s" path="res://assets/icons/hide.webp" id="8_efp1x"]
+[ext_resource type="PackedScene" uid="uid://d1yfh8k73euvr" path="res://camera_2d/camera_2d.tscn" id="8_se57g"]
+[ext_resource type="PackedScene" uid="uid://16mxvqlsc8tl" path="res://camera_2d/camera_timer.tscn" id="9_5lvkg"]
+[ext_resource type="Texture2D" uid="uid://djgvyjg13cx36" path="res://assets/icons/show.webp" id="9_trptp"]
+[ext_resource type="StyleBox" uid="uid://c2qa4jcj4l7ce" path="res://themes/orange_style_button.tres" id="10_xr414"]
+
+[sub_resource type="Animation" id="Animation_k61nn"]
+resource_name = "Load"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1080, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_es3lr"]
+resource_name = "Out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1080, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_5k1xv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1080, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c1sl5"]
+_data = {
+&"Load": SubResource("Animation_k61nn"),
+&"Out": SubResource("Animation_es3lr"),
+&"RESET": SubResource("Animation_5k1xv")
+}
+
+[node name="155" type="Control" unique_id=1247841733 node_paths=PackedStringArray("TipPanel", "LineEdit_Node", "Clinical_Node")]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1080.0
+offset_right = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_d5luo")
+TipPanel = NodePath("TipPanel")
+LineEdit_Node = NodePath("VirtualKeyboard/SolvingPanel/VBoxContainer/LineEdit")
+Clinical_Node = NodePath("Clinical")
+
+[node name="CaseMarginContainer" parent="." unique_id=854691778 instance=ExtResource("2_knky6")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -498.0
+offset_top = -811.0
+offset_right = 502.0
+offset_bottom = 136.0
+
+[node name="Speciality" parent="CaseMarginContainer/Panel" parent_id_path=PackedInt32Array(854691778, 35377892) index="0" unique_id=2140577637]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 338.0
+offset_bottom = 83.0
+text = "Cardiology"
+
+[node name="PrescriptionTexture" parent="CaseMarginContainer/Panel/TextureMarginContainer" parent_id_path=PackedInt32Array(854691778, 345025926) index="0" unique_id=293743861]
+texture = ExtResource("3_iyvru")
+
+[node name="Drug1" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="0" unique_id=1110682478]
+offset_left = 139.0
+offset_top = 178.0
+offset_right = 672.0
+offset_bottom = 255.0
+text = "OMEZ"
+
+[node name="Drug2" type="Button" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="1" unique_id=2017468099 groups=["DrugButtons"]]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 318.0
+offset_right = 672.0
+offset_bottom = 395.0
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = ExtResource("5_gwad6")
+theme_override_styles/normal_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/pressed = ExtResource("4_0h7kq")
+theme_override_styles/pressed_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/hover = ExtResource("4_0h7kq")
+theme_override_styles/hover_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/hover_pressed = ExtResource("4_0h7kq")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/disabled = ExtResource("4_0h7kq")
+theme_override_styles/disabled_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/focus = ExtResource("4_0h7kq")
+text = "MIOPAN"
+icon = ExtResource("6_d61t4")
+expand_icon = true
+
+[node name="Drug3" type="Button" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="2" unique_id=1670080728 groups=["DrugButtons"]]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 461.0
+offset_right = 672.0
+offset_bottom = 538.0
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = ExtResource("5_gwad6")
+theme_override_styles/normal_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/pressed = ExtResource("4_0h7kq")
+theme_override_styles/pressed_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/hover = ExtResource("4_0h7kq")
+theme_override_styles/hover_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/hover_pressed = ExtResource("4_0h7kq")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/disabled = ExtResource("4_0h7kq")
+theme_override_styles/disabled_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/focus = ExtResource("4_0h7kq")
+text = "METACARDIA"
+icon = ExtResource("6_d61t4")
+expand_icon = true
+
+[node name="Drug4" type="Button" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="3" unique_id=1283009533 groups=["DrugButtons"]]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 595.0
+offset_right = 672.0
+offset_bottom = 672.0
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = ExtResource("5_gwad6")
+theme_override_styles/normal_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/pressed = ExtResource("4_0h7kq")
+theme_override_styles/pressed_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/hover = ExtResource("4_0h7kq")
+theme_override_styles/hover_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/hover_pressed = ExtResource("4_0h7kq")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/disabled = ExtResource("4_0h7kq")
+theme_override_styles/disabled_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/focus = ExtResource("4_0h7kq")
+text = "DEPOVIT"
+icon = ExtResource("6_d61t4")
+expand_icon = true
+
+[node name="Drug5" type="Button" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="4" unique_id=1400218724 groups=["DrugButtons"]]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 702.0
+offset_right = 672.0
+offset_bottom = 779.0
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = ExtResource("5_gwad6")
+theme_override_styles/normal_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/pressed = ExtResource("4_0h7kq")
+theme_override_styles/pressed_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/hover = ExtResource("4_0h7kq")
+theme_override_styles/hover_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/hover_pressed = ExtResource("4_0h7kq")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/disabled = ExtResource("4_0h7kq")
+theme_override_styles/disabled_mirrored = ExtResource("4_0h7kq")
+theme_override_styles/focus = ExtResource("4_0h7kq")
+text = "ALDACTONE"
+icon = ExtResource("6_d61t4")
+expand_icon = true
+
+[node name="Alt1" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="5" unique_id=1212042374]
+offset_left = 58.9999
+offset_top = 179.0
+offset_right = 137.0
+offset_bottom = 253.0
+
+[node name="Alt2" type="TextureButton" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="6" unique_id=1539185690 groups=["AltTextures"]]
+layout_mode = 0
+offset_left = 58.9999
+offset_top = 319.0
+offset_right = 137.0
+offset_bottom = 393.0
+texture_normal = ExtResource("7_eljhg")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Alt3" type="TextureButton" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="7" unique_id=492090013 groups=["AltTextures"]]
+layout_mode = 0
+offset_left = 58.9999
+offset_top = 462.0
+offset_right = 137.0
+offset_bottom = 536.0
+texture_normal = ExtResource("7_eljhg")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Alt4" type="TextureButton" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="8" unique_id=160635673 groups=["AltTextures"]]
+layout_mode = 0
+offset_left = 58.9999
+offset_top = 596.0
+offset_right = 137.0
+offset_bottom = 670.0
+texture_normal = ExtResource("7_eljhg")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Alt5" type="TextureButton" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="9" unique_id=1961074171 groups=["AltTextures"]]
+layout_mode = 0
+offset_left = 58.9999
+offset_top = 703.0
+offset_right = 137.0
+offset_bottom = 777.0
+texture_normal = ExtResource("7_eljhg")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="HideDrug1" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="10" unique_id=1091567722]
+offset_left = 58.9999
+offset_top = 179.0
+offset_right = 137.0
+offset_bottom = 256.0
+
+[node name="HideDrug2" type="TextureButton" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="11" unique_id=998902017 groups=["HideTextures"]]
+layout_mode = 0
+offset_left = 58.9999
+offset_top = 319.0
+offset_right = 137.0
+offset_bottom = 396.0
+toggle_mode = true
+texture_normal = ExtResource("8_efp1x")
+texture_pressed = ExtResource("9_trptp")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="HideDrug3" type="TextureButton" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="12" unique_id=1824038058 groups=["HideTextures"]]
+layout_mode = 0
+offset_left = 58.9999
+offset_top = 462.0
+offset_right = 137.0
+offset_bottom = 539.0
+toggle_mode = true
+texture_normal = ExtResource("8_efp1x")
+texture_pressed = ExtResource("9_trptp")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="HideDrug4" type="TextureButton" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="13" unique_id=972515557 groups=["HideTextures"]]
+layout_mode = 0
+offset_left = 58.9999
+offset_top = 596.0
+offset_right = 137.0
+offset_bottom = 673.0
+toggle_mode = true
+texture_normal = ExtResource("8_efp1x")
+texture_pressed = ExtResource("9_trptp")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="HideDrug5" type="TextureButton" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="14" unique_id=692099772 groups=["HideTextures"]]
+layout_mode = 0
+offset_left = 58.9999
+offset_top = 703.0
+offset_right = 137.0
+offset_bottom = 780.0
+toggle_mode = true
+texture_normal = ExtResource("8_efp1x")
+texture_pressed = ExtResource("9_trptp")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="DrugLetterCount1" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="15" unique_id=1449345706]
+offset_left = 27.0
+offset_top = 179.0
+offset_right = 59.0
+offset_bottom = 253.0
+
+[node name="DrugLetterCount2" type="Button" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="16" unique_id=1512442683 groups=["DrugLetterButtons"]]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 319.0
+offset_right = 59.0
+offset_bottom = 393.0
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("10_xr414")
+theme_override_styles/pressed = ExtResource("10_xr414")
+theme_override_styles/focus = ExtResource("10_xr414")
+
+[node name="DrugLetterCount3" type="Button" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="17" unique_id=1700625388 groups=["DrugLetterButtons"]]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 462.0
+offset_right = 59.0
+offset_bottom = 536.0
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("10_xr414")
+theme_override_styles/pressed = ExtResource("10_xr414")
+theme_override_styles/focus = ExtResource("10_xr414")
+
+[node name="DrugLetterCount4" type="Button" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="18" unique_id=1797748445 groups=["DrugLetterButtons"]]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 596.0
+offset_right = 59.0
+offset_bottom = 670.0
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("10_xr414")
+theme_override_styles/pressed = ExtResource("10_xr414")
+theme_override_styles/focus = ExtResource("10_xr414")
+
+[node name="DrugLetterCount5" type="Button" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(854691778, 309411887) index="19" unique_id=1111013734 groups=["DrugLetterButtons"]]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 703.0
+offset_right = 59.0
+offset_bottom = 777.0
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("10_xr414")
+theme_override_styles/pressed = ExtResource("10_xr414")
+theme_override_styles/focus = ExtResource("10_xr414")
+
+[node name="ToolsPanel" parent="." unique_id=478493113 instance=ExtResource("4_642mx")]
+unique_name_in_owner = true
+layout_mode = 1
+offset_left = -500.0
+offset_top = 147.0
+offset_right = 500.0
+offset_bottom = 301.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=421117112]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_c1sl5")
+
+[node name="VirtualKeyboard" parent="." unique_id=1346101103 instance=ExtResource("5_ksk3g")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.499
+offset_left = -538.92
+
+[node name="TipPanel" parent="." unique_id=1292700312 instance=ExtResource("6_o6325")]
+unique_name_in_owner = true
+layout_mode = 1
+
+[node name="Control" parent="TipPanel" index="0" unique_id=1003771022]
+offset_right = 1120.0
+
+[node name="TradeMarginContainer" parent="TipPanel/Control" index="0" unique_id=722846868]
+offset_top = 146.0
+
+[node name="TradePicture" parent="TipPanel/Control/TradeMarginContainer/TradePanel" parent_id_path=PackedInt32Array(1292700312, 1189885614) index="1" unique_id=570127443]
+offset_bottom = 474.0
+
+[node name="Clinical" parent="." unique_id=577606205 instance=ExtResource("7_if3w8")]
+unique_name_in_owner = true
+layout_mode = 1
+
+[node name="WinTimer" type="Timer" parent="." unique_id=2099187464]
+autostart = true
+
+[node name="Camera2D" parent="." unique_id=1101461249 instance=ExtResource("8_se57g")]
+
+[node name="CameraTimer" parent="." unique_id=1334247855 instance=ExtResource("9_5lvkg")]
+
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
+[connection signal="button_down" from="CaseMarginContainer/Panel/HBoxContainer/BackButton" to="." method="_on_back_button_button_down"]
+[connection signal="button_down" from="CaseMarginContainer/Panel/HBoxContainer/NextButton" to="." method="_on_next_button_button_down"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="timeout" from="WinTimer" to="." method="_on_win_timer_timeout"]
+[connection signal="timeout" from="CameraTimer" to="." method="_on_camera_timer_timeout"]
+
+[editable path="CaseMarginContainer"]
+[editable path="ToolsPanel"]
+[editable path="VirtualKeyboard"]
+[editable path="TipPanel"]
+[editable path="Clinical"]

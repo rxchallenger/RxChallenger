@@ -1,0 +1,285 @@
+[gd_scene format=3 uid="uid://b8jxr3kiwpn7e"]
+
+[ext_resource type="Script" uid="uid://djm8oieu1gae4" path="res://case_select/cases/level.gd" id="1_83o0p"]
+[ext_resource type="PackedScene" uid="uid://on4q4h1por6p" path="res://case_margin_container/case_margin_container.tscn" id="2_s8g6m"]
+[ext_resource type="Texture2D" uid="uid://cnn55xa8cx448" path="res://assets/prescriptions/40.webp" id="3_ivpio"]
+[ext_resource type="StyleBox" uid="uid://dn0vu6dbt7tsa" path="res://themes/disabled_style_box_flat.tres" id="4_18k82"]
+[ext_resource type="StyleBox" uid="uid://djhr1wvyv2t8y" path="res://themes/green_style_button.tres" id="5_f8q8p"]
+[ext_resource type="Texture2D" uid="uid://qmmv1a4powqw" path="res://assets/icons/done.webp" id="6_3euhr"]
+[ext_resource type="Texture2D" uid="uid://b41bjfh7gkfq3" path="res://assets/icons/alt.webp" id="7_husmb"]
+[ext_resource type="Texture2D" uid="uid://bkyp35rdc4d4s" path="res://assets/icons/hide.webp" id="8_mkymi"]
+[ext_resource type="Texture2D" uid="uid://djgvyjg13cx36" path="res://assets/icons/show.webp" id="9_tuneo"]
+[ext_resource type="StyleBox" uid="uid://c2qa4jcj4l7ce" path="res://themes/orange_style_button.tres" id="10_xkbl3"]
+[ext_resource type="PackedScene" uid="uid://bhlyncdwpb8i4" path="res://tools_panel/tools_panel.tscn" id="11_tpqjw"]
+[ext_resource type="PackedScene" uid="uid://bc2svnfkweofl" path="res://virtual_keyboard/virtual_keyboard.tscn" id="12_6oyil"]
+[ext_resource type="PackedScene" uid="uid://y4asa2ro60fl" path="res://tip_panel/tip_panel.tscn" id="13_osukn"]
+[ext_resource type="PackedScene" uid="uid://c0k5romw047p5" path="res://clinical/clinical.tscn" id="14_y0qxn"]
+[ext_resource type="PackedScene" uid="uid://d1yfh8k73euvr" path="res://camera_2d/camera_2d.tscn" id="15_stcig"]
+[ext_resource type="PackedScene" uid="uid://16mxvqlsc8tl" path="res://camera_2d/camera_timer.tscn" id="16_prrbr"]
+
+[sub_resource type="Animation" id="Animation_k61nn"]
+resource_name = "Load"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1080, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_es3lr"]
+resource_name = "Out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1080, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_5k1xv"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1080, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_c1sl5"]
+_data = {
+&"Load": SubResource("Animation_k61nn"),
+&"Out": SubResource("Animation_es3lr"),
+&"RESET": SubResource("Animation_5k1xv")
+}
+
+[node name="40" type="Control" unique_id=657464343 node_paths=PackedStringArray("TipPanel", "LineEdit_Node", "Clinical_Node")]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1080.0
+offset_right = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_83o0p")
+TipPanel = NodePath("TipPanel")
+LineEdit_Node = NodePath("VirtualKeyboard/SolvingPanel/VBoxContainer/LineEdit")
+Clinical_Node = NodePath("Clinical")
+
+[node name="CaseMarginContainer" parent="." unique_id=1912013404 instance=ExtResource("2_s8g6m")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -498.0
+offset_top = -811.0
+offset_right = 502.0
+offset_bottom = 136.0
+
+[node name="Speciality" parent="CaseMarginContainer/Panel" parent_id_path=PackedInt32Array(1912013404, 35377892) index="0" unique_id=2140577637]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 338.0
+offset_bottom = 83.0
+text = "Internal Medicine"
+
+[node name="PrescriptionTexture" parent="CaseMarginContainer/Panel/TextureMarginContainer" parent_id_path=PackedInt32Array(1912013404, 345025926) index="0" unique_id=293743861]
+texture = ExtResource("3_ivpio")
+
+[node name="Drug1" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(1912013404, 309411887) index="0" unique_id=1110682478]
+offset_left = 130.0
+offset_top = 211.0
+offset_right = 663.0
+offset_bottom = 288.0
+text = "EPITENS"
+
+[node name="Drug2" type="Button" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(1912013404, 309411887) index="1" unique_id=1192716604 groups=["DrugButtons"]]
+layout_mode = 0
+offset_left = 130.0
+offset_top = 627.0
+offset_right = 663.0
+offset_bottom = 704.0
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_disabled_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = ExtResource("5_f8q8p")
+theme_override_styles/normal_mirrored = ExtResource("4_18k82")
+theme_override_styles/pressed = ExtResource("4_18k82")
+theme_override_styles/pressed_mirrored = ExtResource("4_18k82")
+theme_override_styles/hover = ExtResource("4_18k82")
+theme_override_styles/hover_mirrored = ExtResource("4_18k82")
+theme_override_styles/hover_pressed = ExtResource("4_18k82")
+theme_override_styles/hover_pressed_mirrored = ExtResource("4_18k82")
+theme_override_styles/disabled = ExtResource("4_18k82")
+theme_override_styles/disabled_mirrored = ExtResource("4_18k82")
+theme_override_styles/focus = ExtResource("4_18k82")
+text = "QUIBRON"
+icon = ExtResource("6_3euhr")
+expand_icon = true
+
+[node name="Alt1" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(1912013404, 309411887) index="2" unique_id=1212042374]
+offset_left = 51.9999
+offset_top = 211.0
+offset_right = 130.0
+offset_bottom = 285.0
+
+[node name="Alt2" type="TextureButton" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(1912013404, 309411887) index="3" unique_id=1596623780 groups=["AltTextures"]]
+layout_mode = 0
+offset_left = 51.9999
+offset_top = 627.0
+offset_right = 130.0
+offset_bottom = 701.0
+texture_normal = ExtResource("7_husmb")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="HideDrug1" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(1912013404, 309411887) index="4" unique_id=1091567722]
+offset_left = 51.9999
+offset_top = 211.0
+offset_right = 130.0
+offset_bottom = 288.0
+
+[node name="HideDrug2" type="TextureButton" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(1912013404, 309411887) index="5" unique_id=938552927 groups=["HideTextures"]]
+layout_mode = 0
+offset_left = 51.9999
+offset_top = 627.0
+offset_right = 130.0
+offset_bottom = 704.0
+toggle_mode = true
+texture_normal = ExtResource("8_mkymi")
+texture_pressed = ExtResource("9_tuneo")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="DrugLetterCount1" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(1912013404, 309411887) index="6" unique_id=1449345706]
+offset_left = 20.0
+offset_top = 211.0
+offset_right = 52.0
+offset_bottom = 285.0
+
+[node name="DrugLetterCount2" type="Button" parent="CaseMarginContainer/Panel/ContentControl" parent_id_path=PackedInt32Array(1912013404, 309411887) index="7" unique_id=546772994 groups=["DrugLetterButtons"]]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 627.0
+offset_right = 52.0
+offset_bottom = 701.0
+theme_override_font_sizes/font_size = 28
+theme_override_styles/normal = ExtResource("10_xkbl3")
+theme_override_styles/pressed = ExtResource("10_xkbl3")
+theme_override_styles/focus = ExtResource("10_xkbl3")
+
+[node name="ToolsPanel" parent="." unique_id=1953133273 instance=ExtResource("11_tpqjw")]
+unique_name_in_owner = true
+layout_mode = 1
+offset_left = -500.0
+offset_top = 147.0
+offset_right = 500.0
+offset_bottom = 301.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=855963104]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_c1sl5")
+
+[node name="VirtualKeyboard" parent="." unique_id=790302540 instance=ExtResource("12_6oyil")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.499
+offset_left = -538.92
+
+[node name="TipPanel" parent="." unique_id=1486709941 instance=ExtResource("13_osukn")]
+unique_name_in_owner = true
+layout_mode = 1
+
+[node name="Control" parent="TipPanel" index="0" unique_id=1003771022]
+offset_right = 1120.0
+
+[node name="TradeMarginContainer" parent="TipPanel/Control" index="0" unique_id=722846868]
+offset_top = 146.0
+
+[node name="TradePicture" parent="TipPanel/Control/TradeMarginContainer/TradePanel" parent_id_path=PackedInt32Array(1486709941, 1189885614) index="1" unique_id=570127443]
+offset_bottom = 474.0
+
+[node name="Clinical" parent="." unique_id=1404830321 instance=ExtResource("14_y0qxn")]
+unique_name_in_owner = true
+layout_mode = 1
+
+[node name="WinTimer" type="Timer" parent="." unique_id=23252591]
+autostart = true
+
+[node name="Camera2D" parent="." unique_id=843208724 instance=ExtResource("15_stcig")]
+
+[node name="CameraTimer" parent="." unique_id=1873391105 instance=ExtResource("16_prrbr")]
+
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
+[connection signal="button_down" from="CaseMarginContainer/Panel/HBoxContainer/BackButton" to="." method="_on_back_button_button_down"]
+[connection signal="button_down" from="CaseMarginContainer/Panel/HBoxContainer/NextButton" to="." method="_on_next_button_button_down"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="timeout" from="WinTimer" to="." method="_on_win_timer_timeout"]
+[connection signal="timeout" from="CameraTimer" to="." method="_on_camera_timer_timeout"]
+
+[editable path="CaseMarginContainer"]
+[editable path="ToolsPanel"]
+[editable path="VirtualKeyboard"]
+[editable path="TipPanel"]
+[editable path="Clinical"]

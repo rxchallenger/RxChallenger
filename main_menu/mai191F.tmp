@@ -1,0 +1,402 @@
+[gd_scene load_steps=14 format=3 uid="uid://cni0o2wjvvgg4"]
+
+[ext_resource type="Script" path="res://main_menu/main_menu.gd" id="1_aa8jm"]
+[ext_resource type="Theme" uid="uid://dhjauti4tyal7" path="res://themes/theme.tres" id="2_g2q2l"]
+[ext_resource type="Theme" uid="uid://d2eakbmaefnt6" path="res://addons/silent_wolf/assets/themes/sw_theme.tres" id="3_ochsb"]
+[ext_resource type="Texture2D" uid="uid://c6s0yyec1lfcw" path="res://assets/icons/case.png" id="4_23jm8"]
+[ext_resource type="Texture2D" uid="uid://didvqh6mtymp2" path="res://assets/icons/leaderboards.png" id="5_84lh5"]
+[ext_resource type="Texture2D" uid="uid://cvavl5moaj7ja" path="res://assets/icons/database.png" id="6_edd16"]
+[ext_resource type="Texture2D" uid="uid://5xi6ixwnyply" path="res://assets/icons/setting.png" id="7_2ooid"]
+[ext_resource type="Texture2D" uid="uid://ckb6tfn2wxbyx" path="res://assets/icons/exit.png" id="8_7w5mo"]
+
+[sub_resource type="Animation" id="Animation_skhfl"]
+resource_name = "DatabaseOut"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1080, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_g8h0v"]
+resource_name = "Load"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1080, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_gnbjm"]
+resource_name = "Out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1080, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_25x3h"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1080, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bp057"]
+_data = {
+"DatabaseOut": SubResource("Animation_skhfl"),
+"Load": SubResource("Animation_g8h0v"),
+"Out": SubResource("Animation_gnbjm"),
+"RESET": SubResource("Animation_25x3h")
+}
+
+[node name="MainMenu" type="Control"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1080.0
+offset_right = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aa8jm")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.495
+anchor_right = 0.5
+anchor_bottom = 0.495
+offset_left = 202.0
+offset_top = -774.4
+offset_right = 441.0
+offset_bottom = -555.4
+theme = ExtResource("3_ochsb")
+
+[node name="PlayerName" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Player Name"
+horizontal_alignment = 1
+
+[node name="LoginButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Log in"
+
+[node name="LogoutButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Log Out"
+
+[node name="RegisterButton" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+text = "Register"
+
+[node name="UID" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -540.0
+offset_top = -960.0
+offset_right = -500.0
+offset_bottom = -920.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="get_distribution_name" type="TextEdit" parent="UID"]
+layout_mode = 2
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = -20.0
+offset_right = 1035.92
+offset_bottom = 156.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_distribution_name"
+editable = false
+wrap_mode = 1
+
+[node name="get_name" type="TextEdit" parent="UID"]
+layout_mode = 2
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = 156.0
+offset_right = 1035.92
+offset_bottom = 324.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_name"
+editable = false
+wrap_mode = 1
+
+[node name="get_processor_name" type="TextEdit" parent="UID"]
+layout_mode = 2
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = 324.0
+offset_right = 1035.92
+offset_bottom = 571.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_processor_name"
+editable = false
+wrap_mode = 1
+
+[node name="get_user_data_dir" type="TextEdit" parent="UID"]
+layout_mode = 2
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = 571.0
+offset_right = 1035.92
+offset_bottom = 830.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_user_data_dir"
+editable = false
+wrap_mode = 1
+
+[node name="get_video_adapter_driver_info" type="TextEdit" parent="UID"]
+layout_mode = 2
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = 830.0
+offset_right = 1035.92
+offset_bottom = 1058.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_video_adapter_driver_info"
+editable = false
+wrap_mode = 1
+
+[node name="get_unique_id" type="TextEdit" parent="UID"]
+layout_mode = 2
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = 1054.0
+offset_right = 1035.92
+offset_bottom = 1287.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_unique_id"
+editable = false
+wrap_mode = 1
+
+[node name="get_processor_count" type="TextEdit" parent="UID"]
+layout_mode = 2
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = 1287.0
+offset_right = 1035.92
+offset_bottom = 1463.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_processor_count"
+editable = false
+wrap_mode = 1
+
+[node name="get_model_name" type="TextEdit" parent="UID"]
+layout_mode = 2
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = 1463.0
+offset_right = 1035.92
+offset_bottom = 1639.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_model_name"
+editable = false
+wrap_mode = 1
+
+[node name="get_executable_path" type="TextEdit" parent="UID"]
+layout_mode = 2
+anchor_left = 0.502
+anchor_top = 0.5
+anchor_right = 0.502
+anchor_bottom = 0.5
+offset_left = 16.92
+offset_top = 1639.0
+offset_right = 1035.92
+offset_bottom = 1900.0
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 50
+text = "get_executable_path"
+editable = false
+wrap_mode = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_bp057")
+}
+autoplay = "Load"
+
+[node name="MenuGridContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -286.0
+offset_top = -300.0
+offset_right = 270.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_g2q2l")
+theme_override_constants/separation = 20
+
+[node name="CaseSelectButton" type="Button" parent="MenuGridContainer"]
+layout_mode = 2
+text = "Case Select"
+icon = ExtResource("4_23jm8")
+expand_icon = true
+
+[node name="LeaderBoardButton" type="Button" parent="MenuGridContainer"]
+layout_mode = 2
+text = "Leaderboard"
+icon = ExtResource("5_84lh5")
+expand_icon = true
+
+[node name="DatabaseButton" type="Button" parent="MenuGridContainer"]
+layout_mode = 2
+text = "Database"
+icon = ExtResource("6_edd16")
+expand_icon = true
+
+[node name="SettingsButton" type="Button" parent="MenuGridContainer"]
+layout_mode = 2
+text = "Settings"
+icon = ExtResource("7_2ooid")
+expand_icon = true
+
+[node name="ExitButton" type="Button" parent="MenuGridContainer"]
+layout_mode = 2
+text = "Exit"
+icon = ExtResource("8_7w5mo")
+expand_icon = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+autostart = true
+
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
+[connection signal="pressed" from="VBoxContainer/LoginButton" to="." method="_on_login_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/LogoutButton" to="." method="_on_logout_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/RegisterButton" to="." method="_on_register_button_pressed"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="button_down" from="MenuGridContainer/CaseSelectButton" to="." method="_on_case_select_button_button_down"]
+[connection signal="button_down" from="MenuGridContainer/DatabaseButton" to="." method="_on_database_button_button_down"]
+[connection signal="button_down" from="MenuGridContainer/SettingsButton" to="." method="_on_settings_button_button_down"]
+[connection signal="button_down" from="MenuGridContainer/ExitButton" to="." method="_on_exit_button_button_down"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

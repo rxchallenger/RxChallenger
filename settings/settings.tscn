@@ -1,0 +1,270 @@
+[gd_scene format=3 uid="uid://cqmof7t7hwtcw"]
+
+[ext_resource type="Script" uid="uid://ds1hdnst0ga38" path="res://settings/settings.gd" id="1_v17lr"]
+[ext_resource type="Theme" uid="uid://cv40tygwaw1ho" path="res://themes/theme.tres" id="2_ajm4n"]
+[ext_resource type="Texture2D" uid="uid://huc8ypyexyg" path="res://assets/icons/setting.webp" id="3_d0r5i"]
+[ext_resource type="Texture2D" uid="uid://bv2iul2lvfax3" path="res://assets/icons/left_arrow.webp" id="3_tih8q"]
+[ext_resource type="Texture2D" uid="uid://desq3v0mqrjpl" path="res://assets/icons/deletekey.webp" id="4_37g3r"]
+[ext_resource type="Texture2D" uid="uid://b55d50ob1hcw1" path="res://assets/icons/audio.webp" id="6_w2he1"]
+[ext_resource type="Texture2D" uid="uid://dapifop4snlv5" path="res://assets/icons/checked.webp" id="6_wnuai"]
+[ext_resource type="Texture2D" uid="uid://bjp886s6qoewr" path="res://assets/icons/mute.webp" id="7_b2vjp"]
+
+[sub_resource type="Animation" id="Animation_odh5w"]
+resource_name = "Load"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1080, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_p47ix"]
+resource_name = "Out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1080, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_6yd25"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1080, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.001),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("MarginContainer/Panel/MarginContainer/VBoxContainer/ResetBoxContainer/TrashButton:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("MarginContainer/Panel/MarginContainer/VBoxContainer/ResetBoxContainer/TrashButton:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_puyiy"]
+_data = {
+&"Load": SubResource("Animation_odh5w"),
+&"Out": SubResource("Animation_p47ix"),
+&"RESET": SubResource("Animation_6yd25")
+}
+
+[node name="Settings" type="Control" unique_id=814378268 node_paths=PackedStringArray("OkButton")]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1080.0
+offset_right = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_v17lr")
+OkButton = NodePath("MarginContainer/Panel/MarginContainer/VBoxContainer/OkButton")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=274775327]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -397.0
+offset_top = -278.0
+offset_right = 421.0
+offset_bottom = 252.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_ajm4n")
+
+[node name="Panel" type="Panel" parent="MarginContainer" unique_id=1302031857]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SettingsIcon" type="TextureRect" parent="MarginContainer/Panel" unique_id=1548072802]
+layout_mode = 0
+offset_left = 226.0
+offset_top = 6.0
+offset_right = 309.0
+offset_bottom = 89.0
+texture = ExtResource("3_d0r5i")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="HBoxContainer" type="HSplitContainer" parent="MarginContainer/Panel" unique_id=1482336851]
+layout_mode = 0
+anchor_right = 0.992
+anchor_bottom = 0.054
+offset_right = -0.128052
+offset_bottom = -1.33601
+split_offsets = PackedInt32Array(300)
+split_offset = 300
+
+[node name="BackButton" type="TextureButton" parent="MarginContainer/Panel/HBoxContainer" unique_id=528427464]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 95)
+layout_mode = 2
+texture_normal = ExtResource("3_tih8q")
+texture_pressed = ExtResource("3_tih8q")
+texture_hover = ExtResource("3_tih8q")
+texture_disabled = ExtResource("3_tih8q")
+texture_focused = ExtResource("3_tih8q")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="SettingsLabel" type="Label" parent="MarginContainer/Panel/HBoxContainer" unique_id=1425977522]
+layout_mode = 2
+text = "Settings"
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Panel" unique_id=218422550]
+layout_mode = 0
+offset_left = 79.0
+offset_top = 166.0
+offset_right = 744.0
+offset_bottom = 446.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Panel/MarginContainer" unique_id=456394386]
+layout_mode = 2
+theme_override_constants/separation = 90
+
+[node name="ResetBoxContainer" type="HBoxContainer" parent="MarginContainer/Panel/MarginContainer/VBoxContainer" unique_id=2031136881]
+visible = false
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 100
+
+[node name="ResetLabel" type="RichTextLabel" parent="MarginContainer/Panel/MarginContainer/VBoxContainer/ResetBoxContainer" unique_id=686961707]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.05
+theme_override_font_sizes/normal_font_size = 56
+text = "Clear Player Data"
+fit_content = true
+
+[node name="TrashButton" type="TextureButton" parent="MarginContainer/Panel/MarginContainer/VBoxContainer/ResetBoxContainer" unique_id=671847512]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("4_37g3r")
+texture_pressed = ExtResource("4_37g3r")
+texture_hover = ExtResource("4_37g3r")
+texture_disabled = ExtResource("4_37g3r")
+texture_focused = ExtResource("4_37g3r")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="MuteBoxContainer" type="HBoxContainer" parent="MarginContainer/Panel/MarginContainer/VBoxContainer" unique_id=11518213]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 100
+
+[node name="MuteLabel" type="RichTextLabel" parent="MarginContainer/Panel/MarginContainer/VBoxContainer/MuteBoxContainer" unique_id=1596793178]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 5.05
+theme_override_font_sizes/normal_font_size = 56
+text = "Mute UI Sound"
+fit_content = true
+
+[node name="MuteButton" type="TextureButton" parent="MarginContainer/Panel/MarginContainer/VBoxContainer/MuteBoxContainer" unique_id=1333423524]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+toggle_mode = true
+texture_normal = ExtResource("6_w2he1")
+texture_pressed = ExtResource("7_b2vjp")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="OkButton" type="Button" parent="MarginContainer/Panel/MarginContainer/VBoxContainer" unique_id=330152538]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Ok"
+icon = ExtResource("6_wnuai")
+expand_icon = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1719078086]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_puyiy")
+
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
+[connection signal="button_down" from="MarginContainer/Panel/HBoxContainer/BackButton" to="." method="_on_back_button_button_down"]
+[connection signal="button_down" from="MarginContainer/Panel/MarginContainer/VBoxContainer/ResetBoxContainer/TrashButton" to="." method="_on_trash_button_button_down"]
+[connection signal="pressed" from="MarginContainer/Panel/MarginContainer/VBoxContainer/MuteBoxContainer/MuteButton" to="." method="_on_mute_button_pressed"]
+[connection signal="button_down" from="MarginContainer/Panel/MarginContainer/VBoxContainer/OkButton" to="." method="_on_ok_button_button_down"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

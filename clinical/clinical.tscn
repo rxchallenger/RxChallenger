@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://c0k5romw047p5"]
+
+[ext_resource type="Theme" uid="uid://cv40tygwaw1ho" path="res://themes/theme.tres" id="1_jfbju"]
+[ext_resource type="Script" uid="uid://buxyqec3rjfc6" path="res://clinical/clinical.gd" id="2_20n6b"]
+[ext_resource type="Texture2D" uid="uid://dapifop4snlv5" path="res://assets/icons/checked.webp" id="3_ei4p0"]
+
+[node name="Clinical" type="Control" unique_id=859963710]
+visible = false
+layout_mode = 3
+anchor_left = 0.507
+anchor_top = 0.43
+anchor_right = 0.507
+anchor_bottom = 0.43
+offset_left = -491.56006
+offset_top = -548.60004
+offset_right = 492.43994
+offset_bottom = 706.39996
+theme = ExtResource("1_jfbju")
+script = ExtResource("2_20n6b")
+
+[node name="Control" type="Control" parent="." unique_id=13203179]
+anchors_preset = 0
+offset_right = 984.0
+offset_bottom = 1255.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Control" unique_id=1708761190]
+layout_mode = 0
+offset_left = -22.0
+offset_top = 3.0
+offset_right = 966.0
+offset_bottom = 1245.0
+mouse_filter = 0
+
+[node name="Panel" type="Panel" parent="Control/MarginContainer" unique_id=1834202786]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Control/MarginContainer/Panel" unique_id=1443950344]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 128.0
+offset_top = 8.0
+offset_right = 984.0
+offset_bottom = 91.0
+text = "Label"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control/MarginContainer/Panel" unique_id=11042164]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 40.0
+offset_top = 112.0
+offset_right = 952.0
+offset_bottom = 1049.0
+text = "Data"
+
+[node name="Button" type="Button" parent="Control/MarginContainer/Panel" unique_id=152129576]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 328.0
+offset_top = 1072.0
+offset_right = 617.0
+offset_bottom = 1176.0
+text = "Done"
+icon = ExtResource("3_ei4p0")
+expand_icon = true
+
+[node name="TextureRect" type="TextureRect" parent="Control/MarginContainer/Panel" unique_id=1051303520]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 24.0
+offset_right = 128.0
+offset_bottom = 96.0
+expand_mode = 1
+stretch_mode = 4
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1708576198]
+
+[connection signal="button_down" from="Control/MarginContainer/Panel/Button" to="." method="_on_button_button_down"]

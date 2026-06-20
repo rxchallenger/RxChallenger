@@ -1,0 +1,181 @@
+[gd_scene load_steps=8 format=3 uid="uid://cni0o2wjvvgg4"]
+
+[ext_resource type="Script" path="res://main_menu/main_menu.gd" id="1_aa8jm"]
+[ext_resource type="Theme" uid="uid://dhjauti4tyal7" path="res://themes/theme.tres" id="2_g2q2l"]
+
+[sub_resource type="Animation" id="Animation_skhfl"]
+resource_name = "DatabaseOut"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1080, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_g8h0v"]
+resource_name = "Load"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(1080, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_gnbjm"]
+resource_name = "Out"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1080, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_25x3h"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1080, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bp057"]
+_data = {
+"DatabaseOut": SubResource("Animation_skhfl"),
+"Load": SubResource("Animation_g8h0v"),
+"Out": SubResource("Animation_gnbjm"),
+"RESET": SubResource("Animation_25x3h")
+}
+
+[node name="MainMenu" type="Control"]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1080.0
+offset_right = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_aa8jm")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
+libraries = {
+"": SubResource("AnimationLibrary_bp057")
+}
+autoplay = "Load"
+
+[node name="MenuGridContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -173.0
+offset_top = -212.0
+offset_right = 173.0
+offset_bottom = 212.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_g2q2l")
+theme_override_constants/separation = 20
+
+[node name="LevelSelectButton" type="Button" parent="MenuGridContainer"]
+layout_mode = 2
+text = "Level Select"
+
+[node name="DatabaseButton" type="Button" parent="MenuGridContainer"]
+layout_mode = 2
+text = "Database"
+
+[node name="SettingsButton" type="Button" parent="MenuGridContainer"]
+layout_mode = 2
+text = "Settings"
+
+[node name="ExitButton" type="Button" parent="MenuGridContainer"]
+layout_mode = 2
+text = "Exit"
+
+[connection signal="tree_exiting" from="." to="." method="_on_tree_exiting"]
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="button_down" from="MenuGridContainer/LevelSelectButton" to="." method="_on_level_select_button_button_down"]
+[connection signal="button_down" from="MenuGridContainer/DatabaseButton" to="." method="_on_database_button_button_down"]
+[connection signal="button_down" from="MenuGridContainer/SettingsButton" to="." method="_on_settings_button_button_down"]
+[connection signal="button_down" from="MenuGridContainer/ExitButton" to="." method="_on_exit_button_button_down"]

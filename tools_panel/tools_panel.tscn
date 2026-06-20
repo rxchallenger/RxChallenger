@@ -1,0 +1,118 @@
+[gd_scene format=3 uid="uid://bhlyncdwpb8i4"]
+
+[ext_resource type="Theme" uid="uid://cv40tygwaw1ho" path="res://themes/theme.tres" id="1_lojbb"]
+[ext_resource type="StyleBox" uid="uid://dblv7so0mvcq7" path="res://themes/narrow_panel.tres" id="2_gfc0x"]
+[ext_resource type="Texture2D" uid="uid://dbf2at2cifnur" path="res://assets/icons/history.webp" id="3_i3iau"]
+[ext_resource type="Texture2D" uid="uid://dclil6qngfbo" path="res://assets/icons/complain.webp" id="4_xn5ns"]
+[ext_resource type="Texture2D" uid="uid://cf1jney5nsfnh" path="res://assets/icons/diagnosis.webp" id="5_kjye2"]
+[ext_resource type="Texture2D" uid="uid://bv5urwdl6oucw" path="res://assets/icons/lab.webp" id="6_gr1e2"]
+[ext_resource type="StyleBox" uid="uid://gpqhdbfg8r8w" path="res://themes/red_style_button.tres" id="7_15qw3"]
+[ext_resource type="Texture2D" uid="uid://dmqd1pkbs85td" path="res://assets/icons/drug_interaction.webp" id="7_b36q7"]
+[ext_resource type="Texture2D" uid="uid://dg4afy8sctdvu" path="res://assets/icons/solved.webp" id="9_bv73r"]
+[ext_resource type="Texture2D" uid="uid://den8okwsv3tj0" path="res://assets/icons/ad.webp" id="9_mkwms"]
+
+[node name="ToolsPanel" type="Panel" unique_id=1637033454]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -502.0
+offset_top = 141.0
+offset_right = 498.0
+offset_bottom = 295.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("1_lojbb")
+theme_override_styles/panel = ExtResource("2_gfc0x")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1702034960]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = -0.69500005
+anchor_right = 0.5
+anchor_bottom = -0.69500005
+offset_left = -480.0
+offset_top = -17.969994
+offset_right = 480.0
+offset_bottom = 240.03
+mouse_filter = 2
+theme_override_constants/separation = 40
+
+[node name="SolvedButton" type="TextureButton" parent="VBoxContainer" unique_id=34634576]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 3
+texture_normal = ExtResource("9_bv73r")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1586019939]
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="HistoryButton" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=1300820923]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("3_i3iau")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="ComplaintButton" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=349921340]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("4_xn5ns")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="DiagnosisButton" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=1880451356]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("5_kjye2")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="LabButton" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=1111185075]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("6_gr1e2")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="InteractionButton" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=1857201976]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("7_b36q7")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="CDLabel" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=596349085]
+unique_name_in_owner = true
+layout_mode = 2
+mouse_filter = 0
+theme_override_styles/normal = ExtResource("7_15qw3")
+text = "00:00"
+
+[node name="HelpButton" type="TextureButton" parent="VBoxContainer/HBoxContainer" unique_id=681483317]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+texture_normal = ExtResource("9_mkwms")
+ignore_texture_size = true
+stretch_mode = 4
+
+[node name="CDTimer" type="Timer" parent="." unique_id=1410324143]
+unique_name_in_owner = true
+wait_time = 60.0
+one_shot = true

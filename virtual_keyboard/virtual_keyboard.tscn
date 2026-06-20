@@ -1,0 +1,287 @@
+[gd_scene format=3 uid="uid://bc2svnfkweofl"]
+
+[ext_resource type="Script" uid="uid://btrh25mbrtwo" path="res://virtual_keyboard/virtual_keyboard.gd" id="1_65jgd"]
+[ext_resource type="Theme" uid="uid://cv40tygwaw1ho" path="res://themes/theme.tres" id="1_83vay"]
+[ext_resource type="StyleBox" uid="uid://dblv7so0mvcq7" path="res://themes/narrow_panel.tres" id="3_xfky4"]
+[ext_resource type="StyleBox" uid="uid://djhr1wvyv2t8y" path="res://themes/green_style_button.tres" id="4_yy5yr"]
+[ext_resource type="StyleBox" uid="uid://c2qa4jcj4l7ce" path="res://themes/orange_style_button.tres" id="5_domo0"]
+[ext_resource type="Texture2D" uid="uid://c63c8bk6gfccm" path="res://assets/icons/deletekey.webp" id="6_tdkvg"]
+
+[node name="VirtualKeyboard" type="Control" unique_id=1732730614]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -540.0
+offset_top = -960.0
+offset_right = 540.0
+offset_bottom = 960.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme = ExtResource("1_83vay")
+script = ExtResource("1_65jgd")
+
+[node name="SolvingPanel" type="Panel" parent="." unique_id=134795614]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 1274.0
+offset_right = 1042.0
+offset_bottom = 1481.0
+mouse_filter = 2
+theme_override_styles/panel = ExtResource("3_xfky4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SolvingPanel" unique_id=2104624542]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 19.0
+offset_right = 979.0
+offset_bottom = 186.0
+
+[node name="Button" type="Button" parent="SolvingPanel/VBoxContainer" unique_id=1914782371]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 1
+theme_override_styles/normal = ExtResource("4_yy5yr")
+theme_override_styles/pressed = ExtResource("4_yy5yr")
+theme_override_styles/hover = ExtResource("4_yy5yr")
+theme_override_styles/focus = ExtResource("4_yy5yr")
+
+[node name="LineEdit" type="LineEdit" parent="SolvingPanel/VBoxContainer" unique_id=1793522552]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+mouse_filter = 1
+placeholder_text = "Type Medication Name"
+alignment = 1
+max_length = 18
+editable = false
+context_menu_enabled = false
+middle_mouse_paste_enabled = false
+selecting_enabled = false
+drag_and_drop_selection_enabled = false
+virtual_keyboard_enabled = false
+text_direction = 1
+language = "en"
+
+[node name="LetterCount" type="Button" parent="SolvingPanel" unique_id=748209618]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 20.0
+offset_top = 19.0
+offset_right = 129.0
+offset_bottom = 90.0
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = ExtResource("5_domo0")
+theme_override_styles/normal_mirrored = ExtResource("5_domo0")
+theme_override_styles/pressed = ExtResource("5_domo0")
+theme_override_styles/pressed_mirrored = ExtResource("5_domo0")
+theme_override_styles/hover = ExtResource("5_domo0")
+theme_override_styles/hover_mirrored = ExtResource("5_domo0")
+theme_override_styles/hover_pressed = ExtResource("5_domo0")
+theme_override_styles/hover_pressed_mirrored = ExtResource("5_domo0")
+theme_override_styles/disabled = ExtResource("5_domo0")
+theme_override_styles/disabled_mirrored = ExtResource("5_domo0")
+theme_override_styles/focus = ExtResource("5_domo0")
+disabled = true
+text = "Char: 0"
+
+[node name="KeyboardPanel" type="Panel" parent="." unique_id=1269089906]
+layout_mode = 0
+offset_left = 42.0
+offset_top = 1489.0
+offset_right = 1042.0
+offset_bottom = 1898.0
+mouse_filter = 2
+theme_override_styles/panel = ExtResource("3_xfky4")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="KeyboardPanel" unique_id=724231486]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 28.0
+offset_right = 970.0
+offset_bottom = 380.0
+theme_override_constants/separation = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="KeyboardPanel/VBoxContainer" unique_id=559512780]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="Q" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer" unique_id=914541700 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Q"
+
+[node name="W" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer" unique_id=1088454069 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "W"
+
+[node name="E" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer" unique_id=19404198 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "E"
+
+[node name="R" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer" unique_id=313562797 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "R"
+
+[node name="T" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer" unique_id=2082498566 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "T"
+
+[node name="Y" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer" unique_id=1367867312 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Y"
+
+[node name="U" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer" unique_id=1788361764 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "U"
+
+[node name="I" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer" unique_id=1546976212 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "I"
+
+[node name="O" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer" unique_id=384610526 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "O"
+
+[node name="P" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer" unique_id=1350228119 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "P"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="KeyboardPanel/VBoxContainer" unique_id=1013021114]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="A" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer2" unique_id=623479941 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "A"
+
+[node name="S" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer2" unique_id=1009175582 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "S"
+
+[node name="D" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer2" unique_id=451814837 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "D"
+
+[node name="F" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer2" unique_id=454866540 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "F"
+
+[node name="G" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer2" unique_id=370135287 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "G"
+
+[node name="H" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer2" unique_id=430849701 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "H"
+
+[node name="J" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer2" unique_id=2094543358 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "J"
+
+[node name="K" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer2" unique_id=923752861 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "K"
+
+[node name="L" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer2" unique_id=377952705 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "L"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="KeyboardPanel/VBoxContainer" unique_id=271857595]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="Del" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer3" unique_id=757573981 groups=["Keyboard_Buttons_Gp"]]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+theme_override_styles/normal = ExtResource("5_domo0")
+theme_override_styles/pressed = ExtResource("5_domo0")
+disabled = true
+icon = ExtResource("6_tdkvg")
+expand_icon = true
+
+[node name="Z" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer3" unique_id=1365016559 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+text = "Z"
+
+[node name="X" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer3" unique_id=17754588 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+text = "X"
+
+[node name="C" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer3" unique_id=1837181633 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+text = "C"
+
+[node name="V" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer3" unique_id=1672640876 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+text = "V"
+
+[node name="B" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer3" unique_id=482120524 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+text = "B"
+
+[node name="N" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer3" unique_id=494638680 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+text = "N"
+
+[node name="M" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer3" unique_id=434053958 groups=["Keyboard_Buttons_Gp"]]
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+text = "M"
+
+[node name="Enter" type="Button" parent="KeyboardPanel/VBoxContainer/HBoxContainer3" unique_id=2134700053 groups=["Keyboard_Buttons_Gp"]]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+mouse_filter = 1
+theme_override_styles/normal = ExtResource("5_domo0")
+theme_override_styles/pressed = ExtResource("5_domo0")
+disabled = true
+text = "Enter"
+
+[node name="Timer" type="Timer" parent="." unique_id=13685859]
+wait_time = 0.5
+one_shot = true
+
+[connection signal="text_changed" from="SolvingPanel/VBoxContainer/LineEdit" to="." method="_on_line_edit_text_changed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
