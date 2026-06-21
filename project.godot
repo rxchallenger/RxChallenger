@@ -24,10 +24,6 @@ boot_splash/bg_color=Color(1, 1, 1, 1)
 boot_splash/image="uid://jfngd54wbhxy"
 config/icon="uid://du3skeeb0mm12"
 
-[audio]
-
-general/default_playback_type.web=0
-
 [autoload]
 
 BgGlobal="*res://parallax/bg.tscn"
