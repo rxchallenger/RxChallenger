@@ -215,7 +215,7 @@ func Show_Tip_Pannel(Trade :String, node :Node):
 			var ImageWeb_instance = ImageWeb_scene.instantiate()
 			add_child(ImageWeb_instance)
 			ImageWeb_instance.url = image_url
-			print(ImageWeb_instance.url)
+			print("ImageWeb_instance.url: ", ImageWeb_instance.url)
 			ImageWeb_instance.image_loaded.connect(func(texture):
 				%TipPanel/%TradePicture.texture = texture)
 			ImageWeb_instance.download_image()

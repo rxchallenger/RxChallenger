@@ -25,20 +25,60 @@ func download(url: String) -> void:
 		req_failed.emit()
 
 
-func _on_request_completed(result: int, response_code: int, headers: PackedStringArray, body: PackedByteArray) -> void:
-	# Get image type and its respective GDScript method
-	var content_type: String = ""
+func _on_request_completed(
+	result: int,
+	response_code: int,
+	headers: PackedStringArray,
+	body: PackedByteArray
+) -> void:
+
+	print("==========")
+
+	print("RESULT:", result)
+
+	print("RESPONSE:", response_code)
+
+	print("BODY SIZE:", body.size())
+
+	print("HEADERS:")
+
+	for h in headers:
+		print(h)
+
+	var content_type := ""
 
 	for val in headers:
-		if val.begins_with("Content-Type: "):
-			content_type = val.split("Content-Type: ")[1]
+
+		print("HEADER:", val)
+
+		var lower := val.to_lower()
+
+		if lower.contains("content-type"):
+
+			content_type = lower.split(":")[1]
 
 			content_type = content_type.split(";")[0]
 
-			content_type = content_type.strip_edges().to_lower()
+			content_type = content_type.strip_edges()
+
 			break
 
-	image_load_method = valid_types.get(content_type,"")
+
+	print("CONTENT TYPE:", content_type)
+
+	image_load_method = valid_types.get(
+		content_type,
+		""
+	)
+
+	print("METHOD:", image_load_method)
+
+	res_received.emit(
+		result,
+		response_code,
+		body,
+		image_load_method
+	)
 
 	# Emit signal with all details
 	res_received.emit(result, response_code, body, image_load_method)

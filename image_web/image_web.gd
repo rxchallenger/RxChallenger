@@ -96,6 +96,7 @@ func _on_image_download_api_res_received(
 
 
 
+
 func _on_image_download_api_req_failed() -> void:
 	image_tr.texture = null
 	image_tr.visible = false
