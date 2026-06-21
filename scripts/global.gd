@@ -31,21 +31,38 @@ func save_data() -> void:
 	file.store_var(score)
 	file.store_var(bus_mute_state)
 	file.close()
+
 func load_data() -> void:
-	if FileAccess.file_exists(SAVE_FILE):
-		var file :FileAccess = FileAccess.open(SAVE_FILE, FileAccess.READ)
-		total_cases = file.get_var()
-		unlocked_cases = file.get_var()
-		current_case = file.get_var()
-		score = file.get_var()
-		bus_mute_state = file.get_var()
-		file.close()
-	if bus_mute_state == true:
-		AudioServer.set_bus_mute(master_bus,true)
-	if bus_mute_state == false:
-		AudioServer.set_bus_mute(master_bus,false)
-	if FileAccess.file_exists(SAVE_FILE) == false:
+
+	if not FileAccess.file_exists(SAVE_FILE):
+
 		initialize_data()
+
+		return
+
+
+	var file := FileAccess.open(
+		SAVE_FILE,
+		FileAccess.READ
+	)
+
+	total_cases = file.get_var()
+
+	unlocked_cases = file.get_var()
+
+	current_case = file.get_var()
+
+	score = file.get_var()
+
+	bus_mute_state = file.get_var()
+
+	file.close()
+
+
+	AudioServer.set_bus_mute(
+		master_bus,
+		bus_mute_state
+	)
 func cloud_save() -> void:
 	if SilentWolf.Auth.logged_in_player:
 		player_data = {
@@ -91,8 +108,8 @@ func _ready() -> void:
 	"log_level": 0})
 	SilentWolf.auth_config.redirect_to_scene = "res://main_menu/main_menu.tscn"
 	SilentWolf.scores_config.open_scene_on_close = "res://main_menu/main_menu.tscn"
-	SilentWolf.Auth.auto_login_player()
-	cloud_load()
+	await SilentWolf.Auth.auto_login_player()
+	await cloud_load()
 	MobileAds.initialize()
 	DisplayServer.window_set_size(Vector2(576,1024))
 	if Engine.has_singleton("ByteBrew"):

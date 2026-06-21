@@ -60,7 +60,7 @@ func _ready() -> void:
 	#Hiding and Disabling Solved Button
 	_HelpButton(true,Color(1,1,1,0))
 	#Hiding and Disabling Solved Button
-	_SolvedButton(true,Color(1,1,1,0))
+	_SolvedButton(false,Color(1,1,1,1))
 
 	_on_load_banner_pressed()
 	_on_load_interstitial_pressed()
@@ -208,17 +208,24 @@ func Show_Tip_Pannel(Trade :String, node :Node):
 			%TipPanel/%DrugDataLabel.text = generic_name
 			%TipPanel/%DrugDataText.text = data
 
-			var base_url :String = "https://raw.githubusercontent.com/rxchallenger/RxChallenger/main/assets/drugs/"
-			var image_url :String
-			var url_drug = Trade.to_lower()
-			image_url = base_url + url_drug + ".webp"
-			var ImageWeb_instance = ImageWeb_scene.instantiate()
-			add_child(ImageWeb_instance)
-			ImageWeb_instance.url = image_url
-			print("ImageWeb_instance.url: ", ImageWeb_instance.url)
-			ImageWeb_instance.image_loaded.connect(func(texture):
-				%TipPanel/%TradePicture.texture = texture)
-			ImageWeb_instance.download_image()
+			if OS.has_feature("web"):
+				print("Running on the web!")
+				var base_url :String = "https://raw.githubusercontent.com/rxchallenger/RxChallenger/main/assets/drugs/"
+				var image_url :String
+				var url_drug = Trade.to_lower()
+				image_url = base_url + url_drug + ".webp"
+				var ImageWeb_instance = ImageWeb_scene.instantiate()
+				add_child(ImageWeb_instance)
+				ImageWeb_instance.url = image_url
+				print("ImageWeb_instance.url: ", ImageWeb_instance.url)
+				ImageWeb_instance.image_loaded.connect(func(texture):
+					%TipPanel/%TradePicture.texture = texture)
+				ImageWeb_instance.download_image()
+			else:
+				print("Running on a desktop or mobile device.")
+				var picture :Texture2D = DrugTexture.get_texture()
+				%TipPanel/%TradePicture.set_texture(picture)
+
 
 	TipPanel.get_node("AnimationPlayer").play("Load")
 
