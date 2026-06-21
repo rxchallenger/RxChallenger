@@ -74,17 +74,50 @@ func cloud_save() -> void:
 		var sw_result = await SilentWolf.Players.save_player_data(SilentWolf.Auth.logged_in_player, player_data).sw_save_player_data_complete
 		print("Cloud Save success" if sw_result and sw_result.success else "Cloud Save failed")
 func cloud_load() -> void:
-	if SilentWolf.Auth.logged_in_player:
-		var sw_result = await SilentWolf.Players.get_player_data(SilentWolf.Auth.logged_in_player).sw_get_player_data_complete
-		print("Cloud Player data: " + str(sw_result.player_data))
-		if sw_result and sw_result.success and sw_result.player_data:
-			total_cases = sw_result.player_data.get("total_cases")
-			unlocked_cases = sw_result.player_data.get("unlocked_cases")
-			current_case = sw_result.player_data.get("current_case")
-			score = sw_result.player_data.get("score")
-		else:
-			print("Cloud Load failed")
-			initialize_data()
+
+	if not SilentWolf.Auth.logged_in_player:
+
+		return
+
+
+	var sw_result = await SilentWolf.Players.get_player_data(
+		SilentWolf.Auth.logged_in_player
+	).sw_get_player_data_complete
+
+
+	if (
+		sw_result
+		and sw_result.success
+		and sw_result.player_data
+	):
+
+		total_cases = sw_result.player_data.get(
+			"total_cases",
+			total_cases
+		)
+
+		unlocked_cases = sw_result.player_data.get(
+			"unlocked_cases",
+			unlocked_cases
+		)
+
+		current_case = sw_result.player_data.get(
+			"current_case",
+			current_case
+		)
+
+		score = sw_result.player_data.get(
+			"score",
+			score
+		)
+
+		save_data()
+
+	else:
+
+		print(
+			"Cloud load unavailable"
+		)
 func initialize_data() -> void:
 	total_cases = 160
 	unlocked_cases = 1

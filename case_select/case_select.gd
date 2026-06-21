@@ -16,24 +16,24 @@ func _enter_tree() -> void:
 	%AnimationPlayer.play("Load")
 
 func _ready() -> void:
-	SaveLoad()
+	#SaveLoad()
 	ScriptGlobal.current_scene = get_tree().current_scene
 	print("Current Scene:",ScriptGlobal.current_scene)
 	Loading_Cases()
 	Case_1_Button.grab_focus()
 
-func SaveLoad() -> void:
-#region New Code Region TESTING
-	#ScriptGlobal.total_cases = 100
-	#ScriptGlobal.unlocked_cases = 100
-	#ScriptGlobal.cloud_save()
-#endregion TESTING
-	ScriptGlobal.total_cases = 160
-	ScriptGlobal.save_data()
-	if await SilentWolf.Auth.logged_in_player:
-		ScriptGlobal.cloud_save()
-		ScriptGlobal.total_cases = 160
-		ScriptGlobal.cloud_load()
+#func SaveLoad() -> void:
+##region New Code Region TESTING
+	##ScriptGlobal.total_cases = 100
+	##ScriptGlobal.unlocked_cases = 100
+	##ScriptGlobal.cloud_save()
+##endregion TESTING
+	#ScriptGlobal.total_cases = 160
+	#ScriptGlobal.save_data()
+	#if SilentWolf.Auth.logged_in_player:
+		#ScriptGlobal.cloud_save()
+		#ScriptGlobal.total_cases = 160
+		#ScriptGlobal.cloud_load()
 
 func Loading_Cases() -> void:
 	for case in ContentVBoxContainer.get_children():
@@ -45,10 +45,29 @@ func Loading_Cases() -> void:
 			case.text = "Stay Tuned For Updates!"
 		else:
 			case.queue_free()
-		if str_to_var(case.name) in range(ScriptGlobal.unlocked_cases+1):
-			case.disabled = false
-			case.set_button_icon(unlocked_icon)
+		if case.name.is_valid_int():
+
+			if case.name.to_int() <= ScriptGlobal.unlocked_cases:
+
+				case.disabled = false
+
+				case.set_button_icon(
+					unlocked_icon
+				)
+
+			else:
+
+				case.disabled = true
+
+				case.set_button_icon(
+					locked_icon
+				)
+
 			case.set_expand_icon(true)
+
+		elif case.name == "StayTuned":
+
+			case.disabled = false
 		elif case.name == "StayTuned":
 			case.disabled = false
 		else:
