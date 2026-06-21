@@ -208,7 +208,7 @@ func Show_Tip_Pannel(Trade :String, node :Node):
 			%TipPanel/%DrugDataLabel.text = generic_name
 			%TipPanel/%DrugDataText.text = data
 
-			var base_url :String = "https://raw.githubusercontent.com/rxchallenger/RxChallenger/main/"
+			var base_url :String = "https://raw.githubusercontent.com/rxchallenger/RxChallenger/main/assets/drugs/"
 			var image_url :String
 			var url_drug = Trade.to_lower()
 			image_url = base_url + url_drug + ".webp"

@@ -32,9 +32,13 @@ func _on_request_completed(result: int, response_code: int, headers: PackedStrin
 	for val in headers:
 		if val.begins_with("Content-Type: "):
 			content_type = val.split("Content-Type: ")[1]
+
+			content_type = content_type.split(";")[0]
+
+			content_type = content_type.strip_edges().to_lower()
 			break
 
-	image_load_method = valid_types.get(content_type, "")
+	image_load_method = valid_types.get(content_type,"")
 
 	# Emit signal with all details
 	res_received.emit(result, response_code, body, image_load_method)

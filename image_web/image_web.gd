@@ -31,48 +31,67 @@ func reset_ui() -> void:
 func download_image() -> void:
 	image_status.show_status("Downloading image...")
 	image_download_api.download(url)
+	print("image_download_api: " ,url)
 
 
 func _on_image_download_api_res_received(
-	result: int,
-	response_code: int,
-	body: PackedByteArray,
-	image_load_method: String
+	result:int,
+	response_code:int,
+	body:PackedByteArray,
+	image_load_method:String
 ) -> void:
 
-	if result != HTTPRequest.RESULT_SUCCESS or response_code != 200:
+	print("Result:",result)
+
+	print("Response:",response_code)
+
+	print("Body:",body.size())
+
+	print("Method:",image_load_method)
+
+	if result != HTTPRequest.RESULT_SUCCESS:
+
+		print("Request failed")
+
 		return
 
-	var image: Image = Image.new()
 
-	var error: Error = FAILED
+	if response_code != 200:
+
+		print("HTTP failed")
+
+		return
+
+
+	var image := Image.new()
+
+	var error:Error
+
 
 	if image_load_method != "":
-		error = image.call(image_load_method, body)
+
+		error = image.call(
+			image_load_method,
+			body
+		)
+
+		print("Image Error:",error)
+
 
 	if error != OK:
 
-		image_status.show_error(
-			"Image cannot be loaded."
-		)
+		print("Decoder failed")
 
 		return
 
 
-	image_status.hide_status()
-
-	var texture := ImageTexture.create_from_image(
+	image_tr.texture = ImageTexture.create_from_image(
 		image
 	)
 
-	image_tr.texture = texture
-
-	image_tr.visible = true
-
-
-	# ADD THIS
-
-	image_loaded.emit(texture)
+	image_loaded.emit(
+		image_tr.texture
+	)
 
 
 
