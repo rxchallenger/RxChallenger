@@ -9,7 +9,14 @@ func _ready() -> void:
 	BgGlobal.show()
 	$MenuGridContainer/CaseSelectButton.grab_focus()
 	print("Current Scene:",ScriptGlobal.current_scene)
+	await get_tree().process_frame
+	UpdateLogginState()
 
+	if OS.has_feature("web"):
+		$VBoxContainer.hide()
+		$Announcement.show()
+	else:
+		$Announcement.hide()
 
 func SystemInfo() -> void:
 	$UID.show()

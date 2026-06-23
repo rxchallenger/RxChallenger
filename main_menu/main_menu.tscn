@@ -145,7 +145,7 @@ anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 1080.0
-offset_right = 1080.0002
+offset_right = 1080.0005
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_aa8jm")
@@ -610,6 +610,19 @@ texture_disabled = ExtResource("18_iri28")
 texture_focused = ExtResource("18_iri28")
 ignore_texture_size = true
 stretch_mode = 0
+
+[node name="Announcement" type="Label" parent="." unique_id=1784641644]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.024
+offset_right = -0.00048828125
+offset_bottom = 0.91999817
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 34
+text = "Local saves are only available in web ver."
+horizontal_alignment = 1
 
 [node name="Timer" type="Timer" parent="." unique_id=626077122]
 wait_time = 0.2

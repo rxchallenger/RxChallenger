@@ -60,7 +60,7 @@ func _ready() -> void:
 	#Hiding and Disabling Solved Button
 	_HelpButton(true,Color(1,1,1,0))
 	#Hiding and Disabling Solved Button
-	_SolvedButton(false,Color(1,1,1,1))
+	_SolvedButton(true,Color(1,1,1,0))
 
 	_on_load_banner_pressed()
 	_on_load_interstitial_pressed()
