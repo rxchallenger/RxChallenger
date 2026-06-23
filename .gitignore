@@ -2,7 +2,6 @@
 .godot/
 /android/
 /builds/android/
-/builds/linux/
 /builds/windows/
 .vscode/
 .vs/
