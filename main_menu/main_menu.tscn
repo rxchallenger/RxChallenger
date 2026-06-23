@@ -621,7 +621,7 @@ offset_bottom = 0.91999817
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 34
-text = "Local saves are only available in web ver."
+text = "Only local saves available in the web ver."
 horizontal_alignment = 1
 
 [node name="Timer" type="Timer" parent="." unique_id=626077122]

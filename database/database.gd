@@ -15,6 +15,10 @@ var value_up :float = 0.0
 
 var parent :Node
 
+#region Image Download
+const  ImageWeb_scene = preload("res://image_web/image_web.tscn")
+#endregion
+
 func _enter_tree() -> void:
 	hide()
 
@@ -49,15 +53,33 @@ func DrugInfo(drug_name) -> void:
 	for DrugTexture in DrugsGlobal.get_children():
 		if drug_name == DrugTexture.name:
 			var trade_name :String = drug_name
-			var picture :Texture2D = DrugTexture.get_texture()
+			#var picture :Texture2D = DrugTexture.get_texture()
 			var alternatives :String = DrugsGlobal.alternatives_dictionary.get(drug_name)
 			var generic_name :String = DrugsGlobal.generic_dictionary.get(drug_name)
 			var data :String = DrugsGlobal.drugdata_dictionary.get(generic_name)
 			%TipPanel/%TradeLabel.text = trade_name
-			%TipPanel/%TradePicture.set_texture(picture)
+			#%TipPanel/%TradePicture.set_texture(picture)
 			%TipPanel/%AlternativesText.text = alternatives
 			%TipPanel/%DrugDataLabel.text = generic_name
 			%TipPanel/%DrugDataText.text = data
+
+			if OS.has_feature("web"):
+				print("Running on the web!")
+				var base_url :String = "https://raw.githubusercontent.com/rxchallenger/RxChallenger/main/assets/drugs/"
+				var image_url :String
+				var url_drug = drug_name.to_lower()
+				image_url = base_url + url_drug + ".webp"
+				var ImageWeb_instance = ImageWeb_scene.instantiate()
+				add_child(ImageWeb_instance)
+				ImageWeb_instance.url = image_url
+				print("ImageWeb_instance.url: ", ImageWeb_instance.url)
+				ImageWeb_instance.image_loaded.connect(func(texture):
+					%TipPanel/%TradePicture.texture = texture)
+				ImageWeb_instance.download_image()
+			else:
+				print("Running on a desktop or mobile device.")
+				var picture :Texture2D = DrugTexture.get_texture()
+				%TipPanel/%TradePicture.set_texture(picture)
 
 func _input(event) -> void:
 	if event is InputEventKey and Input.is_action_just_pressed("ui_cancel") and not event.echo:
