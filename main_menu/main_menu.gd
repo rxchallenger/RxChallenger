@@ -11,7 +11,9 @@ func _ready() -> void:
 	print("Current Scene:",ScriptGlobal.current_scene)
 	await get_tree().process_frame
 	UpdateLogginState()
+	Check_OS()
 
+func Check_OS()->void:
 	if OS.has_feature("web"):
 		$VBoxContainer.hide()
 		$Announcement.show()
@@ -106,6 +108,7 @@ func _on_icon_back_button_button_down() -> void:
 	$MenuGridContainer.show()
 	$Icon.self_modulate= Color(1,1,1,1)
 	$IMC.self_modulate= Color(1,1,1,1)
+	Check_OS()
 func _on_icon_done_button_button_down() -> void:
 	ScriptGlobal.get_node("BackAudio").play()
 	for node in $Icon.get_children():
@@ -114,6 +117,7 @@ func _on_icon_done_button_button_down() -> void:
 	$MenuGridContainer.show()
 	$Icon.self_modulate= Color(1,1,1,1)
 	$IMC.self_modulate= Color(1,1,1,1)
+	Check_OS()
 func _on_website_button_button_down() -> void:
 	ScriptGlobal.get_node("ClickAudio").play()
 	OS.shell_open("https://imc-hub.github.io/digital-solutions/rx-challenger")
