@@ -5,3 +5,4 @@
 /builds/windows/
 .vscode/
 .vs/
+*.import
